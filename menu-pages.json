@@ -1,0 +1,86 @@
+[
+  {
+    "kind": "club",
+    "page": 1,
+    "file": "assets/menus/club-01.webp",
+    "width": 596,
+    "height": 1685
+  },
+  {
+    "kind": "club",
+    "page": 2,
+    "file": "assets/menus/club-02.webp",
+    "width": 596,
+    "height": 1685
+  },
+  {
+    "kind": "club",
+    "page": 3,
+    "file": "assets/menus/club-03.webp",
+    "width": 596,
+    "height": 1685
+  },
+  {
+    "kind": "club",
+    "page": 4,
+    "file": "assets/menus/club-04.webp",
+    "width": 596,
+    "height": 1685
+  },
+  {
+    "kind": "club",
+    "page": 5,
+    "file": "assets/menus/club-05.webp",
+    "width": 596,
+    "height": 1685
+  },
+  {
+    "kind": "club",
+    "page": 6,
+    "file": "assets/menus/club-06.webp",
+    "width": 596,
+    "height": 1685
+  },
+  {
+    "kind": "club",
+    "page": 7,
+    "file": "assets/menus/club-07.webp",
+    "width": 596,
+    "height": 1685
+  },
+  {
+    "kind": "club",
+    "page": 8,
+    "file": "assets/menus/club-08.webp",
+    "width": 596,
+    "height": 1685
+  },
+  {
+    "kind": "offers",
+    "page": 1,
+    "file": "assets/menus/offers-01.webp",
+    "width": 1100,
+    "height": 1555
+  },
+  {
+    "kind": "offers",
+    "page": 2,
+    "file": "assets/menus/offers-02.webp",
+    "width": 1100,
+    "height": 1555
+  },
+  {
+    "kind": "offers",
+    "page": 3,
+    "file": "assets/menus/offers-03.webp",
+    "width": 1100,
+    "height": 1555
+  },
+  {
+    "kind": "offers",
+    "page": 4,
+    "file": "assets/menus/offers-04.webp",
+    "width": 1100,
+    "height": 1555
+  }
+]

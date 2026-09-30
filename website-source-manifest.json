@@ -1,0 +1,2556 @@
+{
+  "preparedAt": "2026-09-30T15:15:19.346Z",
+  "basis": "Latest recovered working website, H7 / Food Refresh F1; booking page restored to original A2 embedded Google Form",
+  "files": [
+    {
+      "file": "404.html",
+      "bytes": 7908,
+      "sha256": "d4ad2fe91f2a248b4c54b8ce6b7efb91c27c7673294f60c5b9e55760c02ae4a1"
+    },
+    {
+      "file": "about.html",
+      "bytes": 15609,
+      "sha256": "eb9b53b34e3ef16df5db1f3a5e1221f9551ef48d1f9b842656b5114a20f5fb8d"
+    },
+    {
+      "file": "agents-a1.css",
+      "bytes": 3731,
+      "sha256": "9c2b69b063c94b24a7668cde4ba399c50b6600f4c28c39d23ccfea9f6c0ab8af"
+    },
+    {
+      "file": "agents-a1.js",
+      "bytes": 5113,
+      "sha256": "c4e8d7b2f79ccb9c937537486ef6477c5074f08e4fc30e29c8b5e398c18f39de"
+    },
+    {
+      "file": "agents-a2.css",
+      "bytes": 9981,
+      "sha256": "ae68c6772f8ba4e589391ef951954c825c1829cf4a54ecb25e5d9c8c58af9536"
+    },
+    {
+      "file": "agents-a2.js",
+      "bytes": 7452,
+      "sha256": "dcefcf409dcda8fd4fb76898eb51b7b3ec2784ccc23f4863b27bae15b1157458"
+    },
+    {
+      "file": "agents.html",
+      "bytes": 13164,
+      "sha256": "a8cbddd73c35a902885d09c205974703022e0d239d6c2254f63b5e69c76028ed"
+    },
+    {
+      "file": "appearance-init.js",
+      "bytes": 181,
+      "sha256": "8dcfb700eb88a570dbdbca5df27cf1f866e9fe2738341be71ee11322aed7648a"
+    },
+    {
+      "file": "assets/about_slide_1.jpg",
+      "bytes": 25156,
+      "sha256": "c52964f53cd03853d42788c1ad744db07c99be50c266fea5de6ed7e5b07e5dc0"
+    },
+    {
+      "file": "assets/about_slide_2.jpg",
+      "bytes": 401180,
+      "sha256": "e3ba158c3948ca620b2c767cea73fd70c3e33e49e267ec499874a50b9ecd3328"
+    },
+    {
+      "file": "assets/about_slide_2.webp",
+      "bytes": 176986,
+      "sha256": "9b9cc5497c8c362b82a13285cee3dfe19c67590b5067209204398cedae286bcb"
+    },
+    {
+      "file": "assets/bali_beach.jpg",
+      "bytes": 157638,
+      "sha256": "6cf142380c62cda34b4e8b7b7378c399132559450de79cb7dc30bc48ceeaa28a"
+    },
+    {
+      "file": "assets/bali_fish_curry.png",
+      "bytes": 405197,
+      "sha256": "cfd1869ddbd953d72dd00ed0a75825d19de8b2834aefb298f8f824cd3c80d2ed"
+    },
+    {
+      "file": "assets/bali_gate.jpg",
+      "bytes": 73501,
+      "sha256": "5e02e4471b7a582df4506d2787cd0fef070afe913ba2c453ad650b930a360b49"
+    },
+    {
+      "file": "assets/Bollywood Indian Cuisine Ubud-Resto Drink menu.pdf",
+      "bytes": 14312145,
+      "sha256": "87c38d5c0d1d31f6ea6aa3436f025456aac22b9b8b6c47fbe479a4fc90441a85"
+    },
+    {
+      "file": "assets/Bollywood-Western Menu.pdf",
+      "bytes": 16550201,
+      "sha256": "9b72ca4e8e05f5bc75986a522e0ae3b2b922beb01f6e164007b1c4c2e541fb87"
+    },
+    {
+      "file": "assets/bollywood_sunset.jpg",
+      "bytes": 75597,
+      "sha256": "bfa1665c0a16247cbeec1967541ddf8896ae4e86a7b89effcb36804adbbac997"
+    },
+    {
+      "file": "assets/burger.jpg",
+      "bytes": 76797,
+      "sha256": "8466b8a8bf4c37c14e9bfe06987873d6336305f6a75437cd02e4c2c11c18749d"
+    },
+    {
+      "file": "assets/butter_chicken.jpg",
+      "bytes": 225402,
+      "sha256": "5699789f2e6c095340e0709c7b8d729985cf5158c654438e9c307b5fc7387618"
+    },
+    {
+      "file": "assets/BW OLD TOWN-Food Menu.pdf",
+      "bytes": 42015720,
+      "sha256": "fe56a647af2eeb1e5a1f9b33cac2d092b87c76aeac4d66bb3b37616db52781a0"
+    },
+    {
+      "file": "assets/BW Seminyak-Resto Drink menu.pdf",
+      "bytes": 14445912,
+      "sha256": "5271bde1a6c33a762def136c0cb9d8fdb8f724d44a6eaa5aac1d713b77cf1cb9"
+    },
+    {
+      "file": "assets/chef_hat.png",
+      "bytes": 337212,
+      "sha256": "8728bc95b2927884cf255fb4aea237ccd43a18a5061a43dde8b154928fb3cd34"
+    },
+    {
+      "file": "assets/chicken_biryani.png",
+      "bytes": 705306,
+      "sha256": "227252fecbfce61c810c13ecc0c235409b11754380e5c1aaad2433e3a0109c4d"
+    },
+    {
+      "file": "assets/chole_bhature.png",
+      "bytes": 670452,
+      "sha256": "b945fc95055b97d411771acec097fec1b564ce7dfdbedbdd22be05759e1e4a9b"
+    },
+    {
+      "file": "assets/club-logo-original.png",
+      "bytes": 251668,
+      "sha256": "6580d23c88d8a92cdf9eaac4ce9a605e8f3f424699bec75c2aedf02e4af35659"
+    },
+    {
+      "file": "assets/club_card.jpg",
+      "bytes": 95481,
+      "sha256": "254532333ac9f8ee36549fe53db49163d178ebb69e6ac292f10dbb679ed0452c"
+    },
+    {
+      "file": "assets/dal_makhani.jpg",
+      "bytes": 161092,
+      "sha256": "7926fd556e4034c8c8e185d9ec460eb02d6dfc0004319a755941a572a6ac5fb9"
+    },
+    {
+      "file": "assets/Desserts Menu.pdf",
+      "bytes": 2250746,
+      "sha256": "ee6b0894e157c267513176d118d96e256e24a4a4cb635dfa0b694039d9504cdb"
+    },
+    {
+      "file": "assets/dum_veg_biryani.jpg",
+      "bytes": 506272,
+      "sha256": "000b3fbb4ebef75c02a58165f8e02345f557df4e30bd2e143ac1fab39a1ec06e"
+    },
+    {
+      "file": "assets/experience04/club.webp",
+      "bytes": 79792,
+      "sha256": "051cf5718f9132917e8eb465439fca6e1f5c14dca733d9e3289ec522b0b4ba44"
+    },
+    {
+      "file": "assets/experience04/nusapenida.webp",
+      "bytes": 144880,
+      "sha256": "3d9220db22208d6dc0e0b8acfd6cdd221f8112aafdc9fe9e5b238146de3bab56"
+    },
+    {
+      "file": "assets/experience04/phuket.webp",
+      "bytes": 187694,
+      "sha256": "9bbf008740688cab7380f48ca10c1d2f051df0c40bc584f5d966971c91973749"
+    },
+    {
+      "file": "assets/experience04/seminyak-sunset.webp",
+      "bytes": 143480,
+      "sha256": "4e9a66b4e54fea7120150db04d18b12e65ffaa7275d0e001f9816fdb1443da79"
+    },
+    {
+      "file": "assets/experience04/seminyak.webp",
+      "bytes": 49560,
+      "sha256": "02de3954266c7cb38124f5a4baca86e1fc0295877a73f9a0326fe971180e98b7"
+    },
+    {
+      "file": "assets/experience04/ubud.webp",
+      "bytes": 54584,
+      "sha256": "4b96088a2ce4e6f0abd505494ab306bfb3325120bd728464a05366a1a609b90a"
+    },
+    {
+      "file": "assets/favicon-refined.png",
+      "bytes": 4255,
+      "sha256": "165cfb86c2e9d39fd8a672ccd2a8838a0f20501c2ca70e67e1301147358d2865"
+    },
+    {
+      "file": "assets/favicon.png",
+      "bytes": 138453,
+      "sha256": "7d6566689a543083b0662cdd9b60ae9756f58beed66583e4cd8ad7b5ab518106"
+    },
+    {
+      "file": "assets/fettuccine.jpg",
+      "bytes": 161949,
+      "sha256": "78dc24d712a036323956936934c114700f6fe5ebd9aa388f978c77bd11cc5458"
+    },
+    {
+      "file": "assets/final-photo/curries-1440.webp",
+      "bytes": 455992,
+      "sha256": "e3e6ab8d274e91911e869686d10eea0e7b241f79295a5599af1ef9397f19c6f1"
+    },
+    {
+      "file": "assets/final-photo/curries-480.webp",
+      "bytes": 62680,
+      "sha256": "bcd799e72ea7513d6a96c04d7545a47700c02126de2457a5f080e53f5051eb46"
+    },
+    {
+      "file": "assets/final-photo/curries-960.webp",
+      "bytes": 218168,
+      "sha256": "81ed737c5b1c232a3306d553fe932b635df2fe1b4ef08a3206764075cef02a76"
+    },
+    {
+      "file": "assets/final-photo/curry-detail-1440.webp",
+      "bytes": 626866,
+      "sha256": "e9c5c1d1c2757960ec529c4127c87e5d2a8894fbbab2b535b24ab559702128cf"
+    },
+    {
+      "file": "assets/final-photo/curry-detail-480.webp",
+      "bytes": 100668,
+      "sha256": "a3ac54c32b7463de1d49f024fd4e8389c5b03b6c584fcdd7e5eb3d8f88bbc89d"
+    },
+    {
+      "file": "assets/final-photo/curry-detail-960.webp",
+      "bytes": 315350,
+      "sha256": "14592ea7b9a171dfd41ed88da2c203597b2607a3f714204c83fb4ed3c3b87786"
+    },
+    {
+      "file": "assets/final-photo/rice-1440.webp",
+      "bytes": 371080,
+      "sha256": "79473f0e024363547d492b647aa43b5f3f093fba38a5afd18beb839862c4ced7"
+    },
+    {
+      "file": "assets/final-photo/rice-480.webp",
+      "bytes": 69728,
+      "sha256": "0fdba6a6eb33f2d70294903a7a5b1dbc518e592156bda46d8907903a48c14937"
+    },
+    {
+      "file": "assets/final-photo/rice-960.webp",
+      "bytes": 203526,
+      "sha256": "16e3d34d4a0acd2f2ef26386b49c50b1a7faad4a68cb92a6b3fb98229075b3ce"
+    },
+    {
+      "file": "assets/final-photo/south-indian-1440.webp",
+      "bytes": 330880,
+      "sha256": "995c5b925829aa09256c30cf8b59823de5296bfd3c95ccc3947d5fa457e2c49a"
+    },
+    {
+      "file": "assets/final-photo/south-indian-480.webp",
+      "bytes": 64744,
+      "sha256": "c67e26c8a896552e36d400d45f51a53fd07e366e2c17a12c1ea9e387883d8a9b"
+    },
+    {
+      "file": "assets/final-photo/south-indian-960.webp",
+      "bytes": 177838,
+      "sha256": "5a36c5940781f1f1b9a792e3166a7ad382e1d9b434d50b66cb495292799ab309"
+    },
+    {
+      "file": "assets/final-photo/tandoor-1440.webp",
+      "bytes": 650844,
+      "sha256": "05647739f0ad8ec141a4d5f4db9689a37d945787606ab7970dab5531c9bfdc3c"
+    },
+    {
+      "file": "assets/final-photo/tandoor-480.webp",
+      "bytes": 73926,
+      "sha256": "5ddea455e9c7437deedea576812b2e92a168678b0d7e3e22177c778b3bceb163"
+    },
+    {
+      "file": "assets/final-photo/tandoor-960.webp",
+      "bytes": 285308,
+      "sha256": "e0a753f524b0f91fade6babcbf98b212e0b390517ae02aced7524faab9397dac"
+    },
+    {
+      "file": "assets/food-library/g-1-1.webp",
+      "bytes": 314194,
+      "sha256": "3cd27dd581381f61e570fbf0ebe15a9a45f9751dedbaf3eb413668905043d3d1"
+    },
+    {
+      "file": "assets/food-library/g-10-1.webp",
+      "bytes": 739728,
+      "sha256": "e78cba400e61ddcc7a440340c9d2022d6a57fb80fd220357856fdaa486f1e1b1"
+    },
+    {
+      "file": "assets/food-library/g-12-1.webp",
+      "bytes": 347290,
+      "sha256": "100ede3ad0a888a8e15aca45e0deeb3d92dd1227a88247488be12af7f44d196f"
+    },
+    {
+      "file": "assets/food-library/g-13-1.webp",
+      "bytes": 391506,
+      "sha256": "9ff4b2af9ca0c5afa660ef54d53ab4526ee1aa3de03a17aeed026e0c196a6167"
+    },
+    {
+      "file": "assets/food-library/g-14.webp",
+      "bytes": 373228,
+      "sha256": "cb8c8346e43914e4557738acbfc9376770608e842554437f58968d66b5178eec"
+    },
+    {
+      "file": "assets/food-library/g-17-1.webp",
+      "bytes": 417420,
+      "sha256": "5df06fef568a835eb18c068b0993e8f8f75e90113aa05263f2b7e3e70bb8d802"
+    },
+    {
+      "file": "assets/food-library/g-3.webp",
+      "bytes": 483936,
+      "sha256": "afb53a8d2eba618a2a55df2a9fc4b2e9391a280b8b443939aa96df07bd84c00d"
+    },
+    {
+      "file": "assets/food-library/g-4.webp",
+      "bytes": 452950,
+      "sha256": "7b01baeea3eaae4b02306524b770852a8fee5d4411499f3cd83b6ee7ea4dd952"
+    },
+    {
+      "file": "assets/food-library/g-6-1.webp",
+      "bytes": 545900,
+      "sha256": "7a8445372204b694248fbfd355f482ef0e4b697cedd1f80e09a4184bb52eb342"
+    },
+    {
+      "file": "assets/food-library/g-7-1.webp",
+      "bytes": 406894,
+      "sha256": "34785e995a2453059d70a58d6bc83a5de244fb0705405aa5cbf53f42f054ab4d"
+    },
+    {
+      "file": "assets/food-library/s-11-1.webp",
+      "bytes": 244118,
+      "sha256": "73c51b14183aafae26266a461ccfa47819e012ce4024bdf7d669f8e66d5ff61c"
+    },
+    {
+      "file": "assets/food-library/s-15.webp",
+      "bytes": 218134,
+      "sha256": "d2f267dfa4259362e8a2e9672053e6971d8022fcdda013667c2ce4aa4f0b6ef0"
+    },
+    {
+      "file": "assets/food-library/s-20.webp",
+      "bytes": 243034,
+      "sha256": "1050f4bbdd5556e5c12243e3171c138eb7a5d2404608aee7fe43848bfd09956d"
+    },
+    {
+      "file": "assets/food-library/s-24.webp",
+      "bytes": 389460,
+      "sha256": "445fbc6bc60e5a4dd86059489c2e94e4fff630d968417e365b986094a5216ccb"
+    },
+    {
+      "file": "assets/food-library/s-26-1.webp",
+      "bytes": 411020,
+      "sha256": "8b4c77416a99384f5b16ed4b9c859da70d618eee4b31ef8590da159e6c57bb34"
+    },
+    {
+      "file": "assets/food-library/s-28.webp",
+      "bytes": 374612,
+      "sha256": "de54cfa56ca0a6e19172a7cc375db4179df30c41dc85bacc3dc486d083b215d2"
+    },
+    {
+      "file": "assets/food-library/s-3.webp",
+      "bytes": 216562,
+      "sha256": "4c4d26bb754ab2b844c6f35ad9a741ac8a4ab5db5988d40170f1895df38d2f99"
+    },
+    {
+      "file": "assets/food-library/s-31.webp",
+      "bytes": 455934,
+      "sha256": "ca71c7e7e4a6df6762d6809764b3ce0dc583858f1c25523c0941e1a602c62d29"
+    },
+    {
+      "file": "assets/food-library/s-35.webp",
+      "bytes": 373876,
+      "sha256": "c43087c804f777cd59f912c3e69e74ac9f54d8caf354bbd546ba2350e010bb99"
+    },
+    {
+      "file": "assets/food-library/s-41.webp",
+      "bytes": 265866,
+      "sha256": "e4d6666b7e52cb210a9b66de05ff4c1a80907a3562df2736ce94676678064356"
+    },
+    {
+      "file": "assets/food-library/s-45.webp",
+      "bytes": 307588,
+      "sha256": "3b9f53f5f7bfa1e9c35390023839c8a6224bbe2ca5b2f87d0e6d714c07265154"
+    },
+    {
+      "file": "assets/food-library/s-49.webp",
+      "bytes": 335802,
+      "sha256": "60d8f5657e6c29e6d122330f823eb8b73591f70a7cc827ecd1cdece9f5dec4c1"
+    },
+    {
+      "file": "assets/food-library/s-51.webp",
+      "bytes": 354044,
+      "sha256": "864eed0e3d2e838629650f51919ab5dae97f7b545af165a3c011059b013af14c"
+    },
+    {
+      "file": "assets/food-library/s-53.webp",
+      "bytes": 528066,
+      "sha256": "b285cff08378cf691c8f59f409305867f373c994ab0ada2e6b360daa6e251c10"
+    },
+    {
+      "file": "assets/food-library/s-56.webp",
+      "bytes": 237996,
+      "sha256": "2c3fcd52c2af7773fd685bfb70c2fec5d5c0b010698631201bfef2fd26c64d6c"
+    },
+    {
+      "file": "assets/food-library/s-57.webp",
+      "bytes": 255818,
+      "sha256": "9b46cbcb6bae14726316d135d84c9c772931f9c70c7d27e52a8b35e7bc30b7b3"
+    },
+    {
+      "file": "assets/food-library/s-60.webp",
+      "bytes": 206634,
+      "sha256": "c14c0a2cee4a1fb9febf077081c09535bdf97a5085097a28ca0d8db55c239588"
+    },
+    {
+      "file": "assets/food-library/s-65.webp",
+      "bytes": 262994,
+      "sha256": "405bbf5f1d12d9dfdec08d5432409f5a989a5458946bcbcc628c9ccaf311a22a"
+    },
+    {
+      "file": "assets/food-library/s-67.webp",
+      "bytes": 249946,
+      "sha256": "d55c8a63d271ded9cb02b5cd2875a9987588d09867ae9ea3a1c634180fb7b278"
+    },
+    {
+      "file": "assets/food-library/s-69-1.webp",
+      "bytes": 354116,
+      "sha256": "1e9b842bc2086380887bfd5f71bf82c4f235c09919c02b1222c1e5f794a14c4e"
+    },
+    {
+      "file": "assets/food-library/s-70.webp",
+      "bytes": 391700,
+      "sha256": "974634eb3a1c7c7fd5a31ddf984b458b1a811a43b0085d14d162c2bed0fd1334"
+    },
+    {
+      "file": "assets/food-library/s-71.webp",
+      "bytes": 339120,
+      "sha256": "02df7681c9516318599202d02d9321f80e2516afa46d355a42a2f3401e9310bd"
+    },
+    {
+      "file": "assets/food-library/s-74.webp",
+      "bytes": 166300,
+      "sha256": "2802d5bab5ae57c4cdd3791f02fbbc3606d6aa9967ac9a0ad49208c4d03a9f16"
+    },
+    {
+      "file": "assets/food-library/s-75.webp",
+      "bytes": 261730,
+      "sha256": "80552372e067835651ffff9ad3003aad66dbf9fdf7fdadc9d945f6cbd50a41bd"
+    },
+    {
+      "file": "assets/food-library/s-76.webp",
+      "bytes": 253904,
+      "sha256": "f6cec7a0643cdb6b8385fb0853a4f2ea4b595b642fed68a6f86e73ecf2f504f9"
+    },
+    {
+      "file": "assets/food-library/s-77.webp",
+      "bytes": 246440,
+      "sha256": "aff630212dfacff3d0563d1d835d7be564e05070c3762feaf8f266eec1b00f06"
+    },
+    {
+      "file": "assets/food-library/s-82-1.webp",
+      "bytes": 334596,
+      "sha256": "8fe3fb4d3f037b9f53ce97b996a868e7935e51e77aa927aa0c2c4d8c4ccbf77a"
+    },
+    {
+      "file": "assets/food-library/s-83.webp",
+      "bytes": 263758,
+      "sha256": "3ac7fd09343fe22a9119fe1a730dbf65474f30375cef5c26d076487f561b5513"
+    },
+    {
+      "file": "assets/food-library/s-9.webp",
+      "bytes": 292606,
+      "sha256": "eedeab9ba7ef595eac928ef15f903757ea16278d08f3518ec1a090146657a8f3"
+    },
+    {
+      "file": "assets/garlic_naan.jpg",
+      "bytes": 497527,
+      "sha256": "ead18b9bb03c44a70c48846154433b78a221d8f2c328c9d130a1d1990eaaf49b"
+    },
+    {
+      "file": "assets/ginger_tikka.png",
+      "bytes": 549780,
+      "sha256": "18b7b9c944cdbcc1d52c9ea7ca607ed380133a689dfb40891d446b6e453eb7d6"
+    },
+    {
+      "file": "assets/gulab_jamun.jpg",
+      "bytes": 183602,
+      "sha256": "d03a097f88621e8166980bacc175931cf05ca5190657f009f4fbdcb6539c0798"
+    },
+    {
+      "file": "assets/hero_bg.png",
+      "bytes": 996652,
+      "sha256": "5c474058bda6da05252fc65874c533ee57465c9905cb2ffe54ed8ae52cac1b6e"
+    },
+    {
+      "file": "assets/Hookah Nusa Penida.pdf",
+      "bytes": 3703502,
+      "sha256": "a498bb1319742eb2ad87efd7c72a3244bba9f1311550d3803e1a2a8634f652e2"
+    },
+    {
+      "file": "assets/Hookah Ubud.pdf",
+      "bytes": 1434829,
+      "sha256": "5e26f191fa31f9cd196c397f149ff03727ef6571dbe35b52e724881fb6f3eac6"
+    },
+    {
+      "file": "assets/indonesia_card.jpg",
+      "bytes": 395362,
+      "sha256": "4dbbdcd0d1b82d206257a1f0b6b5638a51340181f5be0e76d5a45e1e22aa10ec"
+    },
+    {
+      "file": "assets/indonesia_gallery_1.jpg",
+      "bytes": 25156,
+      "sha256": "c52964f53cd03853d42788c1ad744db07c99be50c266fea5de6ed7e5b07e5dc0"
+    },
+    {
+      "file": "assets/indonesia_gallery_10.jpg",
+      "bytes": 25597,
+      "sha256": "10f7e4ae68b84b23ec0c3350a1541f06f0ace6cc86575490310a089bc38bbbc5"
+    },
+    {
+      "file": "assets/indonesia_gallery_2.jpg",
+      "bytes": 37206,
+      "sha256": "3cb32115adb02d27eec1f43632e73edc6716487315d6176e2f061bcd9d3ff578"
+    },
+    {
+      "file": "assets/indonesia_gallery_3.jpg",
+      "bytes": 24270,
+      "sha256": "0e7f96cbfbb4057c7ed27ff4cecc5a4072797706a86835a18451c6670e467214"
+    },
+    {
+      "file": "assets/indonesia_gallery_4.jpg",
+      "bytes": 38414,
+      "sha256": "ca8a9f188a5549ba4fc56401db4b92381be7080e48cb5582f1b60e8c5d8b8c9d"
+    },
+    {
+      "file": "assets/indonesia_gallery_5.jpg",
+      "bytes": 23899,
+      "sha256": "c3359bd16e700d8810de42bfc6a07b56b180f68d018af2c549cff8d5202b40ad"
+    },
+    {
+      "file": "assets/indonesia_gallery_6.jpg",
+      "bytes": 21968,
+      "sha256": "e86db99c0799b001708323461c9cca0f9b8b0858081d75ff55836b0764cbb270"
+    },
+    {
+      "file": "assets/indonesia_gallery_7.jpg",
+      "bytes": 19828,
+      "sha256": "dc4146beeb6cccc8caf2714051db1aba91797fe6cd02cd0cc9c702edb249fd1c"
+    },
+    {
+      "file": "assets/indonesia_gallery_8.jpg",
+      "bytes": 28990,
+      "sha256": "367fea43ef50a8ed73887147cf6c0763727f6f03e21d6f76a5e2de3ddc4c9e85"
+    },
+    {
+      "file": "assets/indonesia_gallery_9.jpg",
+      "bytes": 40886,
+      "sha256": "5ad696b05552f754806e7302b772a292ff93c755798f2e493f652bd5e0d52c0a"
+    },
+    {
+      "file": "assets/inline-menu-m2/nusapenida-drinks-01.webp",
+      "bytes": 67534,
+      "sha256": "abff18e3094c1cd3a3d0a16ac56416f31a90746a170de16b84ab50dc61ed6896"
+    },
+    {
+      "file": "assets/inline-menu-m2/nusapenida-drinks-02.webp",
+      "bytes": 178954,
+      "sha256": "87f7f64fa922757569d601c37e8dbfc33b2a74da2c94edfe83486d4c4a64828b"
+    },
+    {
+      "file": "assets/inline-menu-m2/nusapenida-drinks-03.webp",
+      "bytes": 126856,
+      "sha256": "1660761b4ea58c2bee46b5a3caa292ccf8fddeaef0f41e6248597d7c45fa7753"
+    },
+    {
+      "file": "assets/inline-menu-m2/nusapenida-drinks-04.webp",
+      "bytes": 282612,
+      "sha256": "f7cf0a160aaf4891787bf46c73dd8e539bb6354994def2f0f04aa0dede298a3c"
+    },
+    {
+      "file": "assets/inline-menu-m2/nusapenida-drinks-05.webp",
+      "bytes": 274798,
+      "sha256": "2eab7e13d9514881bd3e3906d580bdc9fe5f93802f7b7e2eac24508fa96cc879"
+    },
+    {
+      "file": "assets/inline-menu-m2/nusapenida-drinks-06.webp",
+      "bytes": 213866,
+      "sha256": "628f0536edc40d4334eb48fd0495f9eef62d01578dc83c40e8b41f5da0b725ce"
+    },
+    {
+      "file": "assets/inline-menu-m2/nusapenida-drinks-07.webp",
+      "bytes": 168320,
+      "sha256": "d5134a187a2533e2ba6f8f8c4e0ad3f62e7eb2abf11f3fadbe7368a6d84db55c"
+    },
+    {
+      "file": "assets/inline-menu-m2/nusapenida-drinks-08.webp",
+      "bytes": 96786,
+      "sha256": "d414ec0bfa271c2b87f351837c42c3c3d8013bc82051e6add69d72853e715ff9"
+    },
+    {
+      "file": "assets/inline-menu-m2/nusapenida-shisha-01.webp",
+      "bytes": 192126,
+      "sha256": "ffe31ec0bb9f00e85ff394382dd19aacf9cdfb124ab0c00931fe42ba983d16e3"
+    },
+    {
+      "file": "assets/inline-menu-m2/seminyak-drinks-01.webp",
+      "bytes": 391294,
+      "sha256": "cbb9583c132386a5e1235479c8b3a1f2b7475ebe09f59c51080a3955749ee6ab"
+    },
+    {
+      "file": "assets/inline-menu-m2/seminyak-drinks-02.webp",
+      "bytes": 432336,
+      "sha256": "aa7bb7a03f74ec46d53675717e36fdd145b4883faba34f645a5d8b66d9c72e8f"
+    },
+    {
+      "file": "assets/inline-menu-m2/seminyak-drinks-03.webp",
+      "bytes": 463290,
+      "sha256": "3b55298038bb61fd46ff272b3bd2109f5e556032ecb210dea18624f7e2397795"
+    },
+    {
+      "file": "assets/inline-menu-m2/seminyak-drinks-04.webp",
+      "bytes": 470540,
+      "sha256": "28308b6f2929f2ed30d33a0c76da28f7f54dfbd1a1b2798c2e842be8d0d28f75"
+    },
+    {
+      "file": "assets/inline-menu-m2/seminyak-drinks-05.webp",
+      "bytes": 408034,
+      "sha256": "9daa87bfeea0044e661ae702c12ba09b9e7c1e46d32db9dfe3c8642129e8f838"
+    },
+    {
+      "file": "assets/inline-menu-m2/seminyak-drinks-06.webp",
+      "bytes": 274196,
+      "sha256": "2c3b44a0b39a9ca7eefafa2006ba424f04577be44f688f49a5fbe1bad48d4fe0"
+    },
+    {
+      "file": "assets/inline-menu-m2/seminyak-shisha-01.webp",
+      "bytes": 242950,
+      "sha256": "26845004a0ae58e764072b43d28dbafa02346e434e5b65092393cc3b8b0e1a4a"
+    },
+    {
+      "file": "assets/inline-menu-m2/seminyak-western-01.webp",
+      "bytes": 204276,
+      "sha256": "14b1e28ca0640aba8be19363b75dc3a4b78c9ee66c6cc6021069a2c501f5ef9f"
+    },
+    {
+      "file": "assets/inline-menu-m2/seminyak-western-02.webp",
+      "bytes": 219768,
+      "sha256": "d3ca5dff8d10b21e1f6800499b2d751627509c18a2afc4b2d0c0a2b33c58a612"
+    },
+    {
+      "file": "assets/inline-menu-m2/seminyak-western-03.webp",
+      "bytes": 523318,
+      "sha256": "d8cd3a7c6c5d84f815f4e7a445d77cd535509c072f1527a11b0651051f163f85"
+    },
+    {
+      "file": "assets/inline-menu-m2/seminyak-western-04.webp",
+      "bytes": 450936,
+      "sha256": "eb59153225ccc21d754425cbc3b1dcf3c989dd95dee7e1de43c9ff34dc17f994"
+    },
+    {
+      "file": "assets/inline-menu-m2/seminyak-western-05.webp",
+      "bytes": 267596,
+      "sha256": "184c8f0a0db48225b528067cfa6afccdc0cecaed9683f9ed006bc8d77c627670"
+    },
+    {
+      "file": "assets/inline-menu-m2/seminyak-western-06.webp",
+      "bytes": 257342,
+      "sha256": "2dc2400dee9dbe401e3882dabff13692c56f4ed3255e09794c7abe5c5edd2360"
+    },
+    {
+      "file": "assets/inline-menu-m2/ubud-desserts-01.webp",
+      "bytes": 507318,
+      "sha256": "29b8612c9c837b0df014f5f96dff1fc5f9d543d703d62ba689525b70ea1745ef"
+    },
+    {
+      "file": "assets/inline-menu-m2/ubud-drinks-01.webp",
+      "bytes": 409320,
+      "sha256": "2103fac6ec8d2ae3cd9d39197ae0ad40436499527e942805fbd588f092192059"
+    },
+    {
+      "file": "assets/inline-menu-m2/ubud-drinks-02.webp",
+      "bytes": 421714,
+      "sha256": "7c422c8422d9ffc33d879d43558c5e3636dd8dc0f8d858ba2e741d62751da55a"
+    },
+    {
+      "file": "assets/inline-menu-m2/ubud-drinks-03.webp",
+      "bytes": 463342,
+      "sha256": "69db14cee45e3ff08fdf825483ad65d20b424c193d01476975f072085cf1702b"
+    },
+    {
+      "file": "assets/inline-menu-m2/ubud-drinks-04.webp",
+      "bytes": 472162,
+      "sha256": "891fac575b4a4bebcd81a2d5b70525004c0af17ac92f21d550c14e15e047cbd5"
+    },
+    {
+      "file": "assets/inline-menu-m2/ubud-drinks-05.webp",
+      "bytes": 411028,
+      "sha256": "a436e655ed3c4fe835b58ae0c6d705504d210c746c20896863a2c6b232381125"
+    },
+    {
+      "file": "assets/inline-menu-m2/ubud-drinks-06.webp",
+      "bytes": 258662,
+      "sha256": "c53dbed0bd8a4a5c3492eeb8d92b66e1d712451c00708b8b4e8d03a7a8a6d356"
+    },
+    {
+      "file": "assets/inline-menu-m2/ubud-shisha-01.webp",
+      "bytes": 225242,
+      "sha256": "107531846275af9d483e4147c4db6e06ee5679c58c621d5ae0f3591bce6b66cf"
+    },
+    {
+      "file": "assets/inline-menu-m2/ubud-western-01.webp",
+      "bytes": 249692,
+      "sha256": "045ed711cc21f70679dfda1d6ade9b9f4fd2cfc24ef9ded39e4c7a7e554005ae"
+    },
+    {
+      "file": "assets/inline-menu-m2/ubud-western-02.webp",
+      "bytes": 247142,
+      "sha256": "96bbb5674af1aacce95e137cb4142628b36ede5373780d9e26ede0e6155c0593"
+    },
+    {
+      "file": "assets/inline-menu-m2/ubud-western-03.webp",
+      "bytes": 331742,
+      "sha256": "8cc9b5a133244602159d2be0a949e2a367da4396a43c133b1ed74184a0e2db1a"
+    },
+    {
+      "file": "assets/inline-menu-m2/ubud-western-04.webp",
+      "bytes": 396688,
+      "sha256": "be7577eb506a3bf54076d20e84a693781c4a87ee252cd857eeb6944f2b44d493"
+    },
+    {
+      "file": "assets/inline-menu-m2/ubud-western-05.webp",
+      "bytes": 499540,
+      "sha256": "4da6c1e14cfe3cacf4e6de2da06ae8cff3a5edfd50c4b1609e9dbbb11ba6ea3a"
+    },
+    {
+      "file": "assets/inline-menu-m2/ubud-western-06.webp",
+      "bytes": 583530,
+      "sha256": "a7427fa5e74321394b646710ba626a37ab76d60a810a294f84ebc216275d2b36"
+    },
+    {
+      "file": "assets/inline-menu-m2/ubud-western-07.webp",
+      "bytes": 479040,
+      "sha256": "daa2c8b05ff7d98364eb255e7fd09f668c04bcb9158b8bcdedb7976602ced683"
+    },
+    {
+      "file": "assets/inline-menu-m2/ubud-western-08.webp",
+      "bytes": 321756,
+      "sha256": "1de935acfba6702a7bae8c00de4f96f7624800549587dda6ebc33209bf2469b3"
+    },
+    {
+      "file": "assets/kitchen_utensils.png",
+      "bytes": 675352,
+      "sha256": "c7cb16fb6ae08a29fac829e2afd922ff36f35f12f7dd26f52a33f9581cd4a208"
+    },
+    {
+      "file": "assets/lava_cake.jpg",
+      "bytes": 166325,
+      "sha256": "43f108b16cc3cac68e42380ac8b3d8dc4110b0e8e8054e3c1cf508635f242e39"
+    },
+    {
+      "file": "assets/logo-mark.png",
+      "bytes": 16362,
+      "sha256": "e06d05a4768348d4c54104e3c13b6327d91f192367a5aa0d7b3e81f44c7d34c5"
+    },
+    {
+      "file": "assets/logo-original.png",
+      "bytes": 33847,
+      "sha256": "43f7e13927ab7d0ba7e7d11a8bd73108d09fc043bda6affdf14407d64e098a87"
+    },
+    {
+      "file": "assets/logo.jpg",
+      "bytes": 38370,
+      "sha256": "9fc7b653e77e23daf628175d51de02270930a731097a0f84bb765e73ac45227d"
+    },
+    {
+      "file": "assets/logo.png",
+      "bytes": 100708,
+      "sha256": "faae65e93a5629037a62adc9d873e5e61dd80436410eafb5a363dcf9302b53d9"
+    },
+    {
+      "file": "assets/logo_clean.jpg",
+      "bytes": 53948,
+      "sha256": "a921ab2cd8f599d1f58b9f0a6583a57a0d1edcb7bfdbf8838b76bafe9ceb2fdd"
+    },
+    {
+      "file": "assets/logo_clean.png",
+      "bytes": 89549,
+      "sha256": "044a26196f6f68e95a6f9df44c22a779e308e0008c73f9da44e363438c37a877"
+    },
+    {
+      "file": "assets/logo_high_res.png",
+      "bytes": 89549,
+      "sha256": "044a26196f6f68e95a6f9df44c22a779e308e0008c73f9da44e363438c37a877"
+    },
+    {
+      "file": "assets/malai_tikka.png",
+      "bytes": 700720,
+      "sha256": "39ba563dafd31f520fff8e718822890c88a36fb418c440256f8d8a9138b431ce"
+    },
+    {
+      "file": "assets/mango_lassi.jpg",
+      "bytes": 146719,
+      "sha256": "9e85a8610bf73ec8aec4bde3d525a20eeb5255f27aea3869b08ed6b1e49bd3a7"
+    },
+    {
+      "file": "assets/masala_dosa.jpg",
+      "bytes": 141157,
+      "sha256": "5891222a6b39b1f0bdde2a104e5c238f844a5b52f27a3c62b4de097735df4595"
+    },
+    {
+      "file": "assets/media/club-celebrate.jpg",
+      "bytes": 24145,
+      "sha256": "8852a40771f54758530c49fb51e257c7cc761ec6a6f13e55314f32e584367dd2"
+    },
+    {
+      "file": "assets/media/club-celebrate.mp4",
+      "bytes": 2466022,
+      "sha256": "5c0ff5c8d60a1c9c467005c8d4ccc2b8e5ae8b416b27582eb3ec65d755db25c0"
+    },
+    {
+      "file": "assets/media/club-dancefloor.jpg",
+      "bytes": 22338,
+      "sha256": "effb95207f2363d5edb90e6673c1a5abd4909a8b69b55bc92eaf71cd3f5fdc73"
+    },
+    {
+      "file": "assets/media/club-dancefloor.mp4",
+      "bytes": 2373004,
+      "sha256": "26f050c70f0c8999584879bd9c0b8681991a7ee4fb02e59b57a028c7cf4e2cd6"
+    },
+    {
+      "file": "assets/media/club-mobile-long.jpg",
+      "bytes": 21885,
+      "sha256": "3e57490281910f6b3c14ca47b61a10195c960cba7536da0dfa23c222970ff915"
+    },
+    {
+      "file": "assets/media/club-mobile-long.mp4",
+      "bytes": 5728208,
+      "sha256": "09d7eb19b0ea9260a09dcb528dbd9821dbc88120738c5a7c62c1fe0372e36861"
+    },
+    {
+      "file": "assets/media/club-performance.jpg",
+      "bytes": 39607,
+      "sha256": "74ee8365287560bb1a0c19146ced7df9a67c37a77f9e2aefa110586562dbc713"
+    },
+    {
+      "file": "assets/media/club-performance.mp4",
+      "bytes": 1516686,
+      "sha256": "4a17d70226f85b3e712da660acf8b29dacd63c28c6c1d4d4470673bdb335d22a"
+    },
+    {
+      "file": "assets/media/club-together.jpg",
+      "bytes": 20942,
+      "sha256": "dbfd5d16b49bf0038086c4b01e9f70bb6d23e7708e7890b811e2ea00f98e8084"
+    },
+    {
+      "file": "assets/media/club-together.mp4",
+      "bytes": 2131874,
+      "sha256": "2580e8e32574ff8e10c5fc6e746774acb5ea105cdba52803616d8524a7446b82"
+    },
+    {
+      "file": "assets/media/food-curries.webp",
+      "bytes": 148476,
+      "sha256": "398aabb436fd2c64bc00dd75013732d81a25272ba85515bc45cb1b65c5906595"
+    },
+    {
+      "file": "assets/media/food-tandoor.webp",
+      "bytes": 231070,
+      "sha256": "033626899b58bdf9a7e1acd8c4155c2fb07162dc26556089b801454678325369"
+    },
+    {
+      "file": "assets/media/phuket-courtyard-new.webp",
+      "bytes": 265928,
+      "sha256": "0428d9d4ca87cb4865709b2f47fe0f9097f91eebfa39f2539d02088875db581d"
+    },
+    {
+      "file": "assets/media/phuket-courtyard.webp",
+      "bytes": 215896,
+      "sha256": "89d114cdf912465d84cacb2ec78d4b1772ccd9f901452f7fd834a0f3c4e065d5"
+    },
+    {
+      "file": "assets/media/restaurant-curries.webp",
+      "bytes": 414788,
+      "sha256": "3f71bd8ac80137d6650855b0834cdbb6e7552c67430de235800a8680f33b5a18"
+    },
+    {
+      "file": "assets/media/restaurant-rice.webp",
+      "bytes": 343718,
+      "sha256": "4cea9c45539aed58f48614742fdb9091cc124bf34c5b4b1527ebdfe17c449cc7"
+    },
+    {
+      "file": "assets/media/restaurant-south.webp",
+      "bytes": 302528,
+      "sha256": "4b17af6ebf6443130276219321df146292b779899eddc2b0a3414a64360125ac"
+    },
+    {
+      "file": "assets/media/restaurant-tandoor.webp",
+      "bytes": 561006,
+      "sha256": "5afb2367fd9e780999c39a18f5f98b0652889974a63ecabc115e36f5af9aaf87"
+    },
+    {
+      "file": "assets/media__1785745174884.jpg",
+      "bytes": 109164,
+      "sha256": "4a5ce2deb1bb124f069e502dfe27550e31664d6ea9761e4eaa704cf6c71fd16d"
+    },
+    {
+      "file": "assets/media__1785749150935.svg",
+      "bytes": 6243,
+      "sha256": "78c87c353353d3d09c3378bb6ccc170cb423fb374c9c5187652dbb33e2bb4da9"
+    },
+    {
+      "file": "assets/medu_vada.jpg",
+      "bytes": 90751,
+      "sha256": "69108d9ff066179191671b88834e4b1949917b6737b065eb5c66bb9147b3b9d3"
+    },
+    {
+      "file": "assets/menus/club-01.webp",
+      "bytes": 170102,
+      "sha256": "8df2da4295e1f4b0b1673d17a65a59aff2773d41e6e9d3710ca4809f1f94c809"
+    },
+    {
+      "file": "assets/menus/club-02.webp",
+      "bytes": 76822,
+      "sha256": "9094b21fb9f969ace445a2f85c3aedff059c55c2350553dd6da585b9819b909c"
+    },
+    {
+      "file": "assets/menus/club-03.webp",
+      "bytes": 108418,
+      "sha256": "bbf6347471f9afc26d06ece7dde330ba20e36766137de8160733233bbcf212e8"
+    },
+    {
+      "file": "assets/menus/club-04.webp",
+      "bytes": 79340,
+      "sha256": "ccfbf29bbebc505a01ab194125c4a02b052080e19a95f92917f4906e91579fa2"
+    },
+    {
+      "file": "assets/menus/club-05.webp",
+      "bytes": 95956,
+      "sha256": "fe5a99c9ea38a8c2f526a7cd5f0f1f5f70d6677a3a215ab80eedd1cb58c5eb5a"
+    },
+    {
+      "file": "assets/menus/club-06.webp",
+      "bytes": 87188,
+      "sha256": "587f87d873d3915e5448116de69c88a3052c812f1d3a6f6ebcc1ac13ad5db96c"
+    },
+    {
+      "file": "assets/menus/club-07.webp",
+      "bytes": 56940,
+      "sha256": "18350e8cb0fb12f3b8a557c0aa7679255cc34d12c8e107c8c833bd8da79d9e62"
+    },
+    {
+      "file": "assets/menus/club-08.webp",
+      "bytes": 156614,
+      "sha256": "cdffe77a62857e7d144997239d8322d94a816903ac4e3a252d726908bd22290d"
+    },
+    {
+      "file": "assets/menus/offers-01.webp",
+      "bytes": 190694,
+      "sha256": "1d3d1f003b0c01f7b7b2b5c7f18d0b8216fba358f173566df3ab1c9c8a991484"
+    },
+    {
+      "file": "assets/menus/offers-02.webp",
+      "bytes": 193918,
+      "sha256": "f7c7399a0fb42fb51e45fe6c8ca2b9211642fb53ddcffd17bde8914b4439c5af"
+    },
+    {
+      "file": "assets/menus/offers-03.webp",
+      "bytes": 159726,
+      "sha256": "3a8894db46353db780971c2950f8de4ea7ff390c8f3bbfe50c5669a1f12f7c6a"
+    },
+    {
+      "file": "assets/menus/offers-04.webp",
+      "bytes": 187052,
+      "sha256": "cbf64abc396563da8dcce0e57cb03938d6f694addfba424f2448a2270251965a"
+    },
+    {
+      "file": "assets/mutton_biryani.jpg",
+      "bytes": 219436,
+      "sha256": "76ce9d4737bfec9357760df1a40f4eb0bccf1c1725da3514f68f7d7ac32cf64d"
+    },
+    {
+      "file": "assets/mutton_pepper.png",
+      "bytes": 535538,
+      "sha256": "df823c6aee4adfb4f627f88514f5b0113e98b17d5aba518a577a5233d3010f2a"
+    },
+    {
+      "file": "assets/mysore_dosa.jpg",
+      "bytes": 140355,
+      "sha256": "febe9b4ad80bc9a863cc9a8f801bbd6af66882905c3f3da51f633c328beed4ef"
+    },
+    {
+      "file": "assets/nasi_goreng.jpg",
+      "bytes": 107140,
+      "sha256": "55637a861894cee81ce7397c2a141e70f634d82ae37279e70cd11ef4575b6bda"
+    },
+    {
+      "file": "assets/Nusa Penida-New Food Menu.pdf",
+      "bytes": 35271164,
+      "sha256": "fd748b83293a48141ec6d9f7b4f862ad31bebd89880fe51901d93e16e487fb36"
+    },
+    {
+      "file": "assets/Nusa Penida-Resto Drink menu.pdf",
+      "bytes": 592313,
+      "sha256": "5467929fc5389d93f83bbecade6b13802cbe9b4cbb8943fe1d167ba1aea3ef51"
+    },
+    {
+      "file": "assets/nusa_penida_card.jpg",
+      "bytes": 438356,
+      "sha256": "783737bf37e879287ebbc4e7483d1c381b740e8b7b28e0a114f22e770f995c16"
+    },
+    {
+      "file": "assets/nusa_penida_gallery_1.jpg",
+      "bytes": 37394,
+      "sha256": "7aa5f7ba7f22f4e3519c3ca917631a88233536a543bf13c93f74b11d839171bd"
+    },
+    {
+      "file": "assets/nusa_penida_gallery_10.jpg",
+      "bytes": 12854,
+      "sha256": "fb69f09813fadf10de9bdbdc905bf31a5277b0c08cbc25b259e033da7d60dec9"
+    },
+    {
+      "file": "assets/nusa_penida_gallery_11.jpg",
+      "bytes": 8038,
+      "sha256": "2522531dac977e56abf979706d2c2d8af4e2f133b2eecf31abbe8f3234a99982"
+    },
+    {
+      "file": "assets/nusa_penida_gallery_12.jpg",
+      "bytes": 12029,
+      "sha256": "48fe1826575ccdea6524678ad382ab8b376f3dedaecb515cb4cfa0f5909c9bf0"
+    },
+    {
+      "file": "assets/nusa_penida_gallery_13.jpg",
+      "bytes": 16191,
+      "sha256": "0f5543f7f2a775dc16813c0956e6f0e83c31f7bd1ad95089a61e34a7e7ebf971"
+    },
+    {
+      "file": "assets/nusa_penida_gallery_14.jpg",
+      "bytes": 9403,
+      "sha256": "c5a283bdca30c7120af8f88018fbf930795cfc5ac0f37f8917f76352f4486380"
+    },
+    {
+      "file": "assets/nusa_penida_gallery_15.jpg",
+      "bytes": 12989,
+      "sha256": "71b12a8bd8c5132667d2c79bc704805c6f90bd3783d9c77e93cf1e46bebda133"
+    },
+    {
+      "file": "assets/nusa_penida_gallery_16.jpg",
+      "bytes": 12155,
+      "sha256": "dd38267b8649aee3211955450de196a941fee5b85cb39aca906c7b7f03eb406f"
+    },
+    {
+      "file": "assets/nusa_penida_gallery_17.jpg",
+      "bytes": 10358,
+      "sha256": "14a1c1b5362b2841f2eded7c59c7a64e713e3545d95850cfbeb24ca4d61c1d4b"
+    },
+    {
+      "file": "assets/nusa_penida_gallery_18.jpg",
+      "bytes": 11600,
+      "sha256": "04ec016dcc3b436158a71811d36688e015b293a36f1ef1b52b61c0ed80d3ab48"
+    },
+    {
+      "file": "assets/nusa_penida_gallery_2.jpg",
+      "bytes": 11004,
+      "sha256": "5aeca2aff6bbfe9a1a8d4e4c61d31654a1e8a9658aab140066835e2fbf14d126"
+    },
+    {
+      "file": "assets/nusa_penida_gallery_20.jpg",
+      "bytes": 12588,
+      "sha256": "0ee81a29e7fd0b28b5cea13e125305f5a2ceae022c492e421d65b6184e5c7c49"
+    },
+    {
+      "file": "assets/nusa_penida_gallery_21.jpg",
+      "bytes": 16163,
+      "sha256": "4a90e3c56344ffa3eccb482cbe0dd8592f247612307f014ab683f91d09dbcaaa"
+    },
+    {
+      "file": "assets/nusa_penida_gallery_3.jpg",
+      "bytes": 15973,
+      "sha256": "7e068c771cb7d42a577d5fca14c0b3825ea6647daecaf43b1c20826c577d27f9"
+    },
+    {
+      "file": "assets/nusa_penida_gallery_4.jpg",
+      "bytes": 12085,
+      "sha256": "91e8c924b1ea7aa86608b40620bd69de3bc922e0b0836cd78853f928d0c41835"
+    },
+    {
+      "file": "assets/nusa_penida_gallery_5.jpg",
+      "bytes": 9452,
+      "sha256": "33f813c69066594a5d2bed0857d238c04b73079f85dfeb50c7610c3f101a8297"
+    },
+    {
+      "file": "assets/nusa_penida_gallery_6.jpg",
+      "bytes": 6883,
+      "sha256": "f29c8e841e7681440237a440bd8c63353289925980a95fdc14c89c944ef171e2"
+    },
+    {
+      "file": "assets/nusa_penida_gallery_7.jpg",
+      "bytes": 15660,
+      "sha256": "244c6df9d8d5ffc13dc56dc13b49a03d35aa3ef6e36f33466f7022ca2958d6f7"
+    },
+    {
+      "file": "assets/nusa_penida_gallery_8.jpg",
+      "bytes": 5617,
+      "sha256": "dcbc43488a1df86c991bfa4812ff5976699dbc769ebb423d195d78e91c851ba2"
+    },
+    {
+      "file": "assets/nusa_penida_gallery_9.jpg",
+      "bytes": 13870,
+      "sha256": "2c5bf95deaf97ce44490e4f2f9d4ae46c34116675f9db5cc494755e44ef34b1e"
+    },
+    {
+      "file": "assets/optimized/butter_chicken-480.webp",
+      "bytes": 79866,
+      "sha256": "0142e2295e161e207ccecb7477558dd8e23bafab2235cb8d1aa6bf9ee54a2033"
+    },
+    {
+      "file": "assets/optimized/butter_chicken-687.webp",
+      "bytes": 124160,
+      "sha256": "6284e44cff715c538fbde0302b039dfe4ddb3aec1714a0669137ef83eb46b1a8"
+    },
+    {
+      "file": "assets/optimized/indonesia_gallery_1-243.webp",
+      "bytes": 15810,
+      "sha256": "b2d614affd4877e6296fb30ed6826b5b074d88475676628fc82256df8a1adaf1"
+    },
+    {
+      "file": "assets/optimized/indonesia_gallery_2-243.webp",
+      "bytes": 24106,
+      "sha256": "f8d802171d8bfcacdf374654ea9a689b39f1c2af0e4c479abf8156b10a9a50b0"
+    },
+    {
+      "file": "assets/optimized/indonesia_gallery_3-243.webp",
+      "bytes": 15650,
+      "sha256": "fb59c35453ae8bc10cb62ac590ef65f62ad48b1367626f17669cdaa7350948ca"
+    },
+    {
+      "file": "assets/optimized/indonesia_gallery_4-243.webp",
+      "bytes": 24352,
+      "sha256": "839f70610df30e32a1278d8ab05f02b7541a7d7744a7fa6743d296c13b0483ac"
+    },
+    {
+      "file": "assets/optimized/indonesia_gallery_5-243.webp",
+      "bytes": 15296,
+      "sha256": "c31a4a375234c4a52a6ffba239fcf3a3448d5ce0650f3c15ac3699e73c5a6344"
+    },
+    {
+      "file": "assets/optimized/indonesia_gallery_7-243.webp",
+      "bytes": 11704,
+      "sha256": "87425719005d74b4c2a2a45c8be35c13593e2bc02d129a779fbfdf847c493a21"
+    },
+    {
+      "file": "assets/optimized/masala_dosa-480.webp",
+      "bytes": 53940,
+      "sha256": "a4465469627bdb09270dc22c9e6f733cebd50ab146c5ce77cb193c24278c13be"
+    },
+    {
+      "file": "assets/optimized/masala_dosa-558.webp",
+      "bytes": 69234,
+      "sha256": "6cb68e30915c02f7d7e636727e3a746caa91537110fba9b9be39959f43fdc984"
+    },
+    {
+      "file": "assets/optimized/mutton_biryani-480.webp",
+      "bytes": 93528,
+      "sha256": "9be3029f5a879ce2fce10e3605080ea04fb8fc2f037f30772299e03dc3410fbe"
+    },
+    {
+      "file": "assets/optimized/mutton_biryani-720.webp",
+      "bytes": 165268,
+      "sha256": "956cccbc7a556f9245bb6bbba38bf1c3960448b1448033111052b4d492f6f421"
+    },
+    {
+      "file": "assets/optimized/nusa_penida_gallery_12-163.webp",
+      "bytes": 9820,
+      "sha256": "8cb1c6a16cc9be006fe6b3994c706aee660ada110ddc5dc1f1153cde0b3131d9"
+    },
+    {
+      "file": "assets/optimized/nusa_penida_gallery_20-163.webp",
+      "bytes": 10596,
+      "sha256": "8a48893c0492954c93fd5a93c04d9bdcdd678ae18d3bfd7ba16e3d180af63166"
+    },
+    {
+      "file": "assets/optimized/nusa_penida_gallery_3-163.webp",
+      "bytes": 14038,
+      "sha256": "1876eb1690b8d4a245f58e15cf613cb7a614668ffc9aca32f1b72be28a77e5a2"
+    },
+    {
+      "file": "assets/optimized/nusa_penida_gallery_7-163.webp",
+      "bytes": 12810,
+      "sha256": "225783ae3c7ff14b81391af56556691af682c7d87fe1ba0010538069d8fb4a1d"
+    },
+    {
+      "file": "assets/optimized/nusa_penida_gallery_9-163.webp",
+      "bytes": 11524,
+      "sha256": "49d994b410113a0f49632d0f940e5885fc24c5cd190b4a10d17f4bec6b224515"
+    },
+    {
+      "file": "assets/optimized/seminyak_gallery_10-480.webp",
+      "bytes": 67142,
+      "sha256": "bdf1b4473bd13057256ab772451e82c6ef993b3a10667740d8e40069dc88b562"
+    },
+    {
+      "file": "assets/optimized/seminyak_gallery_10-774.webp",
+      "bytes": 129116,
+      "sha256": "d3c0fb0b0ed93579b01d20a9e9c79ae820f3633b264869e98384d1d5f017e713"
+    },
+    {
+      "file": "assets/optimized/seminyak_gallery_4-480.webp",
+      "bytes": 28672,
+      "sha256": "300f9a4e4be3c56fe9bb6456814ba8bc147b5700fd24b603015eff666ed7db94"
+    },
+    {
+      "file": "assets/optimized/seminyak_gallery_4-774.webp",
+      "bytes": 59964,
+      "sha256": "0256093be24e73dee685afef925a0284ca154d75abd0a5d0470f3f07aa09b27e"
+    },
+    {
+      "file": "assets/optimized/seminyak_gallery_5-480.webp",
+      "bytes": 45120,
+      "sha256": "4f8105ac35b0450f0ada42030363fe5adb70c2df563b079f5e9377df8dbb8e01"
+    },
+    {
+      "file": "assets/optimized/seminyak_gallery_5-774.webp",
+      "bytes": 95684,
+      "sha256": "54c952b19e1d89b2be27a27cb43331d22048c83e84254c40d36c5a25d37b8813"
+    },
+    {
+      "file": "assets/optimized/seminyak_gallery_6-480.webp",
+      "bytes": 44652,
+      "sha256": "2ab262a5f679e215bdfdc8c7c4c8abbb3dd9580d038cfd370540a3415b32f4f2"
+    },
+    {
+      "file": "assets/optimized/seminyak_gallery_6-774.webp",
+      "bytes": 83964,
+      "sha256": "fa87c88c2f0a4facb34014151244196b8f408a4142a307944723c64e73c37bf7"
+    },
+    {
+      "file": "assets/optimized/seminyak_gallery_8-480.webp",
+      "bytes": 38614,
+      "sha256": "2414a283f8e0601a068914e0dedfe0f6d08ab6ff3ed2ae1bb659eddba0b1674b"
+    },
+    {
+      "file": "assets/optimized/seminyak_gallery_8-774.webp",
+      "bytes": 81620,
+      "sha256": "0fdb2d501eb2a2d82eaf36ee4052182f490e979d879b2515db8cd2fab3a1419e"
+    },
+    {
+      "file": "assets/optimized/thailand_gallery_1-1200.webp",
+      "bytes": 210214,
+      "sha256": "d7b60eafc015458d049828973e0b49ae961e0b6d9d8b1a608df9389a8f282e5d"
+    },
+    {
+      "file": "assets/optimized/thailand_gallery_1-480.webp",
+      "bytes": 44798,
+      "sha256": "79e8cfab7a7f57f48b82ab704b839069ed154aabe9c3e7985d919658ebde9b49"
+    },
+    {
+      "file": "assets/optimized/thailand_gallery_1-960.webp",
+      "bytes": 142386,
+      "sha256": "2e32ad294440986732fc7b7952b3e5c8eb07b0e3d39087fb179b2bf5a724ed4e"
+    },
+    {
+      "file": "assets/optimized/thailand_gallery_13-1200.webp",
+      "bytes": 259620,
+      "sha256": "00d3de049cdf6d0a20fc9b68643f6c0e181bdf9985448294f2ed49c9904cd62b"
+    },
+    {
+      "file": "assets/optimized/thailand_gallery_13-480.webp",
+      "bytes": 58266,
+      "sha256": "b29cd0e7ce1149c652ccf3a991dd048848b77a296125534e08f3184f6078fb00"
+    },
+    {
+      "file": "assets/optimized/thailand_gallery_13-960.webp",
+      "bytes": 180850,
+      "sha256": "1df3fbda97a5cb14bdb09cd3b5392cdca98c6293384dded62d3b31cb8c45dc3d"
+    },
+    {
+      "file": "assets/optimized/thailand_gallery_14-480.webp",
+      "bytes": 34938,
+      "sha256": "cc5e824ac47aecd649ffd82edeaf899a2fa2916d43ec7a814cab22cd7f8b80a1"
+    },
+    {
+      "file": "assets/optimized/thailand_gallery_14-794.webp",
+      "bytes": 69918,
+      "sha256": "4cae686cbd8052d954ee384e33708d9676a641199a03f377a4336ea219d58f0e"
+    },
+    {
+      "file": "assets/optimized/thailand_gallery_2-1200.webp",
+      "bytes": 135898,
+      "sha256": "9e6e839dfacd57adb93f4036bf72c03a760b936fa7169e6d0b8d2a905f60c5a4"
+    },
+    {
+      "file": "assets/optimized/thailand_gallery_2-480.webp",
+      "bytes": 35250,
+      "sha256": "4c29e6e9a33a6781debae4ff221760e369bfeccbcb5cfaba039bc9506c94d431"
+    },
+    {
+      "file": "assets/optimized/thailand_gallery_2-960.webp",
+      "bytes": 96946,
+      "sha256": "de64456606f49d3ac7ed2cdb4d16b65b1575b72825c23588bfb60b02b1e90aa9"
+    },
+    {
+      "file": "assets/optimized/thailand_gallery_3-1200.webp",
+      "bytes": 160388,
+      "sha256": "76367e6c233d34e54e54cd57719fce778e7c51a9615e5a5125f2b2f1390d4202"
+    },
+    {
+      "file": "assets/optimized/thailand_gallery_3-480.webp",
+      "bytes": 46284,
+      "sha256": "53c6111f26360e32c86e86b15f6af6746698e15cc32be20dcf432ec07bb2cbcd"
+    },
+    {
+      "file": "assets/optimized/thailand_gallery_3-960.webp",
+      "bytes": 116538,
+      "sha256": "a461e189c58eed84fc1e38ae23494908cc6abd77373ccc7f50b0776274789549"
+    },
+    {
+      "file": "assets/optimized/thailand_gallery_4-1200.webp",
+      "bytes": 362408,
+      "sha256": "5ecb62c571f1583f26a1fc512303c06732b9ba92f98fb4e514e8155079e18d96"
+    },
+    {
+      "file": "assets/optimized/thailand_gallery_4-480.webp",
+      "bytes": 66502,
+      "sha256": "297d24909e7ebad14462e7cf53c0eec188c43d2739f210157064b597e93e577d"
+    },
+    {
+      "file": "assets/optimized/thailand_gallery_4-960.webp",
+      "bytes": 238964,
+      "sha256": "f08e55b427dba7f409dbce2755b12ab7ee7de5d4f83eb82c13fe2a500f1651c4"
+    },
+    {
+      "file": "assets/optimized/thailand_gallery_5-1200.webp",
+      "bytes": 229968,
+      "sha256": "8b7e333af0884b0226fab09028f34ebbf9a156433bf06db98bfe323d53a48bad"
+    },
+    {
+      "file": "assets/optimized/thailand_gallery_5-480.webp",
+      "bytes": 50988,
+      "sha256": "679931e94dcf8c56fa550c504b5a203d726fb9750d2793cf7a1b3c84902e2f43"
+    },
+    {
+      "file": "assets/optimized/thailand_gallery_5-960.webp",
+      "bytes": 158992,
+      "sha256": "915296f0e51afa32c0da4240c1538cfdf0d94d7c7f90972f347cd0ced0164564"
+    },
+    {
+      "file": "assets/paneer_butter.png",
+      "bytes": 590728,
+      "sha256": "ae2edfca153ab1804e0291aa0950b6af9004ae6b132a2ba7043034ff5fcba3e6"
+    },
+    {
+      "file": "assets/paneer_tikka.png",
+      "bytes": 512588,
+      "sha256": "d7b2378173f57bdf9bae4a5e05541d265cd3806738a452fc59a0d90328818aad"
+    },
+    {
+      "file": "assets/poori_bhaji.png",
+      "bytes": 552993,
+      "sha256": "d344bbdfc2745ab8773dc18f9b0f20872e802152d6e5c18346122d80553e0f20"
+    },
+    {
+      "file": "assets/prawn_biryani.png",
+      "bytes": 696038,
+      "sha256": "f82fb0a80054eacea0eaf966f2ed87c7a6c59cf41868639b338e00f498494be8"
+    },
+    {
+      "file": "assets/rendang_tikka.png",
+      "bytes": 425134,
+      "sha256": "a235c7ff7ed128bf552b61d0503684e0fef12022e3ffc23cb99ca2a1fc54717e"
+    },
+    {
+      "file": "assets/replacements/All Branch.png",
+      "bytes": 2907388,
+      "sha256": "09c3a79c0e63b42193919998f688c532703d7e9fbeb33d56f106cd0c3061c296"
+    },
+    {
+      "file": "assets/replacements/all-branch.webp",
+      "bytes": 431446,
+      "sha256": "2672f6be8fef7f71efc3d75fbc705edbbbcbbf2c6c49fac890668e98a788286b"
+    },
+    {
+      "file": "assets/replacements/Courtyard1.png",
+      "bytes": 3149779,
+      "sha256": "181029300fabe31925a87726bc23706eab750ab0828dbbf9270a2e8aa93dfef4"
+    },
+    {
+      "file": "assets/replacements/courtyard1.webp",
+      "bytes": 449168,
+      "sha256": "8bb9b5ea589a05af14d58127a792c874a1572bd91d27d1b8a5b1e7d53c0c3339"
+    },
+    {
+      "file": "assets/replacements/courtyard2.png",
+      "bytes": 2344929,
+      "sha256": "35cffee7960678bd5d798797724ccbaa5eab00cecbaab3dafee64545854a12ca"
+    },
+    {
+      "file": "assets/replacements/courtyard2.webp",
+      "bytes": 234752,
+      "sha256": "c0a2d0f6933bf1346feba12a97e060199bc6caaee0cefbb2681f78bc02c77ff9"
+    },
+    {
+      "file": "assets/replacements/courtyard3.png",
+      "bytes": 2547687,
+      "sha256": "79b81de85e955a73fbdcc87680667a83c02bbefac7c63c5dc4e5310d1d47dce9"
+    },
+    {
+      "file": "assets/replacements/courtyard3.webp",
+      "bytes": 284074,
+      "sha256": "ff4badd1842dd0ac21bcffa6659a18e2006d3186785bbf74953c2b514a530013"
+    },
+    {
+      "file": "assets/replacements/courtyard4.png",
+      "bytes": 2596090,
+      "sha256": "4ada020cf0970344280094edac8b6e725229ea60ef0d0e13dfccd0a29ded73fb"
+    },
+    {
+      "file": "assets/replacements/courtyard4.webp",
+      "bytes": 361178,
+      "sha256": "72e8eeb754aa48999afef75a82e9b02392f632ae458581938b78baf04494e870"
+    },
+    {
+      "file": "assets/replacements/Courtyard5.png",
+      "bytes": 2884363,
+      "sha256": "9dd48d5a4a82aeda481a1edfb41142326e9be90735082cd1f8f9c73e88878a03"
+    },
+    {
+      "file": "assets/replacements/courtyard5.webp",
+      "bytes": 403286,
+      "sha256": "9fea8a5da89c0f4b8e69c29931db68743cdc76add936203144ff1fb849716f75"
+    },
+    {
+      "file": "assets/replacements/courtyard6.png",
+      "bytes": 3059022,
+      "sha256": "cc0364a09712125633eb3a649036efcdd6a8fbfe95f047a577165284e6e60003"
+    },
+    {
+      "file": "assets/replacements/courtyard6.webp",
+      "bytes": 406166,
+      "sha256": "a7195f038cd1eacc3a63bbe5baddf44040c906bc38b20955894da63d324675a5"
+    },
+    {
+      "file": "assets/replacements/courtyard7.png",
+      "bytes": 2816898,
+      "sha256": "cd0dcae515b0f6231b1c4929319ac0d2e6887730e97d516f5381597071680c9d"
+    },
+    {
+      "file": "assets/replacements/courtyard7.webp",
+      "bytes": 425992,
+      "sha256": "602c79228b9f5c9938eeceee5892a2f42517421ff9b16008e593fa29a11c1e36"
+    },
+    {
+      "file": "assets/replacements/courtyard8.png",
+      "bytes": 2323521,
+      "sha256": "de8390c31acf52529b82e5fa433bb5558337947a7339c1d5db357292e804ae56"
+    },
+    {
+      "file": "assets/replacements/courtyard8.webp",
+      "bytes": 247924,
+      "sha256": "ec977728eaee1f35625aa2f3ee61a109b8fb3a38e15e0ba69f5d460507a77ee1"
+    },
+    {
+      "file": "assets/replacements/IMG_5529.jpg",
+      "bytes": 2591107,
+      "sha256": "07f4c0fe9fe788bec81c2d65f4cf73c332edc587017af857a3fc2e30c3ce1d96"
+    },
+    {
+      "file": "assets/replacements/locations-photo.webp",
+      "bytes": 321598,
+      "sha256": "b6a21cc206219901a26b58f25438f588a3bddb4e083a416b5d9e6fd9c99748cb"
+    },
+    {
+      "file": "assets/replacements/Nusa Front.png",
+      "bytes": 6637549,
+      "sha256": "55f736f78f76592aa8d5d05a9599d3c3924706c9e85551a5c08df20fce7ebc89"
+    },
+    {
+      "file": "assets/replacements/nusa-front.webp",
+      "bytes": 520604,
+      "sha256": "0ab42f55f3a7544e089ce5409d81cc0c897ba06f2254874d3e2be63742a63255"
+    },
+    {
+      "file": "assets/replacements/Seminyak Front.png",
+      "bytes": 3397816,
+      "sha256": "a236165aa9ae46bc8f5d71f890ebe820609b857637d7c4bbbfa6a58e50fd57ed"
+    },
+    {
+      "file": "assets/replacements/seminyak-front.webp",
+      "bytes": 349570,
+      "sha256": "df491239594e4ea3adbca698d282998d81a8d0e813f1d108dc84bf273982b9d2"
+    },
+    {
+      "file": "assets/replacements/ubud-front-wide.webp",
+      "bytes": 228188,
+      "sha256": "b3cb3bc927b40aa914f8a03c870775118e6eec4ff228f449b567ebc1994537a9"
+    },
+    {
+      "file": "assets/replacements/ubud-front.png",
+      "bytes": 3501962,
+      "sha256": "e62a1b8966c3cca7b048a31ec66dd66cca53bc55472c110a86f4589c98cf2f16"
+    },
+    {
+      "file": "assets/replacements/ubud-front.webp",
+      "bytes": 345964,
+      "sha256": "a02c49869a6504c060f8f45ddea0db165677597765bad76c6c022e8632601cd0"
+    },
+    {
+      "file": "assets/restaurant-menus/nusapenida-01.webp",
+      "bytes": 261078,
+      "sha256": "9eac0ed1953161eabb7044121412309e7706efa1597af0b6ffd45113a3fa9c64"
+    },
+    {
+      "file": "assets/restaurant-menus/nusapenida-02.webp",
+      "bytes": 520894,
+      "sha256": "73be5b90de92ccd197f0f01e3586ca1c21cf44cd1a15f0fc531572e2b12ad2c9"
+    },
+    {
+      "file": "assets/restaurant-menus/nusapenida-03.webp",
+      "bytes": 267558,
+      "sha256": "ac4cfa053016284b81071645fe50318508d22ac509a61a42e6a6ac065df565eb"
+    },
+    {
+      "file": "assets/restaurant-menus/nusapenida-04.webp",
+      "bytes": 242906,
+      "sha256": "ea6dc7b8d6e5b2bb958e7dc441eaaec2abb8c994d5c83d7ebdbdeee849245c15"
+    },
+    {
+      "file": "assets/restaurant-menus/nusapenida-05.webp",
+      "bytes": 276488,
+      "sha256": "f57c5cfd078cb70a72dcc0a5746a5e50c72a68e8cb4e333bfe166fcbd52e5876"
+    },
+    {
+      "file": "assets/restaurant-menus/nusapenida-06.webp",
+      "bytes": 305566,
+      "sha256": "52bb741ff66a162ef2b69f599011c40209a62bfb9c62c89e9c4ec5d429cafbe9"
+    },
+    {
+      "file": "assets/restaurant-menus/nusapenida-07.webp",
+      "bytes": 373238,
+      "sha256": "9189b2f975af06f75f5b2552b973dcec18bd637ee6a3c837fa314f675841cf87"
+    },
+    {
+      "file": "assets/restaurant-menus/nusapenida-08.webp",
+      "bytes": 383278,
+      "sha256": "3e0dbbf2e98020644e3449c875226eedc9c5df8a9881901a40c23ec2063d8059"
+    },
+    {
+      "file": "assets/restaurant-menus/nusapenida-09.webp",
+      "bytes": 322224,
+      "sha256": "f8413838f09d9646c1e68b6f7c788f6e38d5994ba706641ce9b6bef661084ac0"
+    },
+    {
+      "file": "assets/restaurant-menus/nusapenida-10.webp",
+      "bytes": 338032,
+      "sha256": "ad0810bceffad4524a5f17920bb6d20412f0b919e13d9808f5d7672400914a27"
+    },
+    {
+      "file": "assets/restaurant-menus/nusapenida-11.webp",
+      "bytes": 317536,
+      "sha256": "c5380b26da08df896631d4c393dea48eac4c0d474fa5026eafaf50f8f85879c4"
+    },
+    {
+      "file": "assets/restaurant-menus/nusapenida-12.webp",
+      "bytes": 325652,
+      "sha256": "86a7d436110efa5d59a37eafaed9d23f21fe74bc2570bac4414a8d3c8489af11"
+    },
+    {
+      "file": "assets/restaurant-menus/nusapenida-13.webp",
+      "bytes": 333716,
+      "sha256": "7f291f0fc0f8d919176143e74b6d76046861aeba64d9840b797e65580702b00b"
+    },
+    {
+      "file": "assets/restaurant-menus/nusapenida-14.webp",
+      "bytes": 346866,
+      "sha256": "39212089f0412d4eee0be3ab73f7a3631c698b249ae6330a18dea2ae2472daa6"
+    },
+    {
+      "file": "assets/restaurant-menus/nusapenida-15.webp",
+      "bytes": 349662,
+      "sha256": "c7ec3de6db72c5f8b6de49c005cd11f3d0d017c5d41501cd9e8143f55e43adef"
+    },
+    {
+      "file": "assets/restaurant-menus/nusapenida-16.webp",
+      "bytes": 227332,
+      "sha256": "5fde74739bdd19e4ecbbb9d2bd5e00e81d8625099a13f7c6350021fdba0e09e5"
+    },
+    {
+      "file": "assets/restaurant-menus/nusapenida-17.webp",
+      "bytes": 202006,
+      "sha256": "58a58fdeb7474e2b8f3e0298c84524f1efde7893efed1b14d9fa3ef1639391e3"
+    },
+    {
+      "file": "assets/restaurant-menus/nusapenida-18.webp",
+      "bytes": 265322,
+      "sha256": "23b158b112ca895fe5fd691a8c84ed6d537f53f41ee6a12264f93033803f346e"
+    },
+    {
+      "file": "assets/restaurant-menus/nusapenida.json",
+      "bytes": 15176,
+      "sha256": "db2053adbadc06268cbc6c846bbc5bcbed82048cfe9a34cf542b41462447812d"
+    },
+    {
+      "file": "assets/restaurant-menus/phuket-01.webp",
+      "bytes": 360402,
+      "sha256": "5b9b8a625e4a272b1528087cc6f4046e7114f799561490638a66a0b0173d7d93"
+    },
+    {
+      "file": "assets/restaurant-menus/phuket-02.webp",
+      "bytes": 482378,
+      "sha256": "ddbfe4a530189b8158894cde6e82bb5d8b76c7d592a2c3652ec5be08603426bd"
+    },
+    {
+      "file": "assets/restaurant-menus/phuket-03.webp",
+      "bytes": 275856,
+      "sha256": "99b901bea1da9354bf78cf00212296f29f4bd0eef1b109740443b48ab7ae750f"
+    },
+    {
+      "file": "assets/restaurant-menus/phuket-04.webp",
+      "bytes": 242996,
+      "sha256": "55ecaf73ae2c91b43f5c2145672cbcd05cfd65cb8c2d5b4f5fbdc43c6d24e284"
+    },
+    {
+      "file": "assets/restaurant-menus/phuket-05.webp",
+      "bytes": 271882,
+      "sha256": "36b0c7cc6178c4d2f135e31b8094a06fc65183882898b9416f81f5bf98cd7047"
+    },
+    {
+      "file": "assets/restaurant-menus/phuket-06.webp",
+      "bytes": 285974,
+      "sha256": "3a4ccc1d7d8b9b3c3d84c0952f80384fa671fbf83303fc8a961e05b7b8a4282d"
+    },
+    {
+      "file": "assets/restaurant-menus/phuket-07.webp",
+      "bytes": 316102,
+      "sha256": "89f8c1fffb7835945613999ceb94aa35c04ee1cd76404b4725e438f00390d481"
+    },
+    {
+      "file": "assets/restaurant-menus/phuket-08.webp",
+      "bytes": 333838,
+      "sha256": "23489bc1becf084f5d74055e0369dea32a997ded2e4b341147accfa4cca1c697"
+    },
+    {
+      "file": "assets/restaurant-menus/phuket-09.webp",
+      "bytes": 335804,
+      "sha256": "579676509377c57da965a2a92a90165975595112f64b486e4e2d6bc97970af4f"
+    },
+    {
+      "file": "assets/restaurant-menus/phuket-10.webp",
+      "bytes": 346034,
+      "sha256": "02cbc2aa003b29fa549c7d2446c660c64fafbb5b8c2e16791eebe7147e7d0e66"
+    },
+    {
+      "file": "assets/restaurant-menus/phuket-11.webp",
+      "bytes": 314736,
+      "sha256": "73f36be09dfc37ba3c0496ce89037e0cd9ea832a95795c9915947a1ff7535a63"
+    },
+    {
+      "file": "assets/restaurant-menus/phuket-12.webp",
+      "bytes": 336520,
+      "sha256": "2b0b8af41ecd5b8f25af46f7fc85326fb55d5f1f518557d8bd21ee75a03d9809"
+    },
+    {
+      "file": "assets/restaurant-menus/phuket-13.webp",
+      "bytes": 342562,
+      "sha256": "d61e1287fe09ab379dd4d370245e23ae18c5b434df84ab34ed36494042ab1917"
+    },
+    {
+      "file": "assets/restaurant-menus/phuket-14.webp",
+      "bytes": 331528,
+      "sha256": "a91b1b024d4bb2b3961310746d3a1a3aca3604501434fc65d85f7e3dc006a1a0"
+    },
+    {
+      "file": "assets/restaurant-menus/phuket-15.webp",
+      "bytes": 314200,
+      "sha256": "e09807e875120f79d866ba9d32f042c06e498ed7d2e0e14a857d7a993cf99f6f"
+    },
+    {
+      "file": "assets/restaurant-menus/phuket-16.webp",
+      "bytes": 183822,
+      "sha256": "5d0bc0d59954fc485b1a1da81a6ff31d4c2ff89b21840a3307015f77c6392433"
+    },
+    {
+      "file": "assets/restaurant-menus/phuket-17.webp",
+      "bytes": 231456,
+      "sha256": "d2f8e5ff83c818397694b04d8cc00b6ff0526fcd31e4f0611dfdc1bc198e0fd3"
+    },
+    {
+      "file": "assets/restaurant-menus/phuket-18.webp",
+      "bytes": 371410,
+      "sha256": "eee70e318bf401aaba34f9d1316052fac2c91890251eec79b617deed015ef8fd"
+    },
+    {
+      "file": "assets/restaurant-menus/phuket.json",
+      "bytes": 13841,
+      "sha256": "2a6f57853c7ba860b3f7fd77f010ef8c58baf452d761762ceb19de763157266e"
+    },
+    {
+      "file": "assets/restaurant-menus/seminyak-01.webp",
+      "bytes": 220302,
+      "sha256": "4da26095f031be84f9d4ed19333c941bd4c13cc371b0287831bc2ef043eaf3dd"
+    },
+    {
+      "file": "assets/restaurant-menus/seminyak-02.webp",
+      "bytes": 519170,
+      "sha256": "9b7a8b748a6980ac885946f6f287f01cc255c9de12bbfd7625ce6c7b29b556e6"
+    },
+    {
+      "file": "assets/restaurant-menus/seminyak-03.webp",
+      "bytes": 243178,
+      "sha256": "6fd24cd191b267ca2c5bb6f7c788f2701d12bc6350a70307f1ce46f2567ab1a3"
+    },
+    {
+      "file": "assets/restaurant-menus/seminyak-04.webp",
+      "bytes": 311374,
+      "sha256": "cc75f5fcaf6e8b80268a12ae928e42d34b096c1aaefe5776118c4f5e38abbefe"
+    },
+    {
+      "file": "assets/restaurant-menus/seminyak-05.webp",
+      "bytes": 308356,
+      "sha256": "722894e8a41dd957af325a6d759b9747d75fe242c5fa2b792646342dc03622bb"
+    },
+    {
+      "file": "assets/restaurant-menus/seminyak-06.webp",
+      "bytes": 362624,
+      "sha256": "34c7991f1c5b81d9e3edc4631cc63b8f594a120019ee112ba783ce9d5c0c62a8"
+    },
+    {
+      "file": "assets/restaurant-menus/seminyak-07.webp",
+      "bytes": 386056,
+      "sha256": "0eb478041f0775cfd4ff62cb06f93fa04854415650756e0dd8f867e426e7d527"
+    },
+    {
+      "file": "assets/restaurant-menus/seminyak-08.webp",
+      "bytes": 352828,
+      "sha256": "27f0380bd82f28e6de32e4e7e72518a33ee900c10d4eb8af76b66afc6a40c90b"
+    },
+    {
+      "file": "assets/restaurant-menus/seminyak-09.webp",
+      "bytes": 338988,
+      "sha256": "1be64f390e6bc70ef8041902a310fe33928a90dc34f154b1b978b12c59f04a20"
+    },
+    {
+      "file": "assets/restaurant-menus/seminyak-10.webp",
+      "bytes": 317536,
+      "sha256": "c5380b26da08df896631d4c393dea48eac4c0d474fa5026eafaf50f8f85879c4"
+    },
+    {
+      "file": "assets/restaurant-menus/seminyak-11.webp",
+      "bytes": 344642,
+      "sha256": "b7db0e92f2b050dde6101b3592dbf672327c59a182d36adb3fec6786dd8e2b19"
+    },
+    {
+      "file": "assets/restaurant-menus/seminyak-12.webp",
+      "bytes": 335172,
+      "sha256": "8d5fd9cf5cbb3a11796b55d89bdc8117ef58a08565daf7108cd24bf25d2785ae"
+    },
+    {
+      "file": "assets/restaurant-menus/seminyak-13.webp",
+      "bytes": 348978,
+      "sha256": "3d0576d19f9bfce4f69d2dcfb58153ebd50b7b9fc1a7b4e1a8c81bd310c5a74f"
+    },
+    {
+      "file": "assets/restaurant-menus/seminyak-14.webp",
+      "bytes": 261928,
+      "sha256": "bb2b2006ae45e014fe821587d3d906b9aac4bdd15df070dd0e01009aca7e106b"
+    },
+    {
+      "file": "assets/restaurant-menus/seminyak-15.webp",
+      "bytes": 349444,
+      "sha256": "c0f5137d35c90906b8904c041128fb7afd7e8561e1fe57f079b5ceb3306ef9c6"
+    },
+    {
+      "file": "assets/restaurant-menus/seminyak-16.webp",
+      "bytes": 227332,
+      "sha256": "5fde74739bdd19e4ecbbb9d2bd5e00e81d8625099a13f7c6350021fdba0e09e5"
+    },
+    {
+      "file": "assets/restaurant-menus/seminyak-17.webp",
+      "bytes": 213936,
+      "sha256": "69a3ece3bdac4bee6fa8b5569d2aa8923764ff0e2046c251d4870661bb803be4"
+    },
+    {
+      "file": "assets/restaurant-menus/seminyak-18.webp",
+      "bytes": 228728,
+      "sha256": "5ce80066aa1a366eb81db6a9030f7518ec2a8ed3a81bbbc9737de9333db20a7f"
+    },
+    {
+      "file": "assets/restaurant-menus/seminyak.json",
+      "bytes": 15437,
+      "sha256": "97023bae761326b5fb8ad7ae55d77c7347bcd853edc7582124edf079e773308a"
+    },
+    {
+      "file": "assets/restaurant-menus/ubud-01.webp",
+      "bytes": 233724,
+      "sha256": "694c6d1b7a162f1a9760408c4d70fc2f209633730e46f56a2a3845b222e8ddcc"
+    },
+    {
+      "file": "assets/restaurant-menus/ubud-02.webp",
+      "bytes": 519170,
+      "sha256": "9b7a8b748a6980ac885946f6f287f01cc255c9de12bbfd7625ce6c7b29b556e6"
+    },
+    {
+      "file": "assets/restaurant-menus/ubud-03.webp",
+      "bytes": 293332,
+      "sha256": "67375a0b58fc5cf477189a43234505f92a7bba4cdc6cb185c939034708d5599b"
+    },
+    {
+      "file": "assets/restaurant-menus/ubud-04.webp",
+      "bytes": 247500,
+      "sha256": "779af8baf4bdaec73b06a36a634e9a19190b329309c5ccec8648cd638a289f9c"
+    },
+    {
+      "file": "assets/restaurant-menus/ubud-05.webp",
+      "bytes": 275404,
+      "sha256": "aeea742c07ceae68013b87503f9ec2e8da6fffa99383103defc5dc61af50d4a2"
+    },
+    {
+      "file": "assets/restaurant-menus/ubud-06.webp",
+      "bytes": 305238,
+      "sha256": "83ddef050a0037f4846b2176996cf1d27a86ecd343fb2039ad682476569c633f"
+    },
+    {
+      "file": "assets/restaurant-menus/ubud-07.webp",
+      "bytes": 362882,
+      "sha256": "ea50c99b28323542091f6e2ff44154ac47690aebdcac2e4a068d9f367d3be067"
+    },
+    {
+      "file": "assets/restaurant-menus/ubud-08.webp",
+      "bytes": 367164,
+      "sha256": "486da976e66bd09e5baa7ee91136546bf5003a543a3e52f836ced177425e14cb"
+    },
+    {
+      "file": "assets/restaurant-menus/ubud-09.webp",
+      "bytes": 348528,
+      "sha256": "d62bb3fa0b984a1d241bb0bdfc426eec2f2b6cf92f635ecb163dcd5317b95094"
+    },
+    {
+      "file": "assets/restaurant-menus/ubud-10.webp",
+      "bytes": 338032,
+      "sha256": "ad0810bceffad4524a5f17920bb6d20412f0b919e13d9808f5d7672400914a27"
+    },
+    {
+      "file": "assets/restaurant-menus/ubud-11.webp",
+      "bytes": 317536,
+      "sha256": "c5380b26da08df896631d4c393dea48eac4c0d474fa5026eafaf50f8f85879c4"
+    },
+    {
+      "file": "assets/restaurant-menus/ubud-12.webp",
+      "bytes": 339946,
+      "sha256": "aaabdb6b5e0d7493cb0bb0b48619405da719a8acaa8abb9a45dffa870781dd73"
+    },
+    {
+      "file": "assets/restaurant-menus/ubud-13.webp",
+      "bytes": 345886,
+      "sha256": "3e73ff576a3a4f19b10fd9e9fd66b8d3b9abe2d6bc1f1631e6ab27fda2ef1214"
+    },
+    {
+      "file": "assets/restaurant-menus/ubud-14.webp",
+      "bytes": 373550,
+      "sha256": "f8d8e4a5d794fc05431650f30f123017395ac4d9005b66d705d1a2e0ac4beffa"
+    },
+    {
+      "file": "assets/restaurant-menus/ubud-15.webp",
+      "bytes": 349662,
+      "sha256": "c7ec3de6db72c5f8b6de49c005cd11f3d0d017c5d41501cd9e8143f55e43adef"
+    },
+    {
+      "file": "assets/restaurant-menus/ubud-16.webp",
+      "bytes": 191020,
+      "sha256": "32d5ad06f13dfb5b836761aef66e8812e08b1d69e79a58c110e2015f16196f34"
+    },
+    {
+      "file": "assets/restaurant-menus/ubud-17.webp",
+      "bytes": 213936,
+      "sha256": "69a3ece3bdac4bee6fa8b5569d2aa8923764ff0e2046c251d4870661bb803be4"
+    },
+    {
+      "file": "assets/restaurant-menus/ubud-18.webp",
+      "bytes": 246656,
+      "sha256": "d00e8f5c509c34041cf845797a63debed9f607e6db8e10550eabbd6ae3098f3e"
+    },
+    {
+      "file": "assets/restaurant-menus/ubud.json",
+      "bytes": 15289,
+      "sha256": "30655c9899f024724e8c999df0b9bfdc9feabd9475a4ffca65df17cd3d15c04f"
+    },
+    {
+      "file": "assets/salmon.jpg",
+      "bytes": 91076,
+      "sha256": "56e713a9695abe78f1be4ecd331a414a161aec9b2a9a70df5f24edf6880de74e"
+    },
+    {
+      "file": "assets/sambar_idli.jpg",
+      "bytes": 201237,
+      "sha256": "56a4b7ca47c60ea36dae7a9d47721734c8540397f47d437786aef2cebeefa70e"
+    },
+    {
+      "file": "assets/sate_lilit.png",
+      "bytes": 416025,
+      "sha256": "cab5cec2d686f2cc3fa78d0ab513262d31d7c398c09ce45e876460d8df8ce846"
+    },
+    {
+      "file": "assets/SEMINYAK- Western Menu.pdf",
+      "bytes": 28934900,
+      "sha256": "7948ed802ceae2dc22929e154c9a3187b2be7d13fdd400eb32715b321ecd29e6"
+    },
+    {
+      "file": "assets/Seminyak-Hookah Menu.pdf",
+      "bytes": 3535476,
+      "sha256": "f2db887278cc6d8d3289097db7132b0ea8b27870c0e836a33ce61f8738d3b5ef"
+    },
+    {
+      "file": "assets/Seminyak-New Food Menu.pdf",
+      "bytes": 33755087,
+      "sha256": "c024e28d99d7c5617d66daa77c81d077b4f84330d4d627058a6d3018a969a83a"
+    },
+    {
+      "file": "assets/seminyak_card.jpg",
+      "bytes": 391622,
+      "sha256": "ebcb341f4eeeafade54d3a21be43f9271a91be0a86d3a200e8ba4c6e7988c97e"
+    },
+    {
+      "file": "assets/seminyak_gallery_1.jpg",
+      "bytes": 59537,
+      "sha256": "47669f24e9958420da0a7d9a071c62a0f1722b42551d26346e9fc4551da27e8b"
+    },
+    {
+      "file": "assets/seminyak_gallery_10.jpg",
+      "bytes": 159573,
+      "sha256": "ddff28b26864778ceda1db95bce02866a7eb8342bee3a65ad8bc41c7b68994db"
+    },
+    {
+      "file": "assets/seminyak_gallery_2.jpg",
+      "bytes": 190695,
+      "sha256": "a29037955cba7d5ccc4647bcf916b27bc7c40918c95a2cf7cd8da831ffcce1d8"
+    },
+    {
+      "file": "assets/seminyak_gallery_3.jpg",
+      "bytes": 73320,
+      "sha256": "a86f097d25f667ca7dcbd84dc82949dd4768ccf9e39f07db6066ad2a357ef7c0"
+    },
+    {
+      "file": "assets/seminyak_gallery_4.jpg",
+      "bytes": 76772,
+      "sha256": "26a6afd4ef2802202b9d34dbf06cbd1c9ccdb2a63a96bd25e8690339201ca685"
+    },
+    {
+      "file": "assets/seminyak_gallery_5.jpg",
+      "bytes": 111016,
+      "sha256": "7856c3f5e2a341bc931c5f6fcc27eac0c1781e15433b306c538625eb6aba07bf"
+    },
+    {
+      "file": "assets/seminyak_gallery_6.jpg",
+      "bytes": 114982,
+      "sha256": "3e787b445e3f79897300c51022436cd06dba401e6aa35e0a2b88f9a0cbcf4d76"
+    },
+    {
+      "file": "assets/seminyak_gallery_7.jpg",
+      "bytes": 133809,
+      "sha256": "fcb4bdd03c850cf44605e60f03be103d685046292feb3e9fb07513815d4f3eba"
+    },
+    {
+      "file": "assets/seminyak_gallery_8.jpg",
+      "bytes": 92286,
+      "sha256": "20ee273c47411e03cdd89437eebe4f03166e23e624820509b590e229ecb7e2de"
+    },
+    {
+      "file": "assets/seminyak_gallery_9.jpg",
+      "bytes": 109044,
+      "sha256": "8c5e394b903f3477955d1ce73a45df63bcbbba7bca1e35cb07c2b6f5b7434f77"
+    },
+    {
+      "file": "assets/sop_buntut.png",
+      "bytes": 645196,
+      "sha256": "e788288a7a6c80ba4c447bb41f98512035b24707005de6d021ef8a6ec0a347de"
+    },
+    {
+      "file": "assets/soto_ayam.png",
+      "bytes": 118814,
+      "sha256": "ec29d4336732729062ed326d0c417f236cd59aca036f10561758c01653d1cf77"
+    },
+    {
+      "file": "assets/tandoori_roti.jpg",
+      "bytes": 416388,
+      "sha256": "d7fbac4b6bdcb213cde22a85d7741a57ecace1321c83a969968b6299b91d693f"
+    },
+    {
+      "file": "assets/tandoori_sizzler.jpg",
+      "bytes": 169278,
+      "sha256": "c2ccaeb0512a42017ddc0619e1eeef1807b4f25546f2245bdbff2f3e69142993"
+    },
+    {
+      "file": "assets/thailand_card.jpg",
+      "bytes": 328769,
+      "sha256": "60e7c3a270438ff7e5ac87676b27ff78a4e8c1bb65e509a1a584d19cb0ba0611"
+    },
+    {
+      "file": "assets/thailand_courtyard.png",
+      "bytes": 406572,
+      "sha256": "4e854abeb3f32cbe720f20a004245bd7cc3dc98876d8dcff6511ca9c2cb0d3d8"
+    },
+    {
+      "file": "assets/thailand_gallery_1.jpg",
+      "bytes": 279829,
+      "sha256": "cecb86fc4b355484ece29a07f0e6d52173b25c784b93ea9add70955ff2bb8c97"
+    },
+    {
+      "file": "assets/thailand_gallery_10.jpg",
+      "bytes": 356234,
+      "sha256": "cc234f341639c8dd0ad1e5737454be1e91c56f2a8fa38fa21299c08983fa680d"
+    },
+    {
+      "file": "assets/thailand_gallery_11.jpg",
+      "bytes": 266596,
+      "sha256": "815bb153f9ac05c1860987d5e897958474849151e2bb70512ed66fb637e21d94"
+    },
+    {
+      "file": "assets/thailand_gallery_12.jpg",
+      "bytes": 180934,
+      "sha256": "5131a11a72e74d4884c9e1505df3467a631a138bcfc47b25643bc4c8394a6d34"
+    },
+    {
+      "file": "assets/thailand_gallery_13.jpg",
+      "bytes": 326825,
+      "sha256": "421b76be2a6ed6938c526bf37e247a09ffd580c09a723c471d4bedba8c3032fa"
+    },
+    {
+      "file": "assets/thailand_gallery_14.jpg",
+      "bytes": 125100,
+      "sha256": "f029a9b3ca326dfd9ecac8400b7335899b805aebbf552e2a850806ab46bb8d0a"
+    },
+    {
+      "file": "assets/thailand_gallery_2.jpg",
+      "bytes": 206785,
+      "sha256": "b898ad173ef92250bd2350a6f0e80ff78b1a4a1012c008e128aa95694ec76bbc"
+    },
+    {
+      "file": "assets/thailand_gallery_3.jpg",
+      "bytes": 238186,
+      "sha256": "0dc4cb1e9799005826afe83531504226eff17d1a0a85a139f1e1005c83ac8d6e"
+    },
+    {
+      "file": "assets/thailand_gallery_4.jpg",
+      "bytes": 419612,
+      "sha256": "8d18ce6a901569889becc8310f70e67b54506a30f427e9da3464df2f0de82770"
+    },
+    {
+      "file": "assets/thailand_gallery_5.jpg",
+      "bytes": 300311,
+      "sha256": "d49c108541aac8433edc76b595db034493a53b5b9bc78bb3a6720b7a7ac65c8b"
+    },
+    {
+      "file": "assets/thailand_gallery_6.jpg",
+      "bytes": 257870,
+      "sha256": "9802b02dcc7d7a9bedc663ad7baf5da19dec0e9a69d7c021228c3d373f74ece3"
+    },
+    {
+      "file": "assets/thailand_gallery_7.jpg",
+      "bytes": 300311,
+      "sha256": "d49c108541aac8433edc76b595db034493a53b5b9bc78bb3a6720b7a7ac65c8b"
+    },
+    {
+      "file": "assets/thailand_gallery_8.jpg",
+      "bytes": 279544,
+      "sha256": "f27045d3637d275b2fe4aa842eaa30463f77069f386fdb392825e143438c49a5"
+    },
+    {
+      "file": "assets/thailand_gallery_9.jpg",
+      "bytes": 131218,
+      "sha256": "25c6e7c957b0235fbb4fc0ae8677465f8d11eb2519d8a38ef20fe502785c0550"
+    },
+    {
+      "file": "assets/thailand_palace.jpg",
+      "bytes": 102157,
+      "sha256": "07197ca1afa4afefb9b0ae57112123273789d571653b80417e4136d3b0884b8a"
+    },
+    {
+      "file": "assets/thai_menu_1.png",
+      "bytes": 34795,
+      "sha256": "f713ae5cfa26533e530ee74433c98c2c20610c83949c14d4476fd9b7723b3a04"
+    },
+    {
+      "file": "assets/thai_menu_10.png",
+      "bytes": 39300,
+      "sha256": "ea1f33c6f9c425ade66304a1d1b4010d469cd0d5ec42c4e7d49f0b8d24bea674"
+    },
+    {
+      "file": "assets/thai_menu_11.png",
+      "bytes": 40416,
+      "sha256": "d58bbec2ee4e6fa4296e6548e77054d987e924959763890744334a737ac280e4"
+    },
+    {
+      "file": "assets/thai_menu_12.png",
+      "bytes": 43300,
+      "sha256": "448fc6e385d1c564212c0b1b138e27d035f495ddc0c3b12a7a2ff8e5fb7cab4b"
+    },
+    {
+      "file": "assets/thai_menu_2.png",
+      "bytes": 34759,
+      "sha256": "6ab0a1da0f4c69bcd520aa34b53bf1f427e8b8bb3bd66603b0f62f5396dd86ed"
+    },
+    {
+      "file": "assets/thai_menu_3.png",
+      "bytes": 37420,
+      "sha256": "484452195ef159dbf093202979fbad6091c43a683149f3be70f5447ceb054749"
+    },
+    {
+      "file": "assets/thai_menu_4.png",
+      "bytes": 39711,
+      "sha256": "ef0476d55f3ea97e100f210e66a1623ae6ffa7a6a29053b6acab7bd548f63056"
+    },
+    {
+      "file": "assets/thai_menu_5.png",
+      "bytes": 36164,
+      "sha256": "63b9f89ae6423d8eb64f875fd77873829ad0bb00464d605ea2891c447e06d6d0"
+    },
+    {
+      "file": "assets/thai_menu_6.png",
+      "bytes": 39998,
+      "sha256": "259bc0e1197640faa0d810122a8f30851f477bc4cf9217afe937185e6230551a"
+    },
+    {
+      "file": "assets/thai_menu_7.png",
+      "bytes": 37057,
+      "sha256": "73693afd38711c8974c11d87c88b8d5cbdb5bbc790f48ddc2f941b61ef7725f5"
+    },
+    {
+      "file": "assets/thai_menu_8.png",
+      "bytes": 37647,
+      "sha256": "1828fbd41cceed1c2f43f5c10dd12a52e0227c85995c4640876b24ca2652c8d0"
+    },
+    {
+      "file": "assets/thai_menu_9.png",
+      "bytes": 41080,
+      "sha256": "ae0a0a2e780fe9ed5a33ff09c6ac61680743e8dda35f034de1844016aed2585e"
+    },
+    {
+      "file": "assets/Ubud Food Menu-Bollywood Indian Cuisine.pdf",
+      "bytes": 33027241,
+      "sha256": "785b2983bb3d5d21ed81ed3bb7af72e05649bf3aac9318dfa59c87e29da1a342"
+    },
+    {
+      "file": "assets/ubud_card.jpg",
+      "bytes": 358953,
+      "sha256": "41a99cc53eb13acc87be4390db9e5f1dd05b3b64d3cd9f2a7fc3d0c0a4934dd8"
+    },
+    {
+      "file": "assets/ubud_gallery_1.jpg",
+      "bytes": 370221,
+      "sha256": "b892c712b99913ffa654c9ea905ae427bbbd3e101d08b0279658083361d7813a"
+    },
+    {
+      "file": "assets/veg_samosa.png",
+      "bytes": 330147,
+      "sha256": "cf66f17963ea31e398008aab9cdf17445b59358915fcda2b0fa9974455f0d2f9"
+    },
+    {
+      "file": "assets/wordmark-original.png",
+      "bytes": 6640,
+      "sha256": "e5fa6d93c42b86dc29a771f4e648ca62e18a0b97aaf6cae95af4a8768add9e37"
+    },
+    {
+      "file": "brand-header-h2.css",
+      "bytes": 7356,
+      "sha256": "c8eec1131d4769e4830a4481292c2699ce81612aec44007998563c16cb11f4d5"
+    },
+    {
+      "file": "brand-header-h2.js",
+      "bytes": 4144,
+      "sha256": "021a8c54884762f99557f3a591302274c1f246af88096f419f50a06d1c200a85"
+    },
+    {
+      "file": "brand-header-h3.css",
+      "bytes": 8161,
+      "sha256": "6fd881a3cca8ef9ecf588d7aa5e62223adc415b4a696fd164c619e59605c4eda"
+    },
+    {
+      "file": "brand-header-h3.js",
+      "bytes": 4891,
+      "sha256": "7b9e5d51d371034eaf7bd634b042f8c0495975fbf2607634529243b696259cdb"
+    },
+    {
+      "file": "brand-header-h4.css",
+      "bytes": 7550,
+      "sha256": "3bffa2bed271ca3461dbfe2f242e42687d395e894d3665b4ac20a1faf812f9aa"
+    },
+    {
+      "file": "brand-header-h4.js",
+      "bytes": 8435,
+      "sha256": "9876c4f5e4a86e51cc5fd62034ec694f66a07d011d360bf6dc194291b53c5925"
+    },
+    {
+      "file": "brand-header-h5.css",
+      "bytes": 9907,
+      "sha256": "72e3840685bf24e5927c5f379cf56bd9d425e0c8337994b93645b9ffdeabbc87"
+    },
+    {
+      "file": "brand-header-h5.js",
+      "bytes": 8514,
+      "sha256": "f551117dd8cda287b11f83e037d33692a8ffd807055985f15fe254158e59daae"
+    },
+    {
+      "file": "brand-header-h6.css",
+      "bytes": 10304,
+      "sha256": "5e213653c434da3faa341ae49a6be133dff7fe7b0f76d716aa11c3308a67bae6"
+    },
+    {
+      "file": "brand-header-h6.js",
+      "bytes": 9025,
+      "sha256": "b3b4fdf15c0eab14dd73204a9c418ab442e09e0c24dff1616b80f39fe0b30abd"
+    },
+    {
+      "file": "checkpoint06.css",
+      "bytes": 22518,
+      "sha256": "c90500402a25ba31f786593cd1957c8eb32b3693a339723a2bb4ddbc5421df68"
+    },
+    {
+      "file": "checkpoint06.js",
+      "bytes": 3022,
+      "sha256": "8e87105afdd50ca0317aec28c2e8c1c6c4fad1a6fb58e72947b66c2627a5651d"
+    },
+    {
+      "file": "cinematic.css",
+      "bytes": 20107,
+      "sha256": "91ea8005a904577f7fb3801568d34f4ec4dd2485f103adde77ddaf4bb0ce0cd7"
+    },
+    {
+      "file": "club-menu-c1.css",
+      "bytes": 7975,
+      "sha256": "d59c3168d7712a798af049ec79d9daedc1c73ea085878249e215d554fbff6376"
+    },
+    {
+      "file": "club-menu-c1.js",
+      "bytes": 4141,
+      "sha256": "b06ded05e44558b88f017959006526889e6e0fa44359bc10448d99c5a349e181"
+    },
+    {
+      "file": "club-menu.html",
+      "bytes": 11491,
+      "sha256": "5636b0ef1c85cad177940d97e6f9dd4cc02259466028788c5e311e3dd83d7049"
+    },
+    {
+      "file": "club.html",
+      "bytes": 36465,
+      "sha256": "ac5e6637af81a548143c53f0c1281e0619670e8ff3d63ebee74736ad2fdc6ca2"
+    },
+    {
+      "file": "contact.html",
+      "bytes": 19698,
+      "sha256": "9094fe9e6257bee3e26f4cc5a345f650feb6a49649ba634bd5e2058f7b26c5b5"
+    },
+    {
+      "file": "content-config.js",
+      "bytes": 4664,
+      "sha256": "9a34845d69d8c6c38f1abe34aeaccd8a709c59c730312a176af267d36e10eaf8"
+    },
+    {
+      "file": "destinations.css",
+      "bytes": 20738,
+      "sha256": "05756826821b38a6cf8eddbe5208f9490c7f63651f77874a654c3c4ea9e609f7"
+    },
+    {
+      "file": "destinations.js",
+      "bytes": 6157,
+      "sha256": "5088cab380c663efd90c2a31ad7857dd592f9d9c2b4953ace4b404c5d4e16029"
+    },
+    {
+      "file": "experience.html",
+      "bytes": 13356,
+      "sha256": "be4327bc7f9bc631d633bb598f5ddb4e3dbc182f19302230e8bef7d42dcf0cee"
+    },
+    {
+      "file": "experience04.css",
+      "bytes": 28958,
+      "sha256": "7db8a0193d1a523a1f675f05662705d52b64ddf4c7b56efde14eeadd6884e6ab"
+    },
+    {
+      "file": "experience04.js",
+      "bytes": 4891,
+      "sha256": "a9031f5b3dff2309b28ddbd7d582961165c6ba9636795769c97669e10616aabb"
+    },
+    {
+      "file": "experience05.css",
+      "bytes": 32754,
+      "sha256": "ffc1538f8232a89455c3499635f7787f3e915842cb94d25e7d18ff9d1f1cf03d"
+    },
+    {
+      "file": "experience05.js",
+      "bytes": 18324,
+      "sha256": "e04bc7a8cd8b5a5307879e3e95097561a3693f768e56ed71013b194ef5c27aeb"
+    },
+    {
+      "file": "favicon.ico",
+      "bytes": 138453,
+      "sha256": "7d6566689a543083b0662cdd9b60ae9756f58beed66583e4cd8ad7b5ab518106"
+    },
+    {
+      "file": "gallery.html",
+      "bytes": 29991,
+      "sha256": "82733970a9c947c61b8eb18b22a548ce9ec1e0d661daa9fb4bed9c24db760e1f"
+    },
+    {
+      "file": "header-eye-h7.js",
+      "bytes": 6848,
+      "sha256": "13ecc8f882b4a5aa455a2f8f2eb17bc6719fe6e30d99543eccf20bc2b3a17379"
+    },
+    {
+      "file": "header-h7.css",
+      "bytes": 52689,
+      "sha256": "b3ff2c21290457f74e7d589bb9d1a4b96a5aae7196a2940f55952863eedce333"
+    },
+    {
+      "file": "header-h7.js",
+      "bytes": 6925,
+      "sha256": "c3f5108e9b8f699db33a56985e11e6e19c4f0da3dd678b3cfc8f025a5aa019b6"
+    },
+    {
+      "file": "home-batch01-copy.js",
+      "bytes": 24059,
+      "sha256": "03594ad2881c06bc0260a6df96a0a58cf23b84ff95c5870721271470e628aab1"
+    },
+    {
+      "file": "home-batch01.css",
+      "bytes": 17104,
+      "sha256": "681369be1817860d458c05fcb29e664e9fdc82976365da6ac26091231a5ac766"
+    },
+    {
+      "file": "home-batch01.js",
+      "bytes": 3518,
+      "sha256": "b5bc01fc2f0f28248e37cfa9d49db0b87ef4fb133667b1368dc42dc8f7212a71"
+    },
+    {
+      "file": "home-preview-h1.js",
+      "bytes": 18886,
+      "sha256": "890017370265908a9642d3af8b4bb997d23424ab3fe75c4a7c5471830ee0ee10"
+    },
+    {
+      "file": "home.html",
+      "bytes": 409,
+      "sha256": "951fbb11a72ebf7963e314a145cf5bd1e6fb86960079b986823c6df95318177f"
+    },
+    {
+      "file": "index.html",
+      "bytes": 49122,
+      "sha256": "82fa1920be0b1a615754e2bea1570d86f9a42645abcc48a3cab22a5579b9169c"
+    },
+    {
+      "file": "indonesia-menu.html",
+      "bytes": 417,
+      "sha256": "df7af9f5de75a3576a941f4fcef4e3b403eb22ea46715db9e64f400ad2f2187e"
+    },
+    {
+      "file": "indonesia.html",
+      "bytes": 13486,
+      "sha256": "c46a1ade5082e976bcdc536a03f99662c8e4d2b7a455bc020cb1cc67597d6848"
+    },
+    {
+      "file": "integration-b1.css",
+      "bytes": 6827,
+      "sha256": "d4f69b59a3f348b633850bea67eb1e0945f561b5aa5dc4df471ffa0862445c20"
+    },
+    {
+      "file": "legacy-copy.js",
+      "bytes": 4059,
+      "sha256": "af973783ed0b6adbefd13455780923f6314ece31af5006816b88aac99c46b22d"
+    },
+    {
+      "file": "legacy-integration.css",
+      "bytes": 3028,
+      "sha256": "4967a0ef0742ded40e3f4d81f32a908da4b1f541fb0d628755e035b011a55bb9"
+    },
+    {
+      "file": "legacy-language-m2.js",
+      "bytes": 4392,
+      "sha256": "14639a7b6a2d744046dcdde1aa7ffc1e332134e8ad5f9aa2d957956735c5f6a3"
+    },
+    {
+      "file": "legacy-language.js",
+      "bytes": 4374,
+      "sha256": "1bf97dd4277d6cc7314ac934ff73291f40580d2d40ba308ec62e9c73d1ab0768"
+    },
+    {
+      "file": "locations.html",
+      "bytes": 19346,
+      "sha256": "479b5dfa0c431ec28145725b9afd2978c439de91c9516588c232e8dac541a012"
+    },
+    {
+      "file": "media-manifest.json",
+      "bytes": 1979,
+      "sha256": "59ed0e0039db3decffdd56e2c3fe42b1faeb8d2f9ba7a167ed2c38a8a6e4a352"
+    },
+    {
+      "file": "menu-m2-data.js",
+      "bytes": 96489,
+      "sha256": "b7a1e56ec1af179a9f7854a1a746860d1eaa342cb021a4a05f80bf0b5ab0b05b"
+    },
+    {
+      "file": "menu-m2.css",
+      "bytes": 6449,
+      "sha256": "cd7497cd0738ef6d6339ef52fdb6d8c03612b4f24c8141c16689e0d37edafc77"
+    },
+    {
+      "file": "menu-m2.js",
+      "bytes": 11545,
+      "sha256": "e9baf2d12b2e3c5ee11b984f7a5eafb279d5fa3b6dfc0ad7f6778d8a68b1d6ba"
+    },
+    {
+      "file": "menu-pages.json",
+      "bytes": 1486,
+      "sha256": "b66cccf805e9d8479f192fe11aa3485a9ddad814fd52e8f93567e94c4468e0ea"
+    },
+    {
+      "file": "menu.html",
+      "bytes": 14320,
+      "sha256": "b68545a75750d535be906f37c84622a6c73ac407531bcb1502d7ae9720618897"
+    },
+    {
+      "file": "motion.js",
+      "bytes": 5893,
+      "sha256": "f3fa1737fb2a33db038846757905914bc796c0bdb6b876f4f7c74b50b1ae941f"
+    },
+    {
+      "file": "new-year-2027.css",
+      "bytes": 13749,
+      "sha256": "14cbe4e080b8ee99512923d3458a02bc71b4db425dd809199df8e13f71d901e6"
+    },
+    {
+      "file": "new-year-2027.html",
+      "bytes": 42744,
+      "sha256": "269af1f2cf7cf1b6bce96cf0c9925071f464a6380280f76e42f3cc38c2440570"
+    },
+    {
+      "file": "new-year-2027.js",
+      "bytes": 10113,
+      "sha256": "a733386d56968ef9fead545300250b8e156e0cfb2d13301eb292bd8ed2c6724b"
+    },
+    {
+      "file": "new-year-link.css",
+      "bytes": 1786,
+      "sha256": "7e068a45d7807287cd96386be580827a9dd8409d34b1c53447f3e15d068650cb"
+    },
+    {
+      "file": "nusapenida-menu.html",
+      "bytes": 11491,
+      "sha256": "58778633148b52d87225269f1d5e983a7d2592cae0deedea48cc6696e0e30532"
+    },
+    {
+      "file": "nusapenida.html",
+      "bytes": 17876,
+      "sha256": "8de66a89d7d9508a2029931f9e0f481ccedc96ed50bfe665c438697e109ab0ff"
+    },
+    {
+      "file": "photo-credits.html",
+      "bytes": 9877,
+      "sha256": "7dcb097a694575147ad4c618b36b9bb9c5a677782e4e5c44d3cce46a693b4de7"
+    },
+    {
+      "file": "preferences-init.js",
+      "bytes": 415,
+      "sha256": "ffed8cfc123336192df4e9b9a5e63649956940f2f48cbbbeac9c39c4a85b314a"
+    },
+    {
+      "file": "privacy.html",
+      "bytes": 10683,
+      "sha256": "18585f7f0e44a004216bcd56867f3e30b98308b4b79199fdfef2a271d554503f"
+    },
+    {
+      "file": "restaurant-menu-reader.js",
+      "bytes": 5751,
+      "sha256": "f6f44eed676f338a8764fda6f4505c1a6eefe4fa39089fd99ecacfe04a6698fe"
+    },
+    {
+      "file": "restaurant-menus.js",
+      "bytes": 59816,
+      "sha256": "bda2306d7440e5882a6b3f61fc2dc53bc61fdc1594aafeb3906b3ffb8ec94ac6"
+    },
+    {
+      "file": "reviews.html",
+      "bytes": 13474,
+      "sha256": "f4816a9789c4a90426a75459a87499661225bd7ff9a864ac3212005b413b24fb"
+    },
+    {
+      "file": "robots.txt",
+      "bytes": 26,
+      "sha256": "331ea9090db0c9f6f597bd9840fd5b171830f6e0b3ba1cb24dfa91f0c95aedc1"
+    },
+    {
+      "file": "seminyak-menu.html",
+      "bytes": 11597,
+      "sha256": "8a1bb3e0943354e7c6dc06e76fe35e02c1cb4adb7297a44c737455b78547d4fe"
+    },
+    {
+      "file": "seminyak.html",
+      "bytes": 18227,
+      "sha256": "3aeda4dd065997b50caadbba3c0ad4d246781e6bdc02385afa853d4f19a37c97"
+    },
+    {
+      "file": "site-config.js",
+      "bytes": 1371,
+      "sha256": "98f452cc1f68b79667b6a6e631e0e494a8f4d4c16829ee24c490865ad002fe0f"
+    },
+    {
+      "file": "site.css",
+      "bytes": 30267,
+      "sha256": "ee8acba6cb0aa834c819ca7604d9d8a8ec28b822d474c6846f328c3ceb8ff171"
+    },
+    {
+      "file": "site.js",
+      "bytes": 9684,
+      "sha256": "f441c5bd84a6936b2a3f10a5b15d1df32386f4d5bf344d543f929236bff99f87"
+    },
+    {
+      "file": "sitemap.xml",
+      "bytes": 107,
+      "sha256": "68ab08991efaca902bcb8a6518106d8b29964c5651f39abbb7eb7c9713ca2770"
+    },
+    {
+      "file": "story-h3-copy.js",
+      "bytes": 2115,
+      "sha256": "28a63e1d96d06e4f006761d09cc1170d206ec8c879dc0b9584ba5856acfebf3b"
+    },
+    {
+      "file": "story-h3.css",
+      "bytes": 6361,
+      "sha256": "95f7afad0e0da709a72dd9f8dbc1c4aba9f67dd6bbeb40015422cada225b5c90"
+    },
+    {
+      "file": "story-h3.js",
+      "bytes": 1140,
+      "sha256": "56fa30c0ce1adb169d16ee22362795319f046b32154e34429a5580d1bf4f3c2d"
+    },
+    {
+      "file": "thailand-menu.html",
+      "bytes": 11531,
+      "sha256": "81004ee67dc8e1e0bd24d00d4f42b829cb59ddc4b79e7be960db8a3cc51cdd38"
+    },
+    {
+      "file": "thailand.html",
+      "bytes": 17866,
+      "sha256": "7b55ccdcd148965fca29786c5ee635274b17a81c4a074f0daacfc16250bb11f0"
+    },
+    {
+      "file": "translations.js",
+      "bytes": 90027,
+      "sha256": "b6ad149be58c4752f128e4d9225947ea378f5fcca550627039f5edc99dbd615d"
+    },
+    {
+      "file": "translations.json",
+      "bytes": 93720,
+      "sha256": "c61cb1ff5c4a5fdaec740b466314e71370a8c09f06a1ae4003d24519e07083ad"
+    },
+    {
+      "file": "ubud-menu.html",
+      "bytes": 11543,
+      "sha256": "0e236561ec6a841b9fab4aa43d305edc94486362b3b79366c774b1bcaca9fc37"
+    },
+    {
+      "file": "ubud.html",
+      "bytes": 17889,
+      "sha256": "d5b7f017519bacef1086d68416c936adddc60572e218dd7b29e5393244019a1e"
+    },
+    {
+      "file": "vercel.json",
+      "bytes": 803,
+      "sha256": "316a6e08fb1897727f65c01684af3b2294348f6a2d5dba508711c1c6e91f0685"
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+/* H2 shared brand interaction and The Night header waves. Original logo artwork is unchanged. */
+html[data-brand-header="h2"] .bw-brand-orbit{position:relative;display:inline-grid;place-items:center;flex:0 0 auto;width:54px;height:54px;isolation:isolate;overflow:visible}
+html[data-brand-header="h2"] .bw-brand-orbit::before{content:"";position:absolute;inset:-5px!important;border-radius:50%;background:radial-gradient(ellipse,#efdba9 0%,#dbc084df 38%,#c89d5555 58%,transparent 74%);z-index:-1;animation:bw-aura-idle 8s ease-in-out infinite;transition:opacity .45s,filter .45s}
+html[data-brand-header="h2"] .bw-brand-orbit>img{display:block;background:transparent!important;border:0!important;border-radius:0!important;padding:6px!important;width:54px!important;height:54px!important;object-fit:contain;animation:none!important;transition:transform .55s cubic-bezier(.2,.7,.2,1),opacity .45s;transform:scale(1);transform-origin:center}
+html[data-brand-header="h2"] .bw-brand-gold{position:absolute;inset:6px;pointer-events:none;opacity:0;transform:scale(1);transform-origin:center;background:linear-gradient(112deg,#9c6b20 2%,#e7b955 23%,#fff0b8 40%,#fffbea 47%,#d19a38 62%,#ffdc8b 82%,#a16b20 100%);background-size:230% 100%;background-position:100% 50%;mask:var(--bw-logo-mask) center/contain no-repeat;-webkit-mask:var(--bw-logo-mask) center/contain no-repeat;transition:opacity .42s,transform .55s cubic-bezier(.2,.7,.2,1);z-index:2}
+html[data-brand-header="h2"] .brand:is(:hover,:focus-visible) .bw-brand-orbit>img{transform:scale(1.15);opacity:0}
+html[data-brand-header="h2"] .brand:is(:hover,:focus-visible) .bw-brand-gold{opacity:1;transform:scale(1.15);animation:bw-gold-shine 2.6s ease-in-out infinite}
+html[data-brand-header="h2"] .brand:is(:hover,:focus-visible) .bw-brand-orbit::before{opacity:.32;filter:brightness(.82)}
+@keyframes bw-gold-shine{0%,100%{background-position:100% 50%}55%{background-position:0% 50%}}
+@keyframes bw-aura-idle{0%,100%{opacity:.9}50%{opacity:.7}}
+/* A single, full-width flowing wave field behind the existing navigation. */
+html[data-brand-header="h2"] .nav-equalizer{display:none!important}
+.bw-header-lane{isolation:isolate;--bw-wave-ink:#d6ac69;--bw-wave-soft:#b28eac;--bw-wave-opacity:.74;--bw-night-origin:64%}
+html[data-appearance="light"] .bw-header-lane{--bw-wave-ink:#aa722e;--bw-wave-soft:#a07892;--bw-wave-opacity:.67}
+.bw-header-lane>.header-row{position:relative;z-index:2}
+.bw-header-lane>.mobile-nav{position:relative;z-index:3}
+.bw-header-waves{position:absolute;inset:0 0 auto;height:var(--bw-lane-height,88px);pointer-events:none;z-index:0;overflow:hidden;opacity:var(--bw-wave-opacity);transition:opacity .55s ease;mask-image:linear-gradient(90deg,transparent 0%,#0004 12%,#000 26%,#000 88%,transparent 100%);-webkit-mask-image:linear-gradient(90deg,transparent 0%,#0004 12%,#000 26%,#000 88%,transparent 100%)}
+.bw-header-waves::before{content:"";position:absolute;inset:0;background:radial-gradient(ellipse 35% 100% at var(--bw-night-origin) 54%,#bd925622,transparent 75%);animation:bw-lane-breathe 7s ease-in-out infinite}
+.bw-wave-track{position:absolute;left:0;top:0;width:200%;max-width:none!important;height:100%;fill:none;overflow:visible;animation:bw-wave-flow 18s linear infinite;will-change:transform}
+.bw-wave-track path{vector-effect:non-scaling-stroke;stroke-linecap:round;stroke:var(--bw-wave-ink)}
+.bw-wave-track .bw-wave-primary{stroke-width:1.45;opacity:.6}
+.bw-wave-track .bw-wave-secondary{stroke-width:1;opacity:.32}
+.bw-wave-track .bw-wave-accent{stroke-width:1;stroke:var(--bw-wave-soft);opacity:.27}
+html[data-brand-header="h2"] .bw-night-target{position:relative;color:var(--gold-text,var(--gold))!important;font-weight:600;isolation:isolate;animation:bw-night-text 6s ease-in-out infinite}
+.bw-night-target::before{content:"";position:absolute;inset:-8px -28px;z-index:-1;pointer-events:none;background:radial-gradient(ellipse,#d9ac6233,transparent 70%);border-radius:50%;animation:bw-night-halo 6s ease-in-out infinite}
+.bw-night-target:is(:hover,:focus-visible){text-shadow:0 0 14px #caa66baa}
+.bw-header-lane:has(.bw-night-target:is(:hover,:focus-visible)) .bw-header-waves{opacity:1}
+@keyframes bw-wave-flow{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+@keyframes bw-lane-breathe{0%,100%{opacity:.4}50%{opacity:1}}
+@keyframes bw-night-text{0%,100%{text-shadow:0 0 2px #caa66b00}50%{text-shadow:0 0 14px #caa66b99}}
+@keyframes bw-night-halo{0%,100%{opacity:.25;transform:scale(.9)}50%{opacity:.85;transform:scale(1.22)}}
+html[data-brand-header="h2"] body .bw-brand-orbit{--bw-logo-w:54px;--bw-logo-h:54px;--bw-logo-pad:6px;width:var(--bw-logo-w)!important;height:var(--bw-logo-h)!important}
+html[data-brand-header="h2"] body .bw-brand-orbit>img{width:var(--bw-logo-w)!important;height:var(--bw-logo-h)!important;padding:var(--bw-logo-pad)!important;margin:0!important}
+html[data-brand-header="h2"] body .bw-brand-gold{inset:var(--bw-logo-pad)}
+html[data-brand-header="h2"] .brand{overflow:visible}
+@supports not ((mask-image:url("assets/logo-original.png")) or (-webkit-mask-image:url("assets/logo-original.png"))){html[data-brand-header="h2"] .bw-brand-gold{display:none}html[data-brand-header="h2"] .brand:is(:hover,:focus-visible) .bw-brand-orbit>img{opacity:1;filter:drop-shadow(0 0 5px #dfbc73)}}
+@media(max-width:1190px){html[data-brand-header="h2"] .header .desktop-nav{gap:18px}}
+@media(max-width:760px){html[data-brand-header="h2"] body .bw-brand-orbit{--bw-logo-w:36px;--bw-logo-h:40px;--bw-logo-pad:4px}.bw-header-waves{mask-image:linear-gradient(90deg,transparent,#000 35%,#000 80%,transparent);-webkit-mask-image:linear-gradient(90deg,transparent,#000 35%,#000 80%,transparent)}.bw-wave-track{animation-duration:22s}.bw-header-lane .mobile-nav .bw-night-target{overflow:hidden}.bw-header-lane .mobile-nav .bw-night-target::before{inset:0 30% 0 -30%}}
+@media(max-width:380px){html[data-brand-header="h2"] body .bw-brand-orbit{--bw-logo-w:31px;--bw-logo-h:34px;--bw-logo-pad:4px}}
+html.motion-paused .bw-wave-track,html.motion-paused .bw-header-waves::before,html.motion-paused .bw-night-target,html.motion-paused .bw-night-target::before,html.motion-paused .bw-brand-orbit::before,html.motion-paused .bw-brand-gold{animation:none!important}
+html.bw-header-motion-off .bw-wave-track,html.bw-header-motion-off .bw-header-waves::before,html.bw-header-motion-off .bw-night-target,html.bw-header-motion-off .bw-night-target::before,html.bw-header-motion-off .bw-brand-orbit::before,html.bw-header-motion-off .bw-brand-gold{animation-play-state:paused!important}
+html.motion-paused .brand:is(:hover,:focus-visible) .bw-brand-orbit>img,html.motion-paused .brand:is(:hover,:focus-visible) .bw-brand-gold{transform:none!important;transition:none!important}
+@media(prefers-reduced-motion:reduce){.bw-wave-track,.bw-header-waves::before,.bw-night-target,.bw-night-target::before,.bw-brand-orbit::before,.bw-brand-gold{animation:none!important;transition:none!important}html[data-brand-header="h2"] .brand:is(:hover,:focus-visible) .bw-brand-orbit>img,html[data-brand-header="h2"] .brand:is(:hover,:focus-visible) .bw-brand-gold{transform:none!important;transition:none!important}}
+@media print{.bw-header-waves,.bw-brand-gold{display:none!important}html[data-brand-header="h2"] .bw-brand-orbit>img{opacity:1!important;transform:none!important}}

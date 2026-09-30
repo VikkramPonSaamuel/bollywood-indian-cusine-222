@@ -1,0 +1,62 @@
+[
+  {
+    "name": "club-performance",
+    "source": "f628837973a04212803910a4e5780ad8.mov",
+    "source_start": 4,
+    "source_duration": 8,
+    "source_sha256": "c585eb2f8ff152bdded74651662b0e40f76294a60ac5afe68d1e7185f11ba9b1",
+    "export_bytes": 1516686,
+    "export_sha256": "4a17d70226f85b3e712da660acf8b29dacd63c28c6c1d4d4470673bdb335d22a",
+    "width": 540,
+    "height": 960,
+    "duration": 8.0,
+    "audio_present": false,
+    "codec": "h264",
+    "source_hash_still_matches": true
+  },
+  {
+    "name": "club-dancefloor",
+    "source": "1779118953577385.mp4",
+    "source_start": 4,
+    "source_duration": 12,
+    "source_sha256": "8414b19fc667f7e212449b4651d54f247955e5f4cde777a7bd65092680691bed",
+    "export_bytes": 2373004,
+    "export_sha256": "26f050c70f0c8999584879bd9c0b8681991a7ee4fb02e59b57a028c7cf4e2cd6",
+    "width": 540,
+    "height": 960,
+    "duration": 12.0,
+    "audio_present": false,
+    "codec": "h264",
+    "source_hash_still_matches": true
+  },
+  {
+    "name": "club-together",
+    "source": "1cb9090f02814f4f8973a40471a4be3f.mov",
+    "source_start": 7,
+    "source_duration": 12,
+    "source_sha256": "38ba04f9ba2d10fc4234f3308ec1e7af2f2022980bf472684b0aa4d4a5f1d9a0",
+    "export_bytes": 2131874,
+    "export_sha256": "2580e8e32574ff8e10c5fc6e746774acb5ea105cdba52803616d8524a7446b82",
+    "width": 540,
+    "height": 960,
+    "duration": 12.0,
+    "audio_present": false,
+    "codec": "h264",
+    "source_hash_still_matches": true
+  },
+  {
+    "name": "club-mobile-long",
+    "source": "f628837973a04212803910a4e5780ad8.mov",
+    "source_start": 0,
+    "source_duration": 39.4,
+    "source_sha256": "c585eb2f8ff152bdded74651662b0e40f76294a60ac5afe68d1e7185f11ba9b1",
+    "export_bytes": 5728208,
+    "export_sha256": "09d7eb19b0ea9260a09dcb528dbd9821dbc88120738c5a7c62c1fe0372e36861",
+    "width": 432,
+    "height": 768,
+    "duration": 39.416667,
+    "audio_present": false,
+    "codec": "h264",
+    "source_hash_still_matches": true
+  }
+]

@@ -1,0 +1,49 @@
+/* H5: reference-proportioned brand and independently drawn circular audio-spectrum accent. */
+html[data-brand-header="h5"] body .brand.bw-brand-lockup{display:inline-flex;align-items:flex-end;justify-content:flex-start;gap:14px!important;min-width:0;flex-shrink:0;text-decoration:none;overflow:visible;line-height:1}
+html[data-brand-header="h5"] body .bw-brand-orbit{--bw-logo-w:74px;--bw-logo-h:62px;position:relative;display:grid;place-items:end center;flex:0 0 var(--bw-logo-w);width:var(--bw-logo-w)!important;height:var(--bw-logo-h)!important;isolation:isolate;overflow:visible;margin:0;padding:0}
+/* The bright plateau extends beneath the entire black mark; the halo fades OUTSIDE it. */
+html[data-brand-header="h5"] body .bw-brand-orbit::before{content:"";position:absolute;inset:-14px -11px!important;border-radius:50%;background:radial-gradient(ellipse at 50% 52%,#f7e4b4 0%,#eed293 39%,#dfbd7fdc 56%,#b68a3f73 69%,#af854329 80%,transparent 96%);z-index:-1;opacity:.98;animation:none!important;transition:opacity .45s,filter .45s;pointer-events:none}
+html[data-appearance="light"][data-brand-header="h5"] body .bw-brand-orbit::before{background:radial-gradient(ellipse at 50% 52%,#ecd5a0c9 0%,#e0c386a8 40%,#d3b27463 61%,#c6a46724 79%,transparent 96%);opacity:.86}
+html[data-brand-header="h5"] body .bw-brand-orbit>img{display:block;width:100%!important;height:100%!important;object-fit:contain;object-position:center bottom;margin:0!important;padding:0!important;border:0!important;background:transparent!important;border-radius:0!important;animation:none!important;transform:none;opacity:1;transition:transform .55s cubic-bezier(.2,.7,.2,1),opacity .45s;transform-origin:50% 65%}
+html[data-brand-header="h5"] body .bw-brand-gold{position:absolute;inset:0;z-index:2;opacity:0;pointer-events:none;background:linear-gradient(112deg,#9c6b20 2%,#e7b955 23%,#fff0b8 40%,#fffbea 47%,#d19a38 62%,#ffdc8b 82%,#a16b20 100%);background-size:230% 100%;mask:var(--bw-logo-mask) center bottom/contain no-repeat;-webkit-mask:var(--bw-logo-mask) center bottom/contain no-repeat;transform:none;transform-origin:50% 65%;transition:opacity .45s,transform .55s cubic-bezier(.2,.7,.2,1)}
+html[data-brand-header="h5"] body .bw-brand-lockup .brand-words{display:flex;flex-direction:column;align-items:flex-start;justify-content:flex-end;gap:2px;line-height:1;margin:0;padding:0 0 2px;white-space:nowrap;transform:none;letter-spacing:0;font-family:'Yeseva One',Georgia,serif}
+html[data-brand-header="h5"] body .bw-brand-lockup .brand-words>strong{display:block;font:400 29px/1.06 'Yeseva One',Georgia,serif;letter-spacing:.05px;color:var(--gold-text,var(--gold));margin:0;padding:0;transform:none}
+html[data-brand-header="h5"] body .bw-brand-lockup .brand-words>span{display:block;font:400 17px/1.12 'Yeseva One',Georgia,serif;letter-spacing:var(--bw-subtitle-spacing,1.9px);color:var(--ink);margin:0;padding:0;transform:none}
+html[data-brand-header="h5"] .brand:is(:hover,:focus-visible) .bw-brand-orbit>img{opacity:0;transform:scale(1.12)}
+html[data-brand-header="h5"] .brand:is(:hover,:focus-visible) .bw-brand-gold{opacity:1;transform:scale(1.12);animation:bw-h5-gold 2.6s ease-in-out infinite}
+html[data-brand-header="h5"] .brand:is(:hover,:focus-visible) .bw-brand-orbit::before{opacity:.36;filter:brightness(.8)}
+@keyframes bw-h5-gold{0%,100%{background-position:100% 50%}55%{background-position:0% 50%}}
+/* Locally centred spectrum. The reference GIF is not embedded or hot-linked. */
+html[data-brand-header="h5"] .bw-header-waves,html[data-brand-header="h5"] .nav-equalizer,html[data-brand-header="h5"] .bw-ripple-field{display:none!important}
+.bw-header-spectrum{isolation:isolate}.bw-header-spectrum>.header-row,.bw-header-spectrum>.mobile-nav{position:relative;z-index:2}
+.bw-spectrum-field{position:absolute;inset:0;z-index:0;overflow:hidden;pointer-events:none;contain:paint}
+.bw-spectrum-canvas{position:absolute;left:var(--bw-spectrum-x);top:var(--bw-spectrum-y);transform:translate(-50%,-50%);max-width:none!important;pointer-events:none;display:block}
+html[data-brand-header="h5"] body header .bw-night-target{position:relative;isolation:isolate;color:var(--gold-text,var(--gold))!important;font-weight:600;text-shadow:0 1px 4px var(--bg,var(--paper));text-decoration:none;animation:none!important}
+.bw-header-spectrum .bw-night-target::before{content:""!important;position:absolute;inset:5px -7px;z-index:-1;pointer-events:none;background:radial-gradient(ellipse,var(--bg,var(--paper)) 16%,transparent 74%);opacity:.9;border-radius:50%;animation:none!important}
+html[data-brand-header="h5"] body header .header-row{min-height:96px}
+@media(max-width:1190px){html[data-brand-header="h5"] body header .brand.bw-brand-lockup{gap:12px!important}html[data-brand-header="h5"] body header .bw-brand-orbit{--bw-logo-w:60px;--bw-logo-h:53px}html[data-brand-header="h5"] body header .bw-brand-lockup .brand-words>strong{font-size:25px}html[data-brand-header="h5"] body header .bw-brand-lockup .brand-words>span{font-size:14.5px;letter-spacing:var(--bw-subtitle-spacing,1.5px)}html[data-brand-header="h5"] .header .desktop-nav{gap:17px}}
+@media(max-width:760px){html[data-brand-header="h5"] body header .header-row{min-height:78px}html[data-brand-header="h5"] body header .brand.bw-brand-lockup{gap:8px!important}html[data-brand-header="h5"] body header .bw-brand-orbit{--bw-logo-w:41px;--bw-logo-h:36px}html[data-brand-header="h5"] body header .bw-brand-lockup .brand-words{gap:1px;padding-bottom:1px}html[data-brand-header="h5"] body header .bw-brand-lockup .brand-words>strong{font-size:19px;line-height:1.06}html[data-brand-header="h5"] body header .bw-brand-lockup .brand-words>span{font-size:10.5px;line-height:1.1;letter-spacing:var(--bw-subtitle-spacing,1.15px)}html[data-brand-header="h5"] body header .bw-brand-orbit::before{inset:-9px -7px!important}}
+@media(max-width:380px){html[data-brand-header="h5"] body header .brand.bw-brand-lockup{gap:6px!important}html[data-brand-header="h5"] body header .bw-brand-orbit{--bw-logo-w:33px;--bw-logo-h:30px}html[data-brand-header="h5"] body header .bw-brand-lockup .brand-words>strong{font-size:16.5px}html[data-brand-header="h5"] body header .bw-brand-lockup .brand-words>span{font-size:9.5px;letter-spacing:var(--bw-subtitle-spacing,.9px)}}
+html.motion-paused .bw-brand-gold{animation:none!important}html.bw-header-motion-off .bw-brand-gold{animation-play-state:paused!important}
+@media(prefers-reduced-motion:reduce){.bw-brand-gold,.bw-brand-orbit>img,.bw-brand-orbit::before{animation:none!important;transition:none!important}html[data-brand-header="h5"] .brand:is(:hover,:focus-visible) .bw-brand-orbit>img,html[data-brand-header="h5"] .brand:is(:hover,:focus-visible) .bw-brand-gold{transform:none!important;transition:none!important}}
+@supports not ((mask-image:url("assets/logo-original.png")) or (-webkit-mask-image:url("assets/logo-original.png"))){html[data-brand-header="h5"] .bw-brand-gold{display:none}html[data-brand-header="h5"] .brand:is(:hover,:focus-visible) .bw-brand-orbit>img{opacity:1;filter:drop-shadow(0 0 5px #dfbc73)}}
+@media print{.bw-spectrum-field,.bw-brand-gold{display:none!important}html[data-brand-header="h5"] .bw-brand-orbit>img{opacity:1!important;transform:none!important}}
+/* Feather the enlarged radiance, not the logo: no hard-edged badge, no blurred artwork. */
+html[data-brand-header="h5"] body .bw-brand-orbit::before{filter:blur(3.5px)}html[data-brand-header="h5"] .brand:is(:hover,:focus-visible) .bw-brand-orbit::before{filter:blur(3.5px) brightness(.8)}
+
+/* Latest approved brand refinements: raised mark; red/gold ring fully surrounds The Night. */
+html[data-brand-header="h5"] body .bw-brand-orbit{transform:translateY(-6px);transform-origin:center}
+html[data-brand-header="h5"] body .bw-brand-orbit::before{inset:-13px -12px!important}
+html[data-brand-header="h5"] body header .header-row{min-height:var(--bw-h5-header-height,112px)}
+html[data-brand-header="h5"] body header .desktop-nav .bw-night-target{display:inline-flex;align-items:center;justify-content:center;min-width:94px;padding:20px 16px;white-space:nowrap;line-height:1.5}
+html[data-brand-header="h5"] body header .bw-night-target,html[data-brand-header="h5"] body header .bw-night-target:hover,html[data-brand-header="h5"] body header .bw-night-target:focus-visible{text-decoration:none!important;border-bottom:none!important;box-shadow:none!important;background-image:none!important}
+html[data-brand-header="h5"] body header .bw-night-target::after{content:none!important;display:none!important;animation:none!important;transition:none!important;transform:none!important}
+html[data-brand-header="h5"] body header .bw-night-target::before{inset:14px 8px;background:radial-gradient(ellipse,var(--bg,var(--paper)) 28%,transparent 78%);opacity:.98}
+html[data-brand-header="h5"] body header .mobile-nav .bw-night-target{display:flex;align-items:center;justify-content:flex-start;min-height:126px;padding:36px 24px;overflow:visible}
+html[data-brand-header="h5"] body header .mobile-nav .bw-night-target::before{content:none!important}
+html[data-brand-header="h5"] .bw-spectrum-canvas{filter:none}
+@media(max-width:1190px){html[data-brand-header="h5"] body header .desktop-nav{gap:14px}html[data-brand-header="h5"] body header .desktop-nav .bw-night-target{padding-inline:12px;min-width:90px}}
+@media(max-width:1030px){html[data-brand-header="h5"] body header .header-row{min-height:88px}}
+@media(max-width:760px){html[data-brand-header="h5"] body header .header-row{min-height:80px}html[data-brand-header="h5"] body header .bw-brand-orbit{transform:translateY(-4px)}html[data-brand-header="h5"] body header .bw-brand-orbit::before{inset:-9px -8px!important}}
+@media(max-width:380px){html[data-brand-header="h5"] body header .bw-brand-orbit{transform:translateY(-3px)}}
+@media print{html[data-brand-header="h5"] body .bw-brand-orbit{transform:none}}

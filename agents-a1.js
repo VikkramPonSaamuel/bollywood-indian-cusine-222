@@ -1,0 +1,16 @@
+/* A1: translate website wrapper only; never inspect/reset the cross-origin form or capture answers. */
+(() => {
+'use strict'; if(window.BW_AGENT_PAGE_A1)return;
+const labels={
+en:{link:'Agent bookings',kicker:'TRAVEL PARTNERS · B2B',title:'Travel Agent Bookings',intro:'Exclusively for travel agents. Enter your group and booking details below for our Head Office team to review and confirm.',request:'Your booking request',language:'The booking form remains in its original language.',fallback:'Open the form separately',loading:'Loading the booking form…',note:'Submitting a request does not confirm a booking.',help:'Booking assistance'},
+hi:{link:'एजेंट बुकिंग',kicker:'ट्रैवल पार्टनर · B2B',title:'ट्रैवल एजेंट बुकिंग',intro:'केवल ट्रैवल एजेंटों के लिए। हमारे मुख्य कार्यालय की समीक्षा और पुष्टि के लिए नीचे समूह और बुकिंग की जानकारी भरें।',request:'आपका बुकिंग अनुरोध',language:'बुकिंग फ़ॉर्म अपनी मूल भाषा में रहता है।',fallback:'फ़ॉर्म अलग से खोलें',loading:'बुकिंग फ़ॉर्म लोड हो रहा है…',note:'अनुरोध भेजने से बुकिंग की पुष्टि नहीं होती।',help:'बुकिंग सहायता'},
+ta:{link:'முகவர் முன்பதிவு',kicker:'பயண முகவர்கள் · B2B',title:'பயண முகவர் முன்பதிவு',intro:'பயண முகவர்களுக்கு மட்டும். எங்கள் தலைமை அலுவலகம் பரிசீலித்து உறுதிசெய்ய, குழு மற்றும் முன்பதிவு விவரங்களை கீழே உள்ளிடவும்.',request:'உங்கள் முன்பதிவு கோரிக்கை',language:'முன்பதிவு படிவம் அதன் அசல் மொழியிலேயே இருக்கும்.',fallback:'படிவத்தை தனியாகத் திறக்கவும்',loading:'முன்பதிவு படிவம் ஏற்றப்படுகிறது…',note:'கோரிக்கையை அனுப்புவது முன்பதிவை உறுதிப்படுத்தாது.',help:'முன்பதிவு உதவி'},
+id:{link:'Pemesanan agen',kicker:'MITRA PERJALANAN · B2B',title:'Pemesanan Agen Perjalanan',intro:'Khusus agen perjalanan. Isi detail rombongan dan pemesanan di bawah untuk ditinjau dan dikonfirmasi oleh tim kantor pusat kami.',request:'Permintaan pemesanan Anda',language:'Formulir pemesanan tetap dalam bahasa aslinya.',fallback:'Buka formulir secara terpisah',loading:'Memuat formulir pemesanan…',note:'Mengirim permintaan bukan konfirmasi pemesanan.',help:'Bantuan pemesanan'},
+th:{link:'การจองสำหรับเอเจนต์',kicker:'พันธมิตรการท่องเที่ยว · B2B',title:'การจองสำหรับตัวแทนท่องเที่ยว',intro:'สำหรับตัวแทนท่องเที่ยวเท่านั้น กรอกข้อมูลกลุ่มและการจองด้านล่าง เพื่อให้ทีมสำนักงานใหญ่ตรวจสอบและยืนยัน',request:'คำขอจองของคุณ',language:'แบบฟอร์มการจองยังคงใช้ภาษาต้นฉบับ',fallback:'เปิดแบบฟอร์มแยกต่างหาก',loading:'กำลังโหลดแบบฟอร์มการจอง…',note:'การส่งคำขอไม่ใช่การยืนยันการจอง',help:'ความช่วยเหลือด้านการจอง'}
+};
+function render(){const t=labels[document.documentElement.lang]||labels.en;document.querySelectorAll('[data-agent-copy]').forEach(el=>{const value=t[el.dataset.agentCopy];if(value&&el.textContent!==value)el.textContent=value;});document.querySelectorAll('[data-agent-label]').forEach(el=>{if(el.textContent!==t.link)el.textContent=t.link;});}
+const frame=document.getElementById('agent-booking-form');
+if(frame){frame.addEventListener('load',()=>{const loading=document.querySelector('.agents-loading');if(loading)loading.hidden=true;});}
+document.addEventListener('bw:language',render);window.addEventListener('pageshow',render);render();
+window.BW_AGENT_PAGE_A1={version:'A1',embedded:!!frame,source:'Existing published Google Form',formModified:false,responseStorageChanged:false,submissionTested:false};
+})();

@@ -1,0 +1,8 @@
+{
+  "name": "bollywood-website-handover",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Static website developer handover; original Google Form booking",
+  "scripts": { "start": "node tools/serve.mjs" },
+  "engines": { "node": ">=20" }
+}
