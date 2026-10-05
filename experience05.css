@@ -36,3 +36,74 @@ h1,h2,h3,p,summary,.btn>span,.text-link{overflow-wrap:anywhere}.btn{max-width:10
 .external-arrow{display:inline-block;width:15px;height:15px;flex:0 0 15px;vertical-align:-2px;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
 .actions :is(.btn,.text-link),.delivery a,.group-box a{gap:8px}
 @media(max-width:760px){.footer-bottom{display:flex!important;flex-wrap:wrap;align-items:center;justify-content:flex-start;gap:0 18px!important}.footer-bottom>p{flex:0 0 100%;margin:0}.footer-bottom>a{display:inline-flex!important;min-height:40px;align-items:center;margin:0!important}.footer-bottom>a+a{margin-left:0!important}}
+
+/* Hanging Tandoori Chicken Leg Element */
+.hanging-chicken-wrapper {
+  position: absolute;
+  top: -30px;
+  right: 25px;
+  z-index: 25;
+  width: 210px;
+  pointer-events: none;
+  transform-origin: top center;
+  animation: gentleSwing 4.5s ease-in-out infinite alternate;
+  filter: drop-shadow(0 20px 30px rgba(0,0,0,0.95)) drop-shadow(0 0 25px rgba(223, 191, 124, 0.3));
+}
+.hanging-chicken-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  mix-blend-mode: screen;
+  transform: rotate(-2deg);
+}
+.chicken-steam {
+  position: absolute;
+  top: 15%;
+  left: 15%;
+  width: 70%;
+  height: 60%;
+  pointer-events: none;
+  opacity: 0.75;
+  z-index: 26;
+}
+.chicken-steam-svg path {
+  animation: chickenSteamRise 3.8s ease-in-out infinite;
+}
+.chicken-steam-svg path:nth-child(2) {
+  animation-delay: 1.2s;
+}
+.chicken-steam-svg path:nth-child(3) {
+  animation-delay: 2.3s;
+}
+@keyframes gentleSwing {
+  0% { transform: rotate(-3deg); }
+  50% { transform: rotate(2deg); }
+  100% { transform: rotate(-3deg); }
+}
+@keyframes chickenSteamRise {
+  0% { transform: translateY(12px) scaleY(0.85); opacity: 0.2; }
+  50% { opacity: 0.75; }
+  100% { transform: translateY(-24px) scaleY(1.2); opacity: 0; }
+}
+@media (max-width: 1200px) {
+  .hanging-chicken-wrapper {
+    width: 160px;
+    right: 15px;
+    top: -20px;
+  }
+}
+@media (max-width: 768px) {
+  .hanging-chicken-wrapper {
+    width: 115px;
+    right: 10px;
+    top: -15px;
+  }
+}
+@media (max-width: 480px) {
+  .hanging-chicken-wrapper {
+    width: 85px;
+    right: 5px;
+    top: -10px;
+  }
+}
+
