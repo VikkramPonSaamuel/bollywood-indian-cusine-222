@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html data-appearance="dark" lang="en" data-brand-header="h7">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width,initial-scale=1,viewport-fit=cover" name="viewport">
+  <meta content="noindex,nofollow" name="robots">
+  <meta content="#09090c" name="theme-color">
+  <title>Bollywood Indian Cuisine | Immersive Landing Experience</title>
+  <meta content="The Ultimate Taste of Indian Food. Discover our rich heritage, restaurants in Bali & Phuket, and the Night Club." name="description">
+  <link href="assets/logo-original.png" rel="icon">
+  <script src="preferences-init.js"></script>
+  <link href="experience05.css" rel="stylesheet">
+  <script defer src="translations.js"></script>
+  <script defer src="content-config.js"></script>
+  <link rel="stylesheet" href="integration-b1.css">
+  <link rel="stylesheet" href="home-batch01.css">
+  <link rel="stylesheet" href="header-h7.css?v=H7">
+  
+  <style>
+    /* Scroll Progress Bar */
+    #scroll-progress {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 3px;
+      background: linear-gradient(90deg, #dfbf7c, #ffffff, #dfbf7c);
+      width: 0%;
+      z-index: 9999;
+      transition: width 0.1s ease-out;
+      box-shadow: 0 0 10px rgba(223, 191, 124, 0.8);
+    }
+
+    /* Scroll Reveal Animations */
+    .scroll-reveal {
+      opacity: 0;
+      transform: translateY(40px);
+      transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+      will-change: opacity, transform;
+    }
+    .scroll-reveal.active {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .scroll-reveal-left {
+      opacity: 0;
+      transform: translateX(-50px);
+      transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .scroll-reveal-left.active {
+      opacity: 1;
+      transform: translateX(0);
+    }
+    .scroll-reveal-right {
+      opacity: 0;
+      transform: translateX(50px);
+      transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .scroll-reveal-right.active {
+      opacity: 1;
+      transform: translateX(0);
+    }
+    .scroll-scale {
+      opacity: 0;
+      transform: scale(0.92);
+      transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .scroll-scale.active {
+      opacity: 1;
+      transform: scale(1);
+    }
+
+    /* Stagger delays */
+    .delay-1 { transition-delay: 0.15s; }
+    .delay-2 { transition-delay: 0.3s; }
+    .delay-3 { transition-delay: 0.45s; }
+    .delay-4 { transition-delay: 0.6s; }
+
+    /* Custom Theme & Showcase Cards */
+    .theme-hero-banner {
+      position: relative;
+      padding: 120px 0 80px;
+      background: radial-gradient(circle at 50% 20%, rgba(223, 191, 124, 0.12), transparent 70%), var(--bg);
+      border-bottom: 1px solid var(--edge);
+      overflow: hidden;
+    }
+    .glass-card {
+      background: rgba(20, 18, 22, 0.75);
+      backdrop-filter: blur(12px);
+      border: 1px solid var(--edge);
+      border-radius: 12px;
+      padding: 36px;
+      box-shadow: var(--shadow);
+      transition: transform 0.35s ease, border-color 0.35s ease;
+    }
+    .glass-card:hover {
+      transform: translateY(-6px);
+      border-color: var(--gold);
+    }
+    
+    /* Timeline / Story Showcase */
+    .story-timeline {
+      position: relative;
+      margin: 40px 0;
+      padding-left: 28px;
+      border-left: 2px solid var(--edge);
+    }
+    .timeline-item {
+      position: relative;
+      margin-bottom: 36px;
+    }
+    .timeline-item::before {
+      content: '';
+      position: absolute;
+      left: -35px;
+      top: 6px;
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background: var(--gold);
+      box-shadow: 0 0 10px var(--gold);
+    }
+    .timeline-year {
+      font-family: var(--display);
+      font-size: 22px;
+      color: var(--gold-text);
+      margin-bottom: 6px;
+    }
+
+    /* Interactive Summary Badge Grid */
+    .summary-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 24px;
+      margin-top: 32px;
+    }
+    .summary-card {
+      background: var(--panel);
+      border: 1px solid var(--edge);
+      padding: 28px;
+      border-radius: 8px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    .summary-card-icon {
+      font-size: 28px;
+      color: var(--gold);
+    }
+    .summary-card h3 {
+      font-size: 22px;
+      color: var(--ink);
+    }
+    .summary-card p {
+      font-size: 13px;
+      color: var(--muted);
+      line-height: 1.7;
+    }
+
+    /* Floating Navigation Pill */
+    .floating-nav {
+      position: fixed;
+      bottom: 24px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 100;
+      background: rgba(15, 13, 18, 0.9);
+      backdrop-filter: blur(16px);
+      border: 1px solid var(--gold);
+      border-radius: 30px;
+      padding: 8px 20px;
+      display: flex;
+      gap: 18px;
+      box-shadow: 0 12px 35px rgba(0, 0, 0, 0.6);
+    }
+    .floating-nav a {
+      color: var(--ink);
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      text-decoration: none;
+      padding: 6px 12px;
+      border-radius: 20px;
+      transition: all 0.25s ease;
+    }
+    .floating-nav a:hover, .floating-nav a.active {
+      background: var(--button);
+      color: #18140e;
+    }
+  </style>
+</head>
+<body data-page="landing" id="top">
+  <!-- Scroll Progress Bar -->
+  <div id="scroll-progress"></div>
+
+  <!-- Header -->
+  <header class="site-header bw-shared-header" id="bw-site-header">
+    <div class="header-row wrap">
+      <a class="brand bw-brand-lockup" href="index.html">
+        <span class="bw-brand-orbit">
+          <img src="assets/logo-original.png" class="brand-logo" width="340" height="268" alt="Bollywood Logo">
+          <span class="bw-brand-gold" aria-hidden="true"></span>
+        </span>
+        <span class="brand-words" lang="en" translate="no">
+          <strong>Bollywood</strong>
+          <span>Indian Cuisine</span>
+        </span>
+      </a>
+      <nav class="desktop-nav">
+        <a href="#overview">Overview</a>
+        <a href="#about-story">Our Story</a>
+        <a href="#summary-hub">Summary</a>
+        <a href="#destinations">Destinations</a>
+        <a href="index.html">Classic Home</a>
+      </nav>
+      <div class="bw-h7-tools">
+        <a href="index.html#restaurants" class="btn gold" style="min-height:40px; padding:8px 16px; font-size:11px;">Book a Table</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION WITH SCROLL ANIMATION -->
+    <section class="theme-hero-banner" id="overview">
+      <div class="wrap">
+        <div class="hero-copy scroll-reveal">
+          <span class="eyebrow">BALI · PHUKET · CULINARY HERITAGE</span>
+          <h1 style="font-size: clamp(40px, 5.5vw, 76px); margin-bottom: 20px;">
+            Bollywood <span>Indian Cuisine</span>
+          </h1>
+          <p class="tagline" style="font-size: 22px; color: var(--gold-text); font-family: var(--display);">
+            The Ultimate Taste of Indian Food Across Bali & Phuket
+          </p>
+          <p class="intro" style="max-width: 600px; font-size: 15px; color: var(--muted); margin-bottom: 30px;">
+            An immersive dining journey rooted in traditional Indian recipes, fragrant spice blends, tandoori mastery, and tropical island hospitality.
+          </p>
+          <div class="actions">
+            <a href="#about-story" class="btn gold">
+              <span>Explore Our Story</span>
+              <span aria-hidden="true">↓</span>
+            </a>
+            <a href="#summary-hub" class="btn">
+              <span>View Executive Summary</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 1: DETAILED THEME ANALYSIS -->
+    <section class="section section-tone" id="theme-analysis">
+      <div class="wrap">
+        <div class="section-heading scroll-reveal">
+          <div>
+            <span class="eyebrow">BRAND ARCHITECTURE & DESIGN SYSTEM</span>
+            <h2>Website Theme & Aesthetic Analysis</h2>
+          </div>
+          <p>A breakdown of the visual identity, dark luxury palette, typography, and experience design of Bollywood Indian Cuisine.</p>
+        </div>
+
+        <div class="summary-grid">
+          <div class="glass-card scroll-reveal delay-1">
+            <div class="summary-card-icon">🎨</div>
+            <h3>Dark Luxury Palette</h3>
+            <p>Built upon a rich obsidian backdrop (<code>#09090c</code>) punctuated by warm metallic gold accents (<code>#dfbf7c</code>), ivory typography (<code>#f3eee4</code>), and subtle glassmorphic panels. The mood radiates high-end dining warmth.</p>
+          </div>
+
+          <div class="glass-card scroll-reveal delay-2">
+            <div class="summary-card-icon">📜</div>
+            <h3>Heritage Typography</h3>
+            <p>Pairs classic high-contrast serif headlines for opulent Indian heritage with clean, highly readable modern sans-serif body text (Inter). Supports multi-language rendering in English, Hindi, Tamil, Indonesian, and Thai.</p>
+          </div>
+
+          <div class="glass-card scroll-reveal delay-3">
+            <div class="summary-card-icon">🌴</div>
+            <h3>Tropical Island Synergy</h3>
+            <p>Seamlessly merges traditional Indian motifs with serene island courtyard settings in Ubud, Seminyak, Nusa Penida, and Phuket Old Town—creating an effortless balance between comfort food and destination dining.</p>
+          </div>
+
+          <div class="glass-card scroll-reveal delay-4">
+            <div class="summary-card-icon">💃</div>
+            <h3>Nightlife Integration</h3>
+            <p>Features an exclusive upstairs transition to <em>Bollywood Indian Club Bali</em> in Seminyak, bringing together authentic North & South Indian dining with vibrant DJ music and night entertainment.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 2: ABOUT OUR STORY (HERITAGE & JOURNEY) -->
+    <section class="section" id="about-story">
+      <div class="wrap">
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center;">
+          <div class="scroll-reveal-left">
+            <span class="eyebrow">OUR HOSPITALITY JOURNEY</span>
+            <h2 style="margin-bottom: 24px;">Indian at heart. Across generations.</h2>
+            <p style="color: var(--muted); line-height: 1.8; margin-bottom: 24px;">
+              Our culinary journey began with a passion for authentic Indian hospitality. From spice-laden family kitchens in Madras to creating signature dining destinations across Southeast Asia, every dish represents generations of refined recipes.
+            </p>
+
+            <div class="story-timeline">
+              <div class="timeline-item">
+                <div class="timeline-year">1968 — Roots in Madras</div>
+                <p style="color: var(--muted); font-size: 13px;">The family legacy takes root with foundational spice blends, tandoori techniques, and traditional South Indian recipes.</p>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-year">Expansion to Bali</div>
+                <p style="color: var(--muted); font-size: 13px;">Launching landmark destinations in Ubud, Seminyak, and Nusa Penida to offer visitors an authentic taste of home in Indonesia.</p>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-year">Phuket & The Night</div>
+                <p style="color: var(--muted); font-size: 13px;">Expanding into historic Phuket Old Town, Thailand, alongside introducing the premier <em>Bollywood Indian Club Bali</em>.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="scroll-reveal-right">
+            <div style="position: relative; border-radius: 16px; overflow: hidden; border: 1px solid var(--gold); box-shadow: var(--shadow);">
+              <img src="assets/replacements/courtyard5.webp" alt="Phuket Courtyard" style="width: 100%; height: 500px; object-fit: cover;">
+              <div style="position: absolute; bottom: 0; left: 0; right: 0; padding: 24px; background: linear-gradient(0deg, rgba(9,9,12,0.95), transparent);">
+                <span class="eyebrow" style="margin: 0;">THE COURTYARD EXPERIENCE</span>
+                <p style="color: var(--gold-text); font-family: var(--display); font-size: 18px; margin-top: 4px;">A serene, candlelit courtyard dining setting in Phuket Old Town.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: EXECUTIVE SUMMARY HUB -->
+    <section class="section section-tone" id="summary-hub">
+      <div class="wrap">
+        <div class="section-heading scroll-reveal">
+          <div>
+            <span class="eyebrow">EXECUTIVE SUMMARY</span>
+            <h2>Locations, Offerings & Experience at a Glance</h2>
+          </div>
+          <p>A quick summary of our restaurants, dining categories, nightlife hub, and key operational highlights.</p>
+        </div>
+
+        <div class="summary-grid">
+          <!-- Ubud -->
+          <div class="summary-card scroll-scale delay-1">
+            <span class="eyebrow" style="margin:0;">BALI · INDONESIA</span>
+            <h3>Ubud Restaurant</h3>
+            <p>Balinese courtyard dining with candlelit evenings, live music, and air-conditioned first-floor dining. Open 08:00 – 00:00.</p>
+            <a href="ubud.html" class="text-link" style="margin-top:auto;">Explore Ubud →</a>
+          </div>
+
+          <!-- Seminyak -->
+          <div class="summary-card scroll-scale delay-2">
+            <span class="eyebrow" style="margin:0;">BALI · INDONESIA</span>
+            <h3>Seminyak Restaurant</h3>
+            <p>Outdoor and indoor dining featuring full Indian menus, with the high-energy <em>Bollywood Indian Club</em> upstairs. Open 12:00 – 03:00.</p>
+            <a href="seminyak.html" class="text-link" style="margin-top:auto;">Explore Seminyak →</a>
+          </div>
+
+          <!-- Nusa Penida -->
+          <div class="summary-card scroll-scale delay-3">
+            <span class="eyebrow" style="margin:0;">BALI · INDONESIA</span>
+            <h3>Nusa Penida</h3>
+            <p>Located in Kutampi Kaler, offering crisp dosas, tandoori specials, and outdoor seating near the island coast. Open 10:00 – 22:00.</p>
+            <a href="nusapenida.html" class="text-link" style="margin-top:auto;">Explore Nusa Penida →</a>
+          </div>
+
+          <!-- Phuket -->
+          <div class="summary-card scroll-scale delay-4">
+            <span class="eyebrow" style="margin:0;">PHUKET · THAILAND</span>
+            <h3>Phuket Old Town</h3>
+            <p>Set on historic Dibuk Road, combining warm heritage shophouse interiors with a lush green courtyard. Open 11:00 – 22:00.</p>
+            <a href="thailand.html" class="text-link" style="margin-top:auto;">Explore Phuket →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 4: DESTINATIONS & MENU HIGHLIGHTS -->
+    <section class="section" id="destinations">
+      <div class="wrap">
+        <div class="section-heading scroll-reveal">
+          <div>
+            <span class="eyebrow">FROM OUR KITCHEN, WITH SOUL</span>
+            <h2>Curated Culinary Collections</h2>
+          </div>
+          <p>Every location serves masterfully prepared Indian classics alongside chef specials and desserts.</p>
+        </div>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 20px;">
+          <div class="glass-card scroll-reveal delay-1" style="text-align: center;">
+            <img src="assets/food-library/s-53.webp" alt="Curries" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px; margin-bottom: 16px;">
+            <h3>Curries & Comfort</h3>
+            <p style="font-size: 13px; color: var(--muted); margin-top: 8px;">Rich butter chicken, lamb rogan josh, paneer tikka masala, and garlic naan.</p>
+          </div>
+
+          <div class="glass-card scroll-reveal delay-2" style="text-align: center;">
+            <img src="assets/food-library/s-26-1.webp" alt="Tandoor" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px; margin-bottom: 16px;">
+            <h3>From the Tandoor</h3>
+            <p style="font-size: 13px; color: var(--muted); margin-top: 8px;">Hot charcoal-grilled tandoori chicken, kebabs, and authentic mint chutneys.</p>
+          </div>
+
+          <div class="glass-card scroll-reveal delay-3" style="text-align: center;">
+            <img src="assets/food-library/g-1-1.webp" alt="South Indian" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px; margin-bottom: 16px;">
+            <h3>South Indian Favourites</h3>
+            <p style="font-size: 13px; color: var(--muted); margin-top: 8px;">Golden crisp masala dosas, idli, vada, sambar, and coconut chutney.</p>
+          </div>
+
+          <div class="glass-card scroll-reveal delay-4" style="text-align: center;">
+            <img src="assets/food-library/s-82-1.webp" alt="Biryani" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px; margin-bottom: 16px;">
+            <h3>Rice & Biryani</h3>
+            <p style="font-size: 13px; color: var(--muted); margin-top: 8px;">Fragrant dum biryani infused with saffron, aromatic spices, and raita.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FLOATING SCROLL NAVIGATION PILL -->
+  <nav class="floating-nav" id="floating-nav">
+    <a href="#overview" class="active">Overview</a>
+    <a href="#theme-analysis">Theme</a>
+    <a href="#about-story">About</a>
+    <a href="#summary-hub">Summary</a>
+    <a href="#destinations">Menu</a>
+  </nav>
+
+  <!-- FOOTER -->
+  <footer class="footer" style="background: var(--panel); border-top: 1px solid var(--edge); padding: 40px 0;">
+    <div class="wrap" style="text-align: center;">
+      <p style="color: var(--gold-text); font-family: var(--display); font-size: 18px;">Bollywood Indian Cuisine</p>
+      <p style="color: var(--muted); font-size: 12px; margin-top: 8px;">The Ultimate Taste of Indian Food · Bali & Phuket</p>
+      <div style="margin-top: 20px;">
+        <a href="index.html" class="btn gold" style="min-height: 40px; padding: 8px 20px; font-size: 12px;">Return to Main Website</a>
+      </div>
+      <p style="font-size: 11px; color: var(--muted); margin-top: 24px;">© 2026 Bollywood Indian Cuisine. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- SCROLL ANIMATION SCRIPT -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // 1. Scroll Progress Bar
+      window.addEventListener('scroll', function() {
+        const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+        const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        const scrolled = (winScroll / height) * 100;
+        document.getElementById('scroll-progress').style.width = scrolled + '%';
+      });
+
+      // 2. Intersection Observer for Scroll Animations
+      const observerOptions = {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.15
+      };
+
+      const animateOnScroll = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('active');
+          }
+        });
+      }, observerOptions);
+
+      const targets = document.querySelectorAll('.scroll-reveal, .scroll-reveal-left, .scroll-reveal-right, .scroll-scale');
+      targets.forEach(target => animateOnScroll.observe(target));
+
+      // 3. Highlight Floating Nav on Scroll
+      const sections = document.querySelectorAll('section');
+      const navLinks = document.querySelectorAll('.floating-nav a');
+
+      window.addEventListener('scroll', () => {
+        let current = '';
+        sections.forEach(section => {
+          const sectionTop = section.offsetTop;
+          const sectionHeight = section.clientHeight;
+          if (pageYOffset >= (sectionTop - sectionHeight / 3)) {
+            current = section.getAttribute('id');
+          }
+        });
+
+        navLinks.forEach(link => {
+          link.classList.remove('active');
+          if (link.getAttribute('href') === '#' + current) {
+            link.classList.add('active');
+          }
+        });
+      });
+    });
+  </script>
+</body>
+</html>
