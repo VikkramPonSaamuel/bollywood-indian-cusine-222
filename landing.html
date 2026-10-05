@@ -17,13 +17,27 @@
       height: 100%;
       margin: 0;
       padding: 0;
-      overflow-x: hidden;
-      background: radial-gradient(circle at 50% 30%, rgba(223, 191, 124, 0.12), transparent 70%), #09090c;
+      overflow: hidden;
+      background: #09090c;
       color: #f3eee4;
       font-family: Inter, Arial, sans-serif;
     }
 
+    /* AeroShards Canvas Container */
+    #aero-shards-canvas {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      z-index: 0;
+      pointer-events: none;
+      background: radial-gradient(circle at 50% 35%, rgba(168, 85, 247, 0.15), rgba(223, 191, 124, 0.1) 40%, #09090c 80%);
+    }
+
     .single-page-wrapper {
+      position: relative;
+      z-index: 1;
       min-height: 100vh;
       display: flex;
       flex-direction: column;
@@ -42,16 +56,20 @@
     }
 
     .entry-card {
-      background: rgba(20, 18, 22, 0.85);
-      backdrop-filter: blur(16px);
-      border: 1px solid rgba(121, 98, 61, 0.4);
+      background: rgba(20, 18, 22, 0.82);
+      backdrop-filter: blur(20px);
+      border: 1px solid rgba(223, 191, 124, 0.4);
       border-radius: 16px;
       padding: 48px 36px;
       max-width: 640px;
       width: 100%;
-      box-shadow: 0 24px 65px rgba(0, 0, 0, 0.6);
+      box-shadow: 0 30px 80px rgba(0, 0, 0, 0.85), inset 0 0 30px rgba(223, 191, 124, 0.05);
       box-sizing: border-box;
       margin: auto 0;
+      transition: border-color 0.3s ease;
+    }
+    .entry-card:hover {
+      border-color: rgba(223, 191, 124, 0.7);
     }
 
     .entry-card h1 {
@@ -106,11 +124,11 @@
       letter-spacing: 1px;
       text-transform: uppercase;
       color: #18140e;
-      background: #dfbd78;
+      background: linear-gradient(135deg, #dfbd78, #e9c988);
       border: 1px solid #dfbd78;
       border-radius: 4px;
       text-decoration: none;
-      box-shadow: 0 8px 25px rgba(223, 189, 120, 0.25);
+      box-shadow: 0 8px 30px rgba(223, 189, 120, 0.3);
       transition: transform 0.25s ease, background 0.25s ease, box-shadow 0.25s ease;
       width: 100%;
       box-sizing: border-box;
@@ -118,32 +136,8 @@
 
     .btn-main-entry:hover {
       transform: translateY(-2px);
-      background: #e9c988;
-      box-shadow: 0 12px 30px rgba(223, 189, 120, 0.4);
-    }
-
-    .quick-links {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 12px;
-      margin-top: 24px;
-    }
-
-    .quick-link-btn {
-      color: #b8afa4;
-      font-size: 12px;
-      text-decoration: none;
-      padding: 6px 12px;
-      border: 1px solid rgba(121, 98, 61, 0.3);
-      border-radius: 4px;
-      transition: all 0.2s ease;
-    }
-
-    .quick-link-btn:hover {
-      color: #f3eee4;
-      border-color: #dfbf7c;
-      background: rgba(223, 191, 124, 0.1);
+      background: linear-gradient(135deg, #e9c988, #f4d494);
+      box-shadow: 0 12px 35px rgba(223, 189, 120, 0.45);
     }
 
     .single-footer {
@@ -163,6 +157,9 @@
   </style>
 </head>
 <body data-page="landing">
+  <!-- AeroShards Background Canvas -->
+  <canvas id="aero-shards-canvas"></canvas>
+
   <div class="single-page-wrapper">
     <!-- Header Logo -->
     <div class="header-branding">
@@ -206,5 +203,203 @@
       <p>© 2026 Bollywood Indian Cuisine. All rights reserved.</p>
     </div>
   </div>
+
+  <!-- AERO SHARDS BACKGROUND CANVAS ENGINE -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const canvas = document.getElementById('aero-shards-canvas');
+      if (!canvas) return;
+      const ctx = canvas.getContext('2d');
+
+      let width = 0;
+      let height = 0;
+      let dpr = window.devicePixelRatio || 1;
+
+      // Mouse pointer state
+      const mouse = { x: -1000, y: -1000, targetX: -1000, targetY: -1000, isDown: false, holdGather: 0 };
+      const ripples = [];
+
+      // Shard Colors Palette: Warm Pearl Gold & Deep Purple Accents
+      const SHARD_COLORS = [
+        { r: 223, g: 191, b: 124, a: 0.75 }, // Gold
+        { r: 168, g: 85,  b: 247, a: 0.65 }, // Purple Accent
+        { r: 244, g: 239, b: 230, a: 0.8 },  // Pearl White
+        { r: 184, g: 140, b: 220, a: 0.6 }   // Soft Violet
+      ];
+
+      // Generate Shard Field (Detail: Balanced, Density: 1.5)
+      const SHARD_COUNT = 90;
+      const shards = [];
+
+      function createShard() {
+        return {
+          x: Math.random() * width,
+          y: Math.random() * height,
+          z: Math.random() * 0.8 + 0.2, // Depth scaling
+          vx: (Math.random() - 0.5) * 0.6,
+          vy: Math.random() * 0.4 + 0.3, // Stream flow speed
+          size: (Math.random() * 18 + 12) * 1.1,
+          angle: Math.random() * Math.PI * 2,
+          vSpin: (Math.random() - 0.5) * 0.02,
+          color: SHARD_COLORS[Math.floor(Math.random() * SHARD_COLORS.length)],
+          aspect: Math.random() * 0.6 + 0.7
+        };
+      }
+
+      function resize() {
+        width = window.innerWidth;
+        height = window.innerHeight;
+        dpr = window.devicePixelRatio || 1;
+        canvas.width = width * dpr;
+        canvas.height = height * dpr;
+        ctx.scale(dpr, dpr);
+
+        if (shards.length === 0) {
+          for (let i = 0; i < SHARD_COUNT; i++) {
+            shards.push(createShard());
+          }
+        }
+      }
+
+      window.addEventListener('resize', resize);
+      resize();
+
+      // Track mouse motion for repulsion & gather interaction
+      window.addEventListener('mousemove', (e) => {
+        mouse.targetX = e.clientX;
+        mouse.targetY = e.clientY;
+      });
+
+      window.addEventListener('mousedown', (e) => {
+        mouse.isDown = true;
+        ripples.push({
+          x: e.clientX,
+          y: e.clientY,
+          radius: 0,
+          maxRadius: 220,
+          opacity: 0.8
+        });
+      });
+
+      window.addEventListener('mouseup', () => {
+        mouse.isDown = false;
+      });
+
+      // Render Loop
+      function render() {
+        // Damped smooth mouse interpolation
+        mouse.x += (mouse.targetX - mouse.x) * 0.1;
+        mouse.y += (mouse.targetY - mouse.y) * 0.1;
+
+        if (mouse.isDown) {
+          mouse.holdGather = Math.min(1, mouse.holdGather + 0.05);
+        } else {
+          mouse.holdGather = Math.max(0, mouse.holdGather - 0.04);
+        }
+
+        // Clear canvas with subtle radial backdrop blending
+        ctx.clearRect(0, 0, width, height);
+
+        // Render Click Ripples
+        for (let i = ripples.length - 1; i >= 0; i--) {
+          const r = ripples[i];
+          r.radius += 5.5;
+          r.opacity *= 0.95;
+
+          ctx.save();
+          ctx.beginPath();
+          ctx.arc(r.x, r.y, r.radius, 0, Math.PI * 2);
+          ctx.strokeStyle = `rgba(168, 85, 247, ${r.opacity})`;
+          ctx.lineWidth = 2;
+          ctx.shadowColor = '#dfbf7c';
+          ctx.shadowBlur = 15;
+          ctx.stroke();
+          ctx.restore();
+
+          if (r.opacity < 0.02 || r.radius > r.maxRadius) {
+            ripples.splice(i, 1);
+          }
+        }
+
+        // Update and Render Shards
+        for (let i = 0; i < shards.length; i++) {
+          const s = shards[i];
+
+          // Stream Flow motion
+          s.y += s.vy * s.z * 1.2;
+          s.x += Math.sin(s.y * 0.005 + s.z) * 0.4;
+          s.angle += s.vSpin;
+
+          // Wrap stream around canvas edges
+          if (s.y > height + 40) {
+            s.y = -40;
+            s.x = Math.random() * width;
+          }
+          if (s.x < -40) s.x = width + 40;
+          if (s.x > width + 40) s.x = -40;
+
+          // Mouse Repel / Gather Interaction
+          const dx = s.x - mouse.x;
+          const dy = s.y - mouse.y;
+          const dist = Math.sqrt(dx * dx + dy * dy);
+          const maxDist = 200;
+
+          if (dist < maxDist && dist > 0) {
+            if (mouse.holdGather > 0.1) {
+              // Hold to gather
+              const pull = (1 - dist / maxDist) * 3 * mouse.holdGather;
+              s.x -= (dx / dist) * pull;
+              s.y -= (dy / dist) * pull;
+            } else {
+              // Cursor Repel
+              const push = (1 - dist / maxDist) * 4 * 0.5; // interactionStrength
+              s.x += (dx / dist) * push;
+              s.y += (dy / dist) * push;
+            }
+          }
+
+          // Draw Shard 3D/2D Faceted Diamond Polygon
+          ctx.save();
+          ctx.translate(s.x, s.y);
+          ctx.rotate(s.angle);
+          ctx.scale(s.z, s.z);
+
+          const w = s.size * s.aspect;
+          const h = s.size * 1.4;
+
+          // Shard Polygon Path
+          ctx.beginPath();
+          ctx.moveTo(0, -h / 2);
+          ctx.lineTo(w / 2, 0);
+          ctx.lineTo(0, h / 2);
+          ctx.lineTo(-w / 2, 0);
+          ctx.closePath();
+
+          // Gradient Surface Finish (Pearl / Chrome Glow)
+          const grad = ctx.createLinearGradient(-w / 2, -h / 2, w / 2, h / 2);
+          const c = s.color;
+          grad.addColorStop(0, `rgba(${c.r}, ${c.g}, ${c.b}, ${c.a})`);
+          grad.addColorStop(0.5, `rgba(${Math.min(255, c.r + 40)}, ${Math.min(255, c.g + 40)}, ${Math.min(255, c.b + 40)}, ${c.a * 0.9})`);
+          grad.addColorStop(1, `rgba(20, 18, 22, ${c.a * 0.4})`);
+
+          ctx.fillStyle = grad;
+          ctx.shadowColor = `rgba(${c.r}, ${c.g}, ${c.b}, 0.5)`;
+          ctx.shadowBlur = 12 * s.z;
+          ctx.fill();
+
+          // Edge Highlight Specular Line
+          ctx.strokeStyle = `rgba(255, 255, 255, ${0.4 * s.z})`;
+          ctx.lineWidth = 0.8;
+          ctx.stroke();
+
+          ctx.restore();
+        }
+
+        requestAnimationFrame(render);
+      }
+
+      requestAnimationFrame(render);
+    });
+  </script>
 </body>
 </html>
