@@ -98,65 +98,6 @@
     }
 
     /* -------------------------------------------------------------
-       HANGING TANDOORI CHICKEN LEG (TOP-RIGHT CORNER HERO)
-       ------------------------------------------------------------- */
-    .hanging-chicken-wrapper {
-      position: absolute;
-      top: -30px; /* Extends slightly beyond the top edge */
-      right: 25px; /* Top-right corner placement */
-      z-index: 25; /* Sits above background, below fixed overlays */
-      width: 210px; /* ~18% of hero width */
-      pointer-events: none;
-      transform-origin: top center;
-      animation: gentleSwing 4.5s ease-in-out infinite alternate;
-      filter: drop-shadow(0 20px 30px rgba(0,0,0,0.95)) drop-shadow(0 0 25px rgba(223, 191, 124, 0.3));
-    }
-
-    .hanging-chicken-img {
-      width: 100%;
-      height: auto;
-      display: block;
-      mix-blend-mode: screen; /* Blends black background seamlessly */
-      transform: rotate(-2deg);
-    }
-
-    /* Subtle steam animation above the chicken */
-    .chicken-steam {
-      position: absolute;
-      top: 15%;
-      left: 15%;
-      width: 70%;
-      height: 60%;
-      pointer-events: none;
-      opacity: 0.75;
-      z-index: 26;
-    }
-
-    .chicken-steam-svg path {
-      animation: chickenSteamRise 3.8s ease-in-out infinite;
-    }
-
-    .chicken-steam-svg path:nth-child(2) {
-      animation-delay: 1.2s;
-    }
-
-    .chicken-steam-svg path:nth-child(3) {
-      animation-delay: 2.3s;
-    }
-
-    @keyframes gentleSwing {
-      0% { transform: rotate(-3deg); }
-      50% { transform: rotate(2deg); }
-      100% { transform: rotate(-3deg); }
-    }
-
-    @keyframes chickenSteamRise {
-      0% { transform: translateY(12px) scaleY(0.85); opacity: 0.2; }
-      50% { opacity: 0.75; }
-      100% { transform: translateY(-24px) scaleY(1.2); opacity: 0; }
-    }
-
-    /* -------------------------------------------------------------
        HERO DOODLE ANIMATION ARTWORK (INDIAN CULINARY & HERITAGE)
        ------------------------------------------------------------- */
     .hero-doodle-container {
@@ -353,14 +294,6 @@
     /* -------------------------------------------------------------
        TABLET & MOBILE RESPONSIVE OPTIMIZATIONS
        ------------------------------------------------------------- */
-    @media (max-width: 1200px) {
-      .hanging-chicken-wrapper {
-        width: 160px;
-        right: 15px;
-        top: -20px;
-      }
-    }
-
     @media (max-width: 990px) {
       .hero-grid-container {
         grid-template-columns: 1fr;
@@ -368,6 +301,7 @@
       }
       .hero-doodle-container {
         min-height: 300px;
+        order: -1; /* Shows artwork above hero copy on tablet/mobile if desired or below */
       }
     }
 
@@ -402,11 +336,6 @@
     @media (max-width: 768px) {
       body {
         padding-bottom: 90px;
-      }
-      .hanging-chicken-wrapper {
-        width: 115px;
-        right: 10px;
-        top: -15px;
       }
       .floating-nav {
         bottom: 12px;
@@ -458,11 +387,6 @@
     }
 
     @media (max-width: 480px) {
-      .hanging-chicken-wrapper {
-        width: 85px;
-        right: 5px;
-        top: -10px;
-      }
       .wrap {
         width: calc(100% - 24px) !important;
       }
@@ -516,22 +440,8 @@
   </header>
 
   <main>
-    <!-- HERO SECTION WITH SCROLL ANIMATION & REVOLVING DOODLE ARTWORK & HANGING GRILLED CHICKEN -->
+    <!-- HERO SECTION WITH SCROLL ANIMATION & REVOLVING DOODLE ARTWORK -->
     <section class="theme-hero-banner" id="overview">
-      <!-- HANGING TANDOORI GRILLED CHICKEN LEG (TOP-RIGHT CORNER) -->
-      <div class="hanging-chicken-wrapper">
-        <!-- Subtle rising steam/smoke animation -->
-        <div class="chicken-steam">
-          <svg viewBox="0 0 100 120" class="chicken-steam-svg">
-            <path d="M30 100 Q45 70 35 40 Q25 15 40 0" fill="none" stroke="rgba(255, 235, 200, 0.45)" stroke-width="2.5" stroke-linecap="round" />
-            <path d="M55 110 Q70 80 60 50 Q50 20 65 0" fill="none" stroke="rgba(255, 220, 180, 0.38)" stroke-width="2" stroke-linecap="round" />
-            <path d="M75 105 Q85 75 75 45 Q65 15 80 0" fill="none" stroke="rgba(255, 235, 200, 0.3)" stroke-width="2" stroke-linecap="round" />
-          </svg>
-        </div>
-        <!-- Photorealistic Tandoori Chicken Leg Asset -->
-        <img src="assets/tandoori-chicken-hanging.jpg" alt="Hanging Tandoori Grilled Chicken Leg" class="hanging-chicken-img">
-      </div>
-
       <div class="wrap hero-grid-container">
         <!-- HERO COPY -->
         <div class="hero-copy scroll-reveal">
