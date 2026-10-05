@@ -5,756 +5,215 @@
   <meta content="width=device-width,initial-scale=1,viewport-fit=cover" name="viewport">
   <meta content="noindex,nofollow" name="robots">
   <meta content="#09090c" name="theme-color">
-  <title>Bollywood Indian Cuisine | Mobile-Optimized Landing Experience</title>
-  <meta content="The Ultimate Taste of Indian Food. Discover our rich heritage, restaurants in Bali & Phuket, and the Night Club." name="description">
+  <title>Bollywood Indian Cuisine | Welcome</title>
+  <meta content="The Ultimate Taste of Indian Food across Bali & Phuket." name="description">
   <link href="assets/logo-original.png" rel="icon">
   <script src="preferences-init.js"></script>
   <link href="experience05.css" rel="stylesheet">
-  <script defer src="translations.js"></script>
-  <script defer src="content-config.js"></script>
-  <link rel="stylesheet" href="integration-b1.css">
-  <link rel="stylesheet" href="home-batch01.css">
   <link rel="stylesheet" href="header-h7.css?v=H7">
   
   <style>
-    body {
-      padding-bottom: 80px; /* Ensures floating nav never covers content */
-    }
-
-    /* Scroll Progress Bar */
-    #scroll-progress {
-      position: fixed;
-      top: 0;
-      left: 0;
-      height: 3px;
-      background: linear-gradient(90deg, #dfbf7c, #ffffff, #dfbf7c);
-      width: 0%;
-      z-index: 9999;
-      transition: width 0.1s ease-out;
-      box-shadow: 0 0 10px rgba(223, 191, 124, 0.8);
-    }
-
-    /* Scroll Reveal Animations */
-    .scroll-reveal {
-      opacity: 0;
-      transform: translateY(30px);
-      transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1), transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
-      will-change: opacity, transform;
-    }
-    .scroll-reveal.active {
-      opacity: 1;
-      transform: translateY(0);
-    }
-    .scroll-reveal-left {
-      opacity: 0;
-      transform: translateX(-30px);
-      transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1), transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
-    }
-    .scroll-reveal-left.active {
-      opacity: 1;
-      transform: translateX(0);
-    }
-    .scroll-reveal-right {
-      opacity: 0;
-      transform: translateX(30px);
-      transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1), transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
-    }
-    .scroll-reveal-right.active {
-      opacity: 1;
-      transform: translateX(0);
-    }
-    .scroll-scale {
-      opacity: 0;
-      transform: scale(0.94);
-      transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1), transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
-    }
-    .scroll-scale.active {
-      opacity: 1;
-      transform: scale(1);
-    }
-
-    /* Stagger delays for larger screens */
-    @media (min-width: 769px) {
-      .delay-1 { transition-delay: 0.12s; }
-      .delay-2 { transition-delay: 0.24s; }
-      .delay-3 { transition-delay: 0.36s; }
-      .delay-4 { transition-delay: 0.48s; }
-    }
-
-    /* Custom Theme & Showcase Cards */
-    .theme-hero-banner {
-      position: relative;
-      padding: 90px 0 60px;
-      background: radial-gradient(circle at 65% 30%, rgba(223, 191, 124, 0.15), transparent 65%), var(--bg);
-      border-bottom: 1px solid var(--edge);
-      overflow: hidden;
-    }
-
-    .hero-grid-container {
-      display: grid;
-      grid-template-columns: 1.15fr 0.85fr;
-      align-items: center;
-      gap: 40px;
-    }
-
-    /* -------------------------------------------------------------
-       HERO DOODLE ANIMATION ARTWORK (INDIAN CULINARY & HERITAGE)
-       ------------------------------------------------------------- */
-    .hero-doodle-container {
-      position: relative;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      min-height: 380px;
-    }
-    .doodle-stage {
-      position: relative;
-      width: 340px;
-      height: 340px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-    .doodle-mandala-orbit {
-      position: absolute;
-      inset: 0;
-      animation: rotateMandala 35s linear infinite;
-      pointer-events: none;
-    }
-    .doodle-mandala-svg {
-      width: 100%;
+    html, body {
       height: 100%;
-      filter: drop-shadow(0 0 12px rgba(223, 191, 124, 0.25));
-    }
-    .doodle-center-art {
-      position: relative;
-      z-index: 2;
-      width: 180px;
-      height: 180px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background: radial-gradient(circle, rgba(30, 27, 32, 0.9) 0%, rgba(9, 9, 12, 0.7) 100%);
-      border: 1px solid rgba(223, 191, 124, 0.4);
-      border-radius: 50%;
-      box-shadow: 0 0 35px rgba(223, 191, 124, 0.2), inset 0 0 20px rgba(0,0,0,0.8);
-    }
-    .doodle-culinary-icon {
-      width: 140px;
-      height: 140px;
-    }
-    .steam-wave {
-      animation: steamRise 3s ease-in-out infinite alternate;
-    }
-    .steam-2 { animation-delay: 0.6s; }
-    .steam-3 { animation-delay: 1.2s; }
-
-    /* Floating Orbiting Badges */
-    .orbiting-badge {
-      position: absolute;
-      z-index: 3;
-      background: rgba(20, 18, 22, 0.85);
-      backdrop-filter: blur(10px);
-      border: 1px solid var(--gold);
-      color: var(--ink);
-      padding: 6px 14px;
-      border-radius: 20px;
-      font-size: 11px;
-      font-weight: 500;
-      white-space: nowrap;
-      box-shadow: 0 8px 20px rgba(0,0,0,0.5);
-      animation: floatOrbit 4s ease-in-out infinite alternate;
-    }
-    .badge-1 { top: 10px; left: -10px; animation-delay: 0s; }
-    .badge-2 { top: 30px; right: -20px; animation-delay: 1s; }
-    .badge-3 { bottom: 30px; left: -15px; animation-delay: 2s; }
-    .badge-4 { bottom: 10px; right: -10px; animation-delay: 1.5s; }
-
-    @keyframes rotateMandala {
-      from { transform: rotate(0deg); }
-      to { transform: rotate(360deg); }
-    }
-    @keyframes steamRise {
-      0% { transform: translateY(0) scaleY(1); opacity: 0.5; }
-      50% { opacity: 0.9; }
-      100% { transform: translateY(-8px) scaleY(1.1); opacity: 0.3; }
-    }
-    @keyframes floatOrbit {
-      0% { transform: translateY(0px); }
-      100% { transform: translateY(-10px); }
-    }
-    
-    .glass-card {
-      background: rgba(20, 18, 22, 0.8);
-      backdrop-filter: blur(12px);
-      border: 1px solid var(--edge);
-      border-radius: 12px;
-      padding: 32px;
-      box-shadow: var(--shadow);
-      transition: transform 0.35s ease, border-color 0.35s ease;
-    }
-    .glass-card:hover {
-      transform: translateY(-4px);
-      border-color: var(--gold);
-    }
-    
-    /* Timeline / Story Showcase */
-    .story-timeline {
-      position: relative;
-      margin: 32px 0;
-      padding-left: 24px;
-      border-left: 2px solid var(--edge);
-    }
-    .timeline-item {
-      position: relative;
-      margin-bottom: 28px;
-    }
-    .timeline-item::before {
-      content: '';
-      position: absolute;
-      left: -31px;
-      top: 5px;
-      width: 12px;
-      height: 12px;
-      border-radius: 50%;
-      background: var(--gold);
-      box-shadow: 0 0 10px var(--gold);
-    }
-    .timeline-year {
-      font-family: var(--display);
-      font-size: 20px;
-      color: var(--gold-text);
-      margin-bottom: 6px;
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+      background: radial-gradient(circle at 50% 30%, rgba(223, 191, 124, 0.12), transparent 70%), #09090c;
+      color: #f3eee4;
+      font-family: Inter, Arial, sans-serif;
     }
 
-    /* Interactive Summary Badge Grid */
-    .summary-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 20px;
-      margin-top: 28px;
-    }
-    .summary-card {
-      background: var(--panel);
-      border: 1px solid var(--edge);
-      padding: 24px;
-      border-radius: 8px;
+    .single-page-wrapper {
+      min-height: 100vh;
       display: flex;
       flex-direction: column;
-      gap: 10px;
-    }
-    .summary-card-icon {
-      font-size: 26px;
-      color: var(--gold);
-    }
-    .summary-card h3 {
-      font-size: 20px;
-      color: var(--ink);
-    }
-    .summary-card p {
-      font-size: 13px;
-      color: var(--muted);
-      line-height: 1.6;
+      justify-content: space-between;
+      align-items: center;
+      padding: 30px 24px;
+      box-sizing: border-box;
+      text-align: center;
     }
 
-    /* Floating Navigation Pill */
-    .floating-nav {
-      position: fixed;
-      bottom: 20px;
-      left: 50%;
-      transform: translateX(-50%);
-      z-index: 1000;
-      background: rgba(15, 13, 18, 0.92);
-      backdrop-filter: blur(16px);
-      border: 1px solid var(--gold);
-      border-radius: 30px;
-      padding: 6px 16px;
+    .header-branding {
       display: flex;
+      align-items: center;
       gap: 12px;
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
-      max-width: 92vw;
+      margin-top: 10px;
     }
-    .floating-nav a {
-      color: var(--ink);
-      font-size: 11px;
-      font-weight: 600;
-      letter-spacing: 0.8px;
+
+    .entry-card {
+      background: rgba(20, 18, 22, 0.85);
+      backdrop-filter: blur(16px);
+      border: 1px solid rgba(121, 98, 61, 0.4);
+      border-radius: 16px;
+      padding: 48px 36px;
+      max-width: 640px;
+      width: 100%;
+      box-shadow: 0 24px 65px rgba(0, 0, 0, 0.6);
+      box-sizing: border-box;
+      margin: auto 0;
+    }
+
+    .entry-card h1 {
+      font-family: Georgia, serif;
+      font-size: clamp(34px, 5vw, 54px);
+      color: #f3eee4;
+      line-height: 1.15;
+      margin-bottom: 12px;
+    }
+
+    .entry-card h1 span {
+      color: #dfbf7c;
+      display: block;
+      font-style: italic;
+      font-size: 0.85em;
+      margin-top: 4px;
+    }
+
+    .tagline {
+      font-family: Georgia, serif;
+      color: #e3c684;
+      font-size: clamp(16px, 2vw, 20px);
+      margin-bottom: 20px;
+    }
+
+    .summary-text {
+      color: #b8afa4;
+      font-size: 15px;
+      line-height: 1.7;
+      margin-bottom: 32px;
+    }
+
+    .notice-box {
+      background: rgba(223, 191, 124, 0.08);
+      border: 1px dashed rgba(223, 191, 124, 0.4);
+      border-radius: 8px;
+      padding: 12px 16px;
+      font-size: 13px;
+      color: #e3c684;
+      margin-bottom: 28px;
+    }
+
+    .btn-main-entry {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      min-height: 56px;
+      padding: 14px 36px;
+      font-size: 14px;
+      font-weight: 700;
+      letter-spacing: 1px;
       text-transform: uppercase;
-      text-decoration: none;
-      padding: 6px 14px;
-      border-radius: 20px;
-      transition: all 0.25s ease;
-      white-space: nowrap;
-    }
-    .floating-nav a:hover, .floating-nav a.active {
-      background: var(--button);
       color: #18140e;
+      background: #dfbd78;
+      border: 1px solid #dfbd78;
+      border-radius: 4px;
+      text-decoration: none;
+      box-shadow: 0 8px 25px rgba(223, 189, 120, 0.25);
+      transition: transform 0.25s ease, background 0.25s ease, box-shadow 0.25s ease;
+      width: 100%;
+      box-sizing: border-box;
     }
 
-    /* -------------------------------------------------------------
-       TABLET & MOBILE RESPONSIVE OPTIMIZATIONS
-       ------------------------------------------------------------- */
-    @media (max-width: 990px) {
-      .hero-grid-container {
-        grid-template-columns: 1fr;
-        gap: 36px;
-      }
-      .hero-doodle-container {
-        min-height: 300px;
-        order: -1; /* Shows artwork above hero copy on tablet/mobile if desired or below */
-      }
+    .btn-main-entry:hover {
+      transform: translateY(-2px);
+      background: #e9c988;
+      box-shadow: 0 12px 30px rgba(223, 189, 120, 0.4);
     }
 
-    @media (max-width: 900px) {
-      .wrap {
-        width: calc(100% - 32px) !important;
-      }
-      .desktop-nav {
-        display: none !important;
-      }
-      .about-grid {
-        grid-template-columns: 1fr !important;
-        gap: 36px !important;
-      }
-      .theme-hero-banner {
-        padding: 50px 0 35px;
-      }
-      .section {
-        padding: 56px 0;
-      }
-      .glass-card {
-        padding: 22px 18px;
-      }
-      .summary-card {
-        padding: 20px 18px;
-      }
-      h2 {
-        font-size: clamp(28px, 6vw, 40px);
-      }
+    .quick-links {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 12px;
+      margin-top: 24px;
     }
 
-    @media (max-width: 768px) {
-      body {
-        padding-bottom: 90px;
-      }
-      .floating-nav {
-        bottom: 12px;
-        width: calc(100% - 24px);
-        padding: 4px 6px;
-        gap: 4px;
-        border-radius: 26px;
-        overflow-x: auto;
-        white-space: nowrap;
-        justify-content: space-between;
-        -webkit-overflow-scrolling: touch;
-        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.85);
-      }
-      .floating-nav a {
-        font-size: 10px;
-        letter-spacing: 0.5px;
-        padding: 6px 10px;
-        flex-shrink: 0;
-      }
-      .doodle-stage {
-        width: 280px;
-        height: 280px;
-      }
-      .doodle-center-art {
-        width: 140px;
-        height: 140px;
-      }
-      .doodle-culinary-icon {
-        width: 100px;
-        height: 100px;
-      }
-      .orbiting-badge {
-        font-size: 10px;
-        padding: 4px 10px;
-      }
-      .summary-grid {
-        grid-template-columns: 1fr;
-        gap: 16px;
-      }
-      .actions {
-        flex-direction: column;
-        width: 100%;
-        gap: 10px;
-      }
-      .actions .btn {
-        width: 100%;
-        justify-content: center;
-      }
+    .quick-link-btn {
+      color: #b8afa4;
+      font-size: 12px;
+      text-decoration: none;
+      padding: 6px 12px;
+      border: 1px solid rgba(121, 98, 61, 0.3);
+      border-radius: 4px;
+      transition: all 0.2s ease;
     }
 
-    @media (max-width: 480px) {
-      .wrap {
-        width: calc(100% - 24px) !important;
+    .quick-link-btn:hover {
+      color: #f3eee4;
+      border-color: #dfbf7c;
+      background: rgba(223, 191, 124, 0.1);
+    }
+
+    .single-footer {
+      font-size: 11px;
+      color: #b8afa4;
+      margin-top: 20px;
+    }
+
+    @media (max-width: 600px) {
+      .entry-card {
+        padding: 32px 20px;
       }
-      .hero-copy h1 {
-        font-size: clamp(32px, 8.5vw, 48px) !important;
-      }
-      .hero-copy .tagline {
-        font-size: 17px !important;
-      }
-      .story-timeline {
-        padding-left: 18px;
-      }
-      .timeline-item::before {
-        left: -24px;
-        width: 10px;
-        height: 10px;
+      .summary-text {
+        font-size: 13.5px;
       }
     }
   </style>
 </head>
-<body data-page="landing" id="top">
-  <!-- Scroll Progress Bar -->
-  <div id="scroll-progress"></div>
-
-  <!-- Header -->
-  <header class="site-header bw-shared-header" id="bw-site-header">
-    <div class="header-row wrap" style="display: flex; align-items: center; justify-content: space-between;">
-      <a class="brand bw-brand-lockup" href="index.html">
+<body data-page="landing">
+  <div class="single-page-wrapper">
+    <!-- Header Logo -->
+    <div class="header-branding">
+      <a class="brand bw-brand-lockup" href="index.html" style="text-decoration: none; display: flex; align-items: center; gap: 10px;">
         <span class="bw-brand-orbit">
-          <img src="assets/logo-original.png" class="brand-logo" width="340" height="268" alt="Bollywood Logo">
-          <span class="bw-brand-gold" aria-hidden="true"></span>
+          <img src="assets/logo-original.png" class="brand-logo" width="44" height="44" alt="Bollywood Logo">
         </span>
-        <span class="brand-words" lang="en" translate="no">
-          <strong>Bollywood</strong>
-          <span>Indian Cuisine</span>
+        <span class="brand-words" lang="en" translate="no" style="display: flex; flex-direction: column; font-family: Georgia, serif; line-height: 1.1; color: #dfbf7c;">
+          <strong style="font-size: 22px; font-weight: 400;">Bollywood</strong>
+          <span style="font-size: 10px; letter-spacing: 1.5px; color: #f3eee4; margin-top: 2px;">Indian Cuisine</span>
         </span>
       </a>
+    </div>
+
+    <!-- Central Single-Page Entry Card -->
+    <div class="entry-card">
+      <span class="eyebrow" style="color: #e3c684; font-size: 10px; letter-spacing: 0.2em; display: block; margin-bottom: 12px; text-transform: uppercase;">
+        BALI · PHUKET · CULINARY HERITAGE
+      </span>
       
-      <nav class="desktop-nav">
-        <a href="#overview">Overview</a>
-        <a href="#about-story">Our Story</a>
-        <a href="#summary-hub">Summary</a>
-        <a href="#destinations">Destinations</a>
-        <a href="index.html">Classic Home</a>
-      </nav>
+      <h1>Bollywood <span>Indian Cuisine</span></h1>
+      <p class="tagline">The Ultimate Taste of Indian Food</p>
 
-      <div class="bw-h7-tools">
-        <a href="index.html#restaurants" class="btn gold" style="min-height:38px; padding:6px 14px; font-size:11px;">Book a Table</a>
+      <div class="notice-box">
+        👉 <strong>Notice:</strong> Click the button below to open the main website.
+      </div>
+
+      <p class="summary-text">
+        Explore our premier Indian restaurants in <strong>Ubud</strong>, <strong>Seminyak</strong>, <strong>Nusa Penida</strong>, and <strong>Phuket Old Town</strong>, alongside <em>Bollywood Indian Club Bali</em>.
+      </p>
+
+      <!-- Primary Action Button to Go to Main Page -->
+      <a href="index.html" class="btn-main-entry">
+        <span>Click Here to Enter Main Website</span>
+        <span aria-hidden="true">→</span>
+      </a>
+
+      <!-- Quick Location Direct Links -->
+      <div class="quick-links">
+        <a href="ubud.html" class="quick-link-btn">Ubud</a>
+        <a href="seminyak.html" class="quick-link-btn">Seminyak</a>
+        <a href="nusapenida.html" class="quick-link-btn">Nusa Penida</a>
+        <a href="thailand.html" class="quick-link-btn">Phuket Old Town</a>
+        <a href="menu.html" class="quick-link-btn">Menus</a>
       </div>
     </div>
-  </header>
 
-  <main>
-    <!-- HERO SECTION WITH SCROLL ANIMATION & REVOLVING DOODLE ARTWORK -->
-    <section class="theme-hero-banner" id="overview">
-      <div class="wrap hero-grid-container">
-        <!-- HERO COPY -->
-        <div class="hero-copy scroll-reveal">
-          <span class="eyebrow">BALI · PHUKET · CULINARY HERITAGE</span>
-          <h1 style="font-size: clamp(38px, 5.5vw, 68px); margin-bottom: 16px;">
-            Bollywood <span>Indian Cuisine</span>
-          </h1>
-          <p class="tagline" style="font-size: clamp(18px, 2.2vw, 22px); color: var(--gold-text); font-family: var(--display); margin-bottom: 16px;">
-            The Ultimate Taste of Indian Food Across Bali & Phuket
-          </p>
-          <p class="intro" style="max-width: 580px; font-size: 14px; color: var(--muted); margin-bottom: 24px; line-height: 1.7;">
-            An immersive dining journey rooted in traditional Indian recipes, fragrant spice blends, tandoori mastery, and tropical island hospitality.
-          </p>
-          <div class="actions">
-            <a href="#about-story" class="btn gold">
-              <span>Explore Our Story</span>
-              <span aria-hidden="true">↓</span>
-            </a>
-            <a href="#summary-hub" class="btn">
-              <span>View Executive Summary</span>
-            </a>
-          </div>
-        </div>
-
-        <!-- REVOLVING DOODLE ANIMATION ARTWORK -->
-        <div class="hero-doodle-container scroll-scale delay-2">
-          <div class="doodle-stage">
-            <!-- Revolving Outer Mandala Geometry Orbit -->
-            <div class="doodle-mandala-orbit">
-              <svg viewBox="0 0 500 500" class="doodle-mandala-svg">
-                <circle cx="250" cy="250" r="230" fill="none" stroke="rgba(223, 191, 124, 0.25)" stroke-width="1.5" stroke-dasharray="6 8" />
-                <circle cx="250" cy="250" r="180" fill="none" stroke="rgba(223, 191, 124, 0.4)" stroke-width="1" />
-                <circle cx="250" cy="250" r="120" fill="none" stroke="rgba(223, 191, 124, 0.2)" stroke-width="1" stroke-dasharray="4 4" />
-                <!-- Star Anise & Spice Petals Geometry -->
-                <g stroke="#dfbf7c" stroke-width="1.5" fill="none" opacity="0.6">
-                  <path d="M250 20 Q250 250 480 250 Q250 250 250 480 Q250 250 20 250 Q250 250 250 20Z" />
-                  <path d="M87 87 Q250 250 413 413 Q250 250 87 413 Q250 250 413 87 Q250 250 87 87Z" />
-                </g>
-              </svg>
-            </div>
-
-            <!-- Central Glowing Handi / Tandoor Steam Doodle Artwork -->
-            <div class="doodle-center-art">
-              <svg viewBox="0 0 240 240" class="doodle-culinary-icon">
-                <defs>
-                  <linearGradient id="gold-steam" x1="0%" y1="100%" x2="0%" y2="0%">
-                    <stop offset="0%" stop-color="#dfbf7c" stop-opacity="0.8" />
-                    <stop offset="100%" stop-color="#ffffff" stop-opacity="0.2" />
-                  </linearGradient>
-                </defs>
-                <!-- Rising Steam Aroma Waves -->
-                <path class="steam-wave steam-1" d="M90 70 Q105 45 95 25 Q85 10 100 0" fill="none" stroke="url(#gold-steam)" stroke-width="3" stroke-linecap="round"/>
-                <path class="steam-wave steam-2" d="M120 65 Q135 40 125 20 Q115 5 130 -10" fill="none" stroke="url(#gold-steam)" stroke-width="3" stroke-linecap="round"/>
-                <path class="steam-wave steam-3" d="M150 70 Q165 45 155 25 Q145 10 160 0" fill="none" stroke="url(#gold-steam)" stroke-width="3" stroke-linecap="round"/>
-                
-                <!-- Brass Handi Cooking Pot Doodle -->
-                <path d="M50 100 C50 85 190 85 190 100 L175 170 C175 195 65 195 65 170 Z" fill="none" stroke="#dfbf7c" stroke-width="3.5" />
-                <!-- Lid Handle & Trim -->
-                <ellipse cx="120" cy="95" rx="60" ry="14" fill="none" stroke="#e3c684" stroke-width="2.5"/>
-                <circle cx="120" cy="80" r="7" fill="#dfbf7c"/>
-                <!-- Tandoori Flame accent inside bowl -->
-                <path d="M110 145 Q120 115 130 145 Q138 130 120 162 Q102 130 110 145Z" fill="#dfbf7c" opacity="0.9"/>
-              </svg>
-            </div>
-
-            <!-- Floating Orbiting Badges -->
-            <div class="orbiting-badge badge-1">🌶️ Authentic Spices</div>
-            <div class="orbiting-badge badge-2">🔥 Tandoor Craft</div>
-            <div class="orbiting-badge badge-3">🌴 Bali & Phuket</div>
-            <div class="orbiting-badge badge-4">✨ Heritage 1968</div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- SECTION 1: DETAILED THEME ANALYSIS -->
-    <section class="section section-tone" id="theme-analysis">
-      <div class="wrap">
-        <div class="section-heading scroll-reveal">
-          <div>
-            <span class="eyebrow">BRAND ARCHITECTURE & DESIGN SYSTEM</span>
-            <h2>Website Theme & Aesthetic Analysis</h2>
-          </div>
-          <p>A breakdown of the visual identity, dark luxury palette, typography, and experience design of Bollywood Indian Cuisine.</p>
-        </div>
-
-        <div class="summary-grid">
-          <div class="glass-card scroll-reveal delay-1">
-            <div class="summary-card-icon">🎨</div>
-            <h3>Dark Luxury Palette</h3>
-            <p>Built upon a rich obsidian backdrop (<code>#09090c</code>) punctuated by warm metallic gold accents (<code>#dfbf7c</code>), ivory typography (<code>#f3eee4</code>), and subtle glassmorphic panels.</p>
-          </div>
-
-          <div class="glass-card scroll-reveal delay-2">
-            <div class="summary-card-icon">📜</div>
-            <h3>Heritage Typography</h3>
-            <p>Pairs classic high-contrast serif headlines for Indian heritage with clean, highly readable modern body text. Supports English, Hindi, Tamil, Indonesian, and Thai.</p>
-          </div>
-
-          <div class="glass-card scroll-reveal delay-3">
-            <div class="summary-card-icon">🌴</div>
-            <h3>Tropical Island Synergy</h3>
-            <p>Seamlessly merges traditional Indian motifs with serene island courtyard settings in Ubud, Seminyak, Nusa Penida, and Phuket Old Town.</p>
-          </div>
-
-          <div class="glass-card scroll-reveal delay-4">
-            <div class="summary-card-icon">💃</div>
-            <h3>Nightlife Integration</h3>
-            <p>Features an exclusive upstairs transition to <em>Bollywood Indian Club Bali</em> in Seminyak, bringing together dining with vibrant DJ entertainment.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- SECTION 2: ABOUT OUR STORY (HERITAGE & JOURNEY) -->
-    <section class="section" id="about-story">
-      <div class="wrap">
-        <div class="about-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: center;">
-          <div class="scroll-reveal-left">
-            <span class="eyebrow">OUR HOSPITALITY JOURNEY</span>
-            <h2 style="margin-bottom: 20px;">Indian at heart. Across generations.</h2>
-            <p style="color: var(--muted); line-height: 1.7; font-size: 14px; margin-bottom: 20px;">
-              Our culinary journey began with a passion for authentic Indian hospitality. From spice-laden family kitchens in Madras to creating signature dining destinations across Southeast Asia, every dish represents generations of refined recipes.
-            </p>
-
-            <div class="story-timeline">
-              <div class="timeline-item">
-                <div class="timeline-year">1968 — Roots in Madras</div>
-                <p style="color: var(--muted); font-size: 13px;">The family legacy takes root with foundational spice blends, tandoori techniques, and traditional South Indian recipes.</p>
-              </div>
-              <div class="timeline-item">
-                <div class="timeline-year">Expansion to Bali</div>
-                <p style="color: var(--muted); font-size: 13px;">Launching landmark destinations in Ubud, Seminyak, and Nusa Penida to offer visitors an authentic taste of home in Indonesia.</p>
-              </div>
-              <div class="timeline-item">
-                <div class="timeline-year">Phuket & The Night</div>
-                <p style="color: var(--muted); font-size: 13px;">Expanding into historic Phuket Old Town, Thailand, alongside introducing the premier <em>Bollywood Indian Club Bali</em>.</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="scroll-reveal-right">
-            <div style="position: relative; border-radius: 14px; overflow: hidden; border: 1px solid var(--gold); box-shadow: var(--shadow);">
-              <img src="assets/replacements/courtyard5.webp" alt="Phuket Courtyard" style="width: 100%; max-height: 420px; object-fit: cover;">
-              <div style="position: absolute; bottom: 0; left: 0; right: 0; padding: 20px; background: linear-gradient(0deg, rgba(9,9,12,0.95), transparent);">
-                <span class="eyebrow" style="margin: 0;">THE COURTYARD EXPERIENCE</span>
-                <p style="color: var(--gold-text); font-family: var(--display); font-size: 16px; margin-top: 4px;">A serene, candlelit courtyard dining setting in Phuket Old Town.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- SECTION 3: EXECUTIVE SUMMARY HUB -->
-    <section class="section section-tone" id="summary-hub">
-      <div class="wrap">
-        <div class="section-heading scroll-reveal">
-          <div>
-            <span class="eyebrow">EXECUTIVE SUMMARY</span>
-            <h2>Locations, Offerings & Experience at a Glance</h2>
-          </div>
-          <p>A quick summary of our restaurants, dining categories, nightlife hub, and key operational highlights.</p>
-        </div>
-
-        <div class="summary-grid">
-          <!-- Ubud -->
-          <div class="summary-card scroll-scale delay-1">
-            <span class="eyebrow" style="margin:0;">BALI · INDONESIA</span>
-            <h3>Ubud Restaurant</h3>
-            <p>Balinese courtyard dining with candlelit evenings, live music, and air-conditioned first-floor dining. Open 08:00 – 00:00.</p>
-            <a href="ubud.html" class="text-link" style="margin-top:auto;">Explore Ubud →</a>
-          </div>
-
-          <!-- Seminyak -->
-          <div class="summary-card scroll-scale delay-2">
-            <span class="eyebrow" style="margin:0;">BALI · INDONESIA</span>
-            <h3>Seminyak Restaurant</h3>
-            <p>Outdoor and indoor dining featuring full Indian menus, with the high-energy <em>Bollywood Indian Club</em> upstairs. Open 12:00 – 03:00.</p>
-            <a href="seminyak.html" class="text-link" style="margin-top:auto;">Explore Seminyak →</a>
-          </div>
-
-          <!-- Nusa Penida -->
-          <div class="summary-card scroll-scale delay-3">
-            <span class="eyebrow" style="margin:0;">BALI · INDONESIA</span>
-            <h3>Nusa Penida</h3>
-            <p>Located in Kutampi Kaler, offering crisp dosas, tandoori specials, and outdoor seating near the island coast. Open 10:00 – 22:00.</p>
-            <a href="nusapenida.html" class="text-link" style="margin-top:auto;">Explore Nusa Penida →</a>
-          </div>
-
-          <!-- Phuket -->
-          <div class="summary-card scroll-scale delay-4">
-            <span class="eyebrow" style="margin:0;">PHUKET · THAILAND</span>
-            <h3>Phuket Old Town</h3>
-            <p>Set on historic Dibuk Road, combining warm heritage shophouse interiors with a lush green courtyard. Open 11:00 – 22:00.</p>
-            <a href="thailand.html" class="text-link" style="margin-top:auto;">Explore Phuket →</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- SECTION 4: DESTINATIONS & MENU HIGHLIGHTS -->
-    <section class="section" id="destinations">
-      <div class="wrap">
-        <div class="section-heading scroll-reveal">
-          <div>
-            <span class="eyebrow">FROM OUR KITCHEN, WITH SOUL</span>
-            <h2>Curated Culinary Collections</h2>
-          </div>
-          <p>Every location serves masterfully prepared Indian classics alongside chef specials and desserts.</p>
-        </div>
-
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 18px;">
-          <div class="glass-card scroll-reveal delay-1" style="text-align: center;">
-            <img src="assets/food-library/s-53.webp" alt="Curries" style="width: 100%; height: 180px; object-fit: cover; border-radius: 8px; margin-bottom: 14px;">
-            <h3>Curries & Comfort</h3>
-            <p style="font-size: 13px; color: var(--muted); margin-top: 6px;">Rich butter chicken, lamb rogan josh, paneer tikka masala, and garlic naan.</p>
-          </div>
-
-          <div class="glass-card scroll-reveal delay-2" style="text-align: center;">
-            <img src="assets/food-library/s-26-1.webp" alt="Tandoor" style="width: 100%; height: 180px; object-fit: cover; border-radius: 8px; margin-bottom: 14px;">
-            <h3>From the Tandoor</h3>
-            <p style="font-size: 13px; color: var(--muted); margin-top: 6px;">Hot charcoal-grilled tandoori chicken, kebabs, and authentic mint chutneys.</p>
-          </div>
-
-          <div class="glass-card scroll-reveal delay-3" style="text-align: center;">
-            <img src="assets/food-library/g-1-1.webp" alt="South Indian" style="width: 100%; height: 180px; object-fit: cover; border-radius: 8px; margin-bottom: 14px;">
-            <h3>South Indian Favourites</h3>
-            <p style="font-size: 13px; color: var(--muted); margin-top: 6px;">Golden crisp masala dosas, idli, vada, sambar, and coconut chutney.</p>
-          </div>
-
-          <div class="glass-card scroll-reveal delay-4" style="text-align: center;">
-            <img src="assets/food-library/s-82-1.webp" alt="Biryani" style="width: 100%; height: 180px; object-fit: cover; border-radius: 8px; margin-bottom: 14px;">
-            <h3>Rice & Biryani</h3>
-            <p style="font-size: 13px; color: var(--muted); margin-top: 6px;">Fragrant dum biryani infused with saffron, aromatic spices, and raita.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <!-- FLOATING SCROLL NAVIGATION PILL -->
-  <nav class="floating-nav" id="floating-nav">
-    <a href="#overview" class="active">Overview</a>
-    <a href="#theme-analysis">Theme</a>
-    <a href="#about-story">About</a>
-    <a href="#summary-hub">Summary</a>
-    <a href="#destinations">Menu</a>
-  </nav>
-
-  <!-- FOOTER -->
-  <footer class="footer" style="background: var(--panel); border-top: 1px solid var(--edge); padding: 36px 0;">
-    <div class="wrap" style="text-align: center;">
-      <p style="color: var(--gold-text); font-family: var(--display); font-size: 18px;">Bollywood Indian Cuisine</p>
-      <p style="color: var(--muted); font-size: 12px; margin-top: 6px;">The Ultimate Taste of Indian Food · Bali & Phuket</p>
-      <div style="margin-top: 16px;">
-        <a href="index.html" class="btn gold" style="min-height: 38px; padding: 8px 18px; font-size: 11px;">Return to Main Website</a>
-      </div>
-      <p style="font-size: 11px; color: var(--muted); margin-top: 20px;">© 2026 Bollywood Indian Cuisine. All rights reserved.</p>
+    <!-- Single Page Footer -->
+    <div class="single-footer">
+      <p>© 2026 Bollywood Indian Cuisine. All rights reserved.</p>
     </div>
-  </footer>
-
-  <!-- SCROLL ANIMATION SCRIPT -->
-  <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      // 1. Scroll Progress Bar
-      window.addEventListener('scroll', function() {
-        const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-        const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-        const scrolled = (winScroll / height) * 100;
-        document.getElementById('scroll-progress').style.width = scrolled + '%';
-      });
-
-      // 2. Intersection Observer for Scroll Animations
-      const observerOptions = {
-        root: null,
-        rootMargin: '0px',
-        threshold: 0.08
-      };
-
-      const animateOnScroll = new IntersectionObserver((entries, observer) => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add('active');
-          }
-        });
-      }, observerOptions);
-
-      const targets = document.querySelectorAll('.scroll-reveal, .scroll-reveal-left, .scroll-reveal-right, .scroll-scale');
-      targets.forEach(target => animateOnScroll.observe(target));
-
-      // 3. Highlight Floating Nav on Scroll
-      const sections = document.querySelectorAll('section');
-      const navLinks = document.querySelectorAll('.floating-nav a');
-
-      window.addEventListener('scroll', () => {
-        let current = '';
-        sections.forEach(section => {
-          const sectionTop = section.offsetTop;
-          const sectionHeight = section.clientHeight;
-          if (pageYOffset >= (sectionTop - sectionHeight / 3)) {
-            current = section.getAttribute('id');
-          }
-        });
-
-        navLinks.forEach(link => {
-          link.classList.remove('active');
-          if (link.getAttribute('href') === '#' + current) {
-            link.classList.add('active');
-          }
-        });
-      });
-    });
-  </script>
+  </div>
 </body>
 </html>
